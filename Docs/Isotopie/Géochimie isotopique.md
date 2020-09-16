@@ -221,6 +221,92 @@ une correction interne.
 
 ## II) Techniques de préparation des échantillons et séparation chimique, protocoles analytiques
 
+Quelles méthodes ou quels outils pour répondre aux mêmes questions ?
+
+Quel est l'âge de la Terre : les dépôts sédimentaires en aval d'un fleuve
+
+Quel est l'âge des continents et des océans : marges de l'Océan Pacifique
+
+Ou trouver le cuivre et du zinc : prospection de recherche en remontant les filières
+
+Quelle était la température des océans à l'archéen : minéraux formés dans l'Océan
+
+L'échantillonnage est important pour la colecte des données et pour l'analyse et l'interprétation des résultatd.
+
+Les questions initiales : 
+
+- combien d'échantillons inclure dans mon étude?
+- quels critères devrais-je utiliser pour les choisir?
+- combien d'analyses faire ?
+
+Les réponses à ces questions : 
+
+- le nombre nécessaire pour obtenir des réponses significatives
+- les critères qui reflètent les objectifs de votre étude
+- le nombre nécessaire pour obtenir les informations que vous recherchez dans les limites de vos ressources (humaines, matérielles et de temps)
+
+La stratégie d'échantillonnage va introduire une démarcation claire entre les études quantitatives et les études qualitatives.
+
+|| Etude qualitative || Etude | quantitative| 
+|--------|--------|
+| nombre d'échantillons restreints analysés en profondeur, échantillons ciblés et non aléatoire, sous ensemble plus spécifique | grand nombre d'échantillons indépendamment de leur contexte(signification statistique).échantillonnage aléatoire |
+| attention particulière au caractère unique, spécifique.les échelles employées adaptées pour tenir compte des variations individuelles. | échelles normalisées, nombre restreint de dimensions pré établies.Analyse statistique: tendances médianes - moyennes et écarts type |
+
+Faire la distinction entre les stratégies d'échantillonnage ciblées et aléatoires
+
+La nature exacte d'un échantillonnage ciblé peut évoluer au cours de l'étude
+
+[Stratégie analytique](Images/strategieanalytique.PNG)
+
+![Stratégie d'échantillonnage](Images/strategie.PNG)
+
+![Caractérisation de l'hétérogénéité](Images/caracterisationheterogeneite.PNG)
+
+![Prélèvements d'échantillons](Images/prelevements.PNG)
+![Prélèvement des échantillons](Images/prélevements2.PNG)
+
+Mise en solution par voie humide :
+
+- Acide Fluorhydrique HF: dissous la silice H<sub>2</sub>SiF<sub>6 (l)</sub>  SiF<sub>4(g)</sub> dangereux, sels insoluble de Ca, Mg, ... volatiles B, As,Ge, Sb
+- Acide Chlorhydrique HCl: peu utilisé seul, sauf pour les carbonates.
+- Acide Nitrique HNO<sub>3</sub>  : mise en solution des sulfures, arséniures.HNO<sub>3</sub> HCl (1:3) : eau régale, mise en solution des métaux lourds
+- Acide Perchlorique HClO<sub>4</sub> : acide le plus fort. Seul les alcalins sont insolubles. Reprise en HCl dilué.Oxydation de MO. Dangereux.
+- Acide Sulfurique H<sub>2</sub>SO<sub>4</sub>: oxidant,mais forme des sulfates peu solubles.utilisé en mélange avec HF, notamment pour doser le F.
+
+Mise en solution des silicates : 
+
+- Avec perte de silice Mélange HClO<sub>4</sub> : HF à 200°C
+- Sans perte de siliceHF seul, HF-HCl
+
+Mise en solution des minéraux réfractaires :
+
+- Sulfures :dissolution en  H<sub>2</sub>SO<sub>4</sub>
+- Sulfates : fusion avec Na<sub>2</sub>CO<sub>3</sub>
+- Silicates:  zircon, tourmaline, béryle, topaze, disthène, .. - Oxydes : corindon, rutile, spinelles (Al ou Cr)...
+        -mise en solution en bombe (110-250°, 80 - 300105Pa)Fusion au métaborate(Li<sub>2</sub>O B<sub>2</sub>O<sub>3</sub>), reprise en HCl ou HNO<sub>3</sub>
+
+Echangeurs cationiques : ce sont en général des polymères organiques contenant des fonctions -C-OH=O ou -SO3H (acide sulfonique) de la forme 
+
+![Acide sulfonique](Images/acidesulfonique.PNG)
+
+Une résine cationique retient mieux les cations de charge ionique plus élevée,par exemple la fixation des ions va diminuer dans le sens :Th<sub>4</sub><sup>+</sup>  > Ac<sub>3</sub><sup>+</sup>  > Ra<sub>2</sub><sup>+</sup> > Fr<sup>+</sup> (éléments de la 7ème période de rayon ionique équivalent)
+
+ou à charge ionique constante , les cations de rayon ionique plus grand :Cs<sup>+</sup> > Rb<sup>+</sup>  >K<sup>+</sup>  > Na<sup>+</sup> > H<sup>+</sup>
+
+Résines amioniques : polymères organiques, genre styrène ou divinyl-benzène avec des groupements NH<sub>3</sub><sup>+</sup> dans lesquelles le contre - ion est de type Cl<sup>-</sup> ou OH<sup>-</sup>.
+
+On peut séparer un grand nombre de cations sur des résines anioniques en complexant le cation sous formes anioniques mono ou multi chargées.
+
+![Séparation chimique](Images/séparation.PNG)
+
+Schéma  simplifié  du  spectromètres  de  masseMC-ICPMS  Nu  Plasma  utilisés  pour  les  mesures des  compositions  isotopiques  du  magnésium à l'ENS de Lyon.
+
+![Spectromètre de masse](Images/spectrometredemasse.PNG)
+
+Séparation des minéraux
+
+![Séparation des minéraux](Images/séparationdesminéraux.PNG)
+
 
 
 ## III) Acquisition et traitement des données
