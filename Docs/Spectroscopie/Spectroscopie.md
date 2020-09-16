@@ -67,5 +67,58 @@ représentent la propagation d’un champ électrique et d’un champ magnétiqu
 - techniques moléculaire : caractéristiques sur la molécule
 - spéciation : environnement chimique local
 
+Pour chaque techniques :
+
+- le principe physique (domaine spectral et le mode d'interaction entre les photons et la matière)
+- appareillage (exciter et détecter)
+- spectre 
+- infos diverses
+- a quoi ça sert
+
+
+## Fluorescence X, XRF
+
+XRF (X-Ray Fluorescence) : émission de rayon X lié à la relaxation d'un atome. Il est excité car il a une lacune en couche profonde. La **relaxation** est faite par le **transfert** d'un électron d'une **couche externe vers une couche profonde**. L'ionisation en couche profonde est dûe par l'absorption d'un photon X incident.
+
+Rayons X sont ceux de haute énergie. L'unité d'énergie est en keV en abscisse. En ordonnée on a une émission en Intensité du signal (AU ou cp ou cp/s).
+
+Pour générer des rayons x : Sources
+
+1. on utilise un élément radioactif (100 euros)
+2. tube à rayons x : on fait interagir des électrons avec une cible en métal (100K d'euros)
+
+![Tube à rayon X](Images/tubeàrayonx.PNG)
+
+3. rayonnement synchrotron : appareil dans lequel on fait tourner des photons à la vitesses de la lumière (1 milliard d'euros)
+ 
+Détecter :
+
+- Dispersion en énergie : utiliser les photons de la lumière et les trier en fonction de l'énergie du photon sur un semi-conducteur. Pas toujours de photons car XRF est en compétition avec des électrons Auger. On voit tous les élements.
+
+- dispersion en longueur d'onde : le détecteur va permettre de compter les photons. Les photons arrivent au cristal analyseur et repartent vers le détecteur. Les rayons arrivent en parallèles 2d sinθ. Les chemins ont la même longueur entre la source, le cristal et le détecteur. Pas de spectre. On sélectionne les élements. Equation de Bragues.
+
+Infos diverses :
+
+Les éléments doivent avoir une couche L. Seulement à partir du Bore qu'on peut l'observer. Plus on avance dans le tableau, les résultats sont meilleurs pas de H, He, Li, Be et les plus légers. 
+
+Utilité :
+
+La fluorescence permet une analyse élémentaire qualitative et/ou quantitative. Il existe des ensembles source/détecteur portables (pistolet) manipulables sur le terrain. Méthode peu sensible aux conditions de T, P,... et aux liaisons chimiquesMéthode non destructive. Peut permettre de regarder les peintures au plomb.
+
+### Libs
+
+Transfert électronique entre le continuum et une couche interne. Technique élémentaire : composition élémentaire de l'échantillon. Emission optique induite par laser. On fait une émission optique. Un électron est éjecté, un électron sera mis à sa place en émettant un photon proche UV-IR.
+
+**Domaine spectral** : proche UV- IR
+
+Spectre avec des longueur d'onde de **250 à 900 nm**. Beaucoup plus de pics et plus fins. L'excitation sera du au **laser**. La détection est une **caméra optique CCD**.
+
+En Libs, on voit tous les éléments. Efficace sur les éléments légers. Différence entre XRF et Libs, le calcul des quantités. Libs se base sur la physique des plasmas. Plus compliqué pour doser.
+
+### DRF
+
+Diffraction des rayons X
+
+
 
 
