@@ -200,3 +200,74 @@ Pour 100m, on peut avoir une profondeur d'investigation entre 25m (conducteur) e
 
 analyse de la résistivité apparente du sous-sol par un quadripôle symétrique ABMN de dimension constante, traîné le long d'un profil -> dimension du dispositif (fixe) induit une profondeur d'investigation à peu près constante
 
+## II) Sondage électrique
+
+### Mesure
+
+En régime variable : champ électrique et champ magnétique étroitement liés -> **Électromagnétisme**
+Un champ magnétique variable engendre un champ électrique -> induction électromagnétique de Faraday. 
+
+
+Analyse de la résistivité apparente du sous sol (ρa ) mesurée par un dispositif quadripôle symétrique (ABMN) pour une succession d'écartements des électrodes AB ->propagation d'un courant électrique dans le sol. Mesure du potentiel électrique **généré par l'injection d'un courant continu** (DC) dans le sol. On va jouer sur la profondeur d'investigation. On cherche les corps électriquement conducteurs dans un environnement résistant.
+On doit utiliser un courant alternatif dans une bobine qui va générer le champ magnétique primaire. Nous allons regarder la variation des deux champ magnétiques.
+
+Résistivités des roches: propriété physique qui détermine la capacité de ce milieu à laisser passer le courant électrique.
+
+![prospection électrique](Images/electrique.PNG)
+
+Le s sera directement lié à la profondeur d'investigation.
+
+Les valeurs restent apparentes et ne reflètent qu'une valeur moyenne dans un espace délimité.
+
+La conduction est l'influence de la teneur en sels (augmente la conductivité), idem pour la température. La composition des fluides joue un rôle majeur dans la résistivité. L'unité est de millisiemens / m -> électromagnétisme
+
+On peut le faire dans tous les milieux car il n'y a pas d'interaction avec le sol. Ce que nous allons regarder ce sont des rapports de champs. Hs/He. Ce sont des dipôle qui sont dans le même plan. Le rapport entre les deux champs magnétiques peuvent remonter à la conductivité.
+
+
+- en verticale : le champ magnétique sera plus profond
+- en horizontal : sondage de la surface
+
+Plus le milieu est conducteur, plus faible sera la profondeur d'investigation. Si la conduction n'est pas trop grande, on peut déterminer la conduction avec le rapport de champ. La conductivité est apparente. Elle est fonction de ce que va mesurer l'outil.
+
+On cherche à déterminer d'où provient le champ secondaire. Pour 3m, on sonde 1,50m de profondeur en sondage verticale. En horizontal la valeur est maximale en surface. En verticale, on va sonder deux fois plus.
+
+Si la conductivité ne varie pas de façon significative à mois d'une distance, on peut considérer que le sol est latéralement uniforme.
+
+### Méthodes : 
+
+- permafrost
+- détection de gravier
+- cartographie d'invasion saline
+- détection de karst
+- détection et cartographie de zones pollués ou contaminées
+- cartographie de ma topographie des sols
+- cartographie de la conductivité du sol mis à la terre
+- détection des tuyaux et conducteurs métalliques 
+
+
+### Outils
+
+L'outils qui s'appelle EM31, il a un espace de s = 3,7m, il va sonder jusqu'à 6 en verticale et 3m en horizontal. 
+
+L'EM34, on peut espacer l'émetteur et le récepteur s =10,20 et 40 m. Il va sonder jusqu'à 60m.
+
+### Avantages
+
+- excellente résolution de la conductivité
+      - l'extension latérale du volume de sol échantillonné est approximativement la même que l'extension verticale
+      - de faibles perturbations de conductivité et est facilement et précisément mesurés
+- pas de problème d'injection de courant
+  - couplage électromagnétique
+  - pas de problème de résistance de contact aux électrodes
+- simplicité d'interprétation 
+- mesures faciles et rapides
+
+### Désavantage
+
+- attention au milieu conducteur
+- attention au changement de temps
+- "le zéro" il faut un zéro de référence, mettre à un endroit très résistant permettant de normalisé
+
+
+
+
