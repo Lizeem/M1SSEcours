@@ -1,5 +1,7 @@
 # Méthodes de prospection géophysique
 
+## Introduction
+
 - Application d'un ensemble de méthodes physiques : gravimétrie, électricité, magnétisme, sismique afin d'approcher les propriétés et / ou la structure du massif
 - Mesure d'une grandeur physique et de leur variation
 - Méthode indirectes et non-destructives de reconnaissance et d'auscultation
@@ -19,19 +21,19 @@ investigation géophysique -> acquisition de données 1,2 ou 3D :
 - **coupe** (2D) : déplacement au sol selon une direction et une profondeur
 - **bloc diagramme** (3D)
 
-## I) Polarisation spontanée électrique 
+## I) Polarisation spontanée 
 
 ### Introduction
 
 Le géophysicien s'intéresse aux **propriétés électriques** des sols (inclus sol végétal) et des roches : **caractérisation et imagerie du sous-sol**. Spontané : polarisation naturelle
 
-Propriété électrique : 
+Propriétés électriques : 
 
 - activité électrochimique (base de la **PS**)
 - **résistivité** : difficulté avec laquelle on peut faire passer un courant électrique dans la roche, contraire de la conduction, non naturel. L'unité est Ωm.
-- constante diélectrique : capacité des roches à emmagasiner de l'énergié et à la rstituer, à la base de la **polarisation provoquée**
+- constante diélectrique : capacité des roches à emmagasiner de l'énergié et à la restituer, à la base de la **polarisation provoquée**
 
-Accès à des profondeurs d'investigation élevées : structure invisible à d'autres méthodes
+Accès à des profondeurs d'investigation élevées : structures invisibles à d'autres méthodes
 
 Point commun de ces méthodes : ***mesure potentiel électrique***
 
@@ -43,6 +45,8 @@ Associée à des mécanismes de polarisation de charges électriques dans le mil
 - terme utilisé pour désigner la méthode de prospection basée sur la mesure du phénomène
 
 La PS est causée par l'activité électrochimique ou mécanique : altération des sulfures, variation de la composition des roches aux contacts géologiques, activité bioélectrique du matériel organique, corrosion, gradients thermiques et pression dans les fluides souterrains.
+
+### Comment ça marche ?
 
 Principe de mesure passive. Les données de potentiel spontanée sont mesurés en surface, on va ensuite pouvoir créer des modèles de circulation en profondeur. On mesure la **différence** de potentiel d'origine naturelle entre deux points du sol. Les courants électriques induits liés à des phénomènes **électrocinétiques** et **électrochimiques**.
 
@@ -56,11 +60,13 @@ Deux phénomènes :
     - "solutions" à concentration différente (argiles et sables aquifères par exemple) -> phénomènes "**osmotiques**" 
     - **présence d'une masse conductrice** (amas de minéral métalliques ou schistes graphiteux) partiellement enfouie sous  le niveau hydrostatique
 
-### A) Sources naturelles du potentiel électrique
+![Potentiel spontanée](Images/potentielspotanné.PNG)
+
+### Sources naturelles du potentiel électrique
 
 #### 1. Potentiel électrocinétique 
 
-Observé lorsqu'une solution de **résistivité ρ** et de **viscosité η** traverse un matériau poreux, d'origine mécanique il se produit généralement sous influence de la gravité.
+Observé lorsqu' une solution de **résistivité ρ** et de **viscosité η** traverse un matériau poreux, d'origine mécanique il se produit généralement sous influence de la gravité.
 
 ![Formule électrocinétique](Images/electrocinétique.png)
 
@@ -97,8 +103,6 @@ Lorsque deux électrodes métalliques sont immergées dans une solution dont la 
 
 ![Potentiel de Nernst](Images/potentiel-de-nernst.png)
 
-Ed et Es définissent le **potentiel de membrane**
-
 #### 4. Potentiel de contact électrolytique
 
 Lorsque 2 électrodes de métaux différents sont introduites dans une solution électrolytique.  
@@ -112,7 +116,7 @@ Combinaison des potentiels de diffusion, Nernst et contact ≡ **potentiels de m
 - courants telluriques (induction de l'ionosphère, explosion nucléaire, tempêtes électriques) pas stables dans le temps 
 - effet bioélectrique observé à la frontière entre clairière et forêt : eau souterraine drainée par les racines des arbres => ΔV pouvant être confondus avec ceux produits par les sulfures (de l'ordre de quelque centaines de mV)
 
-### B) Le potentiel de minéralisation
+### Le potentiel de minéralisation
 
 Les porteurs de charge sont des électrons Associé avec les sulfures métalliques, le graphite et certains oxydes métalliques telle que la magnétite.
 
@@ -123,7 +127,7 @@ L'anomalie au dessus des sulfures métalliques (pyrite, chalcopyrite, pyrrhotite
 L : Propriétés de transports des ions, de l’eau porale et des électrons 
 ∇μ : gradients de potentiels chimiques respectifs 
 
-### C) La PS comme méthode de prospection
+### La PS comme méthode de prospection
 
 Attention au choix des électrodes : performance dépend de leur polarisation et de leur dérive.  
 
@@ -135,18 +139,16 @@ Sources de bruit possible : Induction magnétotellurique, potentiel thermo-élec
 
 ![PS](Images/PS.png)
 
-### D) Les différentes méthodes d'acquisition
+### Les différentes méthodes d'acquisition
 
-Technique du gradient : la paire d'électrodes se déplace simultanément, d'un point de mesure à l'autre : mesures le long d'une ligne => profil. Plusieurs profils => surface statique.  
+**Technique du gradient** : la paire d'électrodes se déplace simultanément, d'un point de mesure à l'autre : mesures le long d'une ligne => profil. Plusieurs profils => surface statique.  Méthode rapide mais il faut additionner toutes les valeurs pour obtenir ΔV, les erreurs de zéro s'additionnent et il faut veiller à garder toujours la même polarité des électrodes. 
 
-Méthode rapide mais il faut additionner toutes les valeurs pour obtenir ΔV, les erreurs de zéro s'additionnent et il faut veiller à garder toujours la même polarité des électrodes. 
-
-Technique Base-Fixe : on ne déplace qu'une électrode tout en gardant l'autre fixe. L'électrode mobile est déplacée de façon à couvrir la surface d'investigation. 
+**Technique Base-Fixe** : on ne déplace qu'une électrode tout en gardant l'autre fixe. L'électrode mobile est déplacée de façon à couvrir la surface d'investigation. 
 
 - Avantages : lecture directe car les mesures sont faites avec une même référence, et les erreurs de zéro entre les deux électrodes ne s'accumulent pas. 
 - Désavantage principal : manipulation des fils fastidieuse.
 
-### E) Interprétation des résultats 
+### Interprétation des résultats 
 
 Obtention de contours ou de profils.  
 
@@ -154,11 +156,11 @@ Obtention de contours ou de profils.
 - interprétation surtout qualitative ; idée du pendage avec le gradient des courbes de contours.  
 - forme du corps anomal indiquée par la forme des contours 
 
-### F) Applications de la polarisation spontanée
+### Applications de la polarisation spontanée
 
 #### 1. Application à l'hydrologie
 
-Le champ électrique, présent naturellement dans le sous-sol, est influencé par la géométrie de la source ainsi que par la distribution de la résistivité électrique du milieu => mesure ayant une origine dynamique liée à l’écoulement de l’eau 
+Le champ électrique, présent naturellement dans le sous-sol, est influencé par la **géométrie de la source** ainsi que par la distribution de la résistivité électrique du milieu => mesure ayant une origine dynamique liée à l’écoulement de l’eau 
 
 Intérêt en hydrologie des mesures de PS : 
 
@@ -182,11 +184,11 @@ Les mécanismes de dégradation de la Matière Organique : dégradation aérobie
 
 Acide sulfurique H2S, dioxyde de soufre SO2 et CO2 : composants principaux des gaz volcaniques Les réactions chimiques entre ces gaz et les roches peuvent contrôler l’environnement chimique des volcans et des champs géothermiques avoisinants. Génération des ions sulfates ?? 
 
-1. Oxydation par l’oxygène dissout dans l’eau de percolation :  H2S + 2O2↔H2SO4Mais 2O2 très faible, n’explique pas les formations des ions sulfates dans les sources chaudes 
+1. Oxydation par l’oxygène dissout dans l’eau de percolation :  H<sub>2</sub>S + 2O<sub>2</sub> ↔ H<sub>2</sub>SO<sub>4</sub> Mais 2O<sub>2</sub> très faible, n’explique pas les formations des ions sulfates dans les sources chaudes 
 2. Oxydation par l’oxygène de l’air : Vitesse trop lente 
-3. Oxydation par des composés ferriques dans les roches : H2O + SO2↔H2SO3. Ce dernier réagit avec des ions ferriques, pour former l’ion sulfate
+3. Oxydation par des composés ferriques dans les roches : H<sub>2</sub>O + SO<sub>2</sub> ↔ H<sub>2</sub>SO<sub>3</sub>. Ce dernier réagit avec des ions ferriques, pour former l’ion sulfate
 
-### Sondage électrique
+## II) Sondage électrique
 
 Analyse de la résistivité apparente du sous sol mesurée par un dispositif quadripôle symétrique (ABMN) pour une succession d'écartement des électrodes AB
 
@@ -194,21 +196,34 @@ Analyse de la résistivité apparente du sous sol mesurée par un dispositif qua
 
 Loi d'Ohm : U = RI
 
-Pour 100m, on peut avoir une profondeur d'investigation entre 25m (conducteur) et 10m (résistant) en fonction de la résistivité du sol
+### Tomographie électrique
+
+Choix du dispositif de mesure. Il va créer un diagramme de sensibilité. Contribution de chaque élément du volume du sol (ou de surface de la section en 2D) à la différence de potentiel totale mesurée ΔV. Diagramme de sensibilité des principaux dispositifs 2D utilisés pour mesurer la résistivité électrique d’un sol. Plus une zone est sombre, plus sa contribution à la mesure est importante. C1 et C2 représentent les électrodes de courant, Pl et P2 les électrodes de potentiel. 
+
+L'objectif est d'imager la résistivité (réelle) du sol selon un plan vertical (2D) ou dans un volume de sol (3D). Séries de mesures individuelles le long d'un profil (2D). Valeurs de résistivité apparentes ρa obtenues reportées dans un plan vertical appelé **pseudo-section**. Positionnement des valeurs de résistivité apparente **arbitraire**.
+
+Profondeur d'investigation = f(distance entre les électrodes A et B)
+
+-> en approche simplifiée: entre AB/4 à AB/10 en fonction des résistivités. La différence de potentiel mesurée entre M et N traduit une résistivité apparente (ρa) liée aux résistivités vraies et aux épaisseurs de toutes les couches intéressées par le dispositif ABMN.
+
+Le dispositif de Wenner est un quadripôle avec une distance identique entre les électrodes. Le dipôle de mesure de tension est au centre. Ce dispositif est recommandé pour les structures horizontales. La profondeur d'investigation plus faible que celle du Dipôle-Dipôle et du Wenner-Schlumberger.
+
+Le dispositif dipôle - dipôle est recommandé surtout pour les structures verticales. La profondeur d'investigation plus grande que pour le Wenner et Wenner -Schlumberger. Il nécessite des appareils sensibles et un bon couplage des électrodes avec le sol peut être utilisé pour de la 3D seulement pour des grilles de 12 x 12 électrodes
+
+Le dispositif Wenner - Schlumberger est recommandé à la fois pour les structures horizontales et verticales. La profondeur d'investigation est d'environ 10 % plus élevée qu'avec le dispositif de Wenner.
 
 ### Trainée électrique
 
-analyse de la résistivité apparente du sous-sol par un quadripôle symétrique ABMN de dimension constante, traîné le long d'un profil -> dimension du dispositif (fixe) induit une profondeur d'investigation à peu près constante
+Analyse de la résistivité apparente du sous-sol par un quadripôle symétrique ABMN de dimension constante, traîné le long d'un profil -> dimension du dispositif (fixe) induit une profondeur d'investigation à peu près constante.
 
-## II) Prospection électromagnétique
+## III) Prospection électromagnétique
 
-### Mesure
+### Introduction
 
-En régime variable : champ électrique et champ magnétique étroitement liés -> **Électromagnétisme**
-Un champ magnétique variable engendre un champ électrique -> induction électromagnétique de Faraday. 
+En régime variable : champ électrique et champ magnétique étroitement liés -> **Électromagnétisme**.
+Un champ magnétique variable engendre un champ électrique -> induction électromagnétique de Faraday. Le champ électrique crée un courant électrique, qui crée un champ magnétique...
 
-
-Analyse de la résistivité apparente du sous sol (ρa ) mesurée par un dispositif quadripôle symétrique (ABMN) pour une succession d'écartements des électrodes AB ->propagation d'un courant électrique dans le sol. Mesure du potentiel électrique **généré par l'injection d'un courant continu** (DC) dans le sol. On va jouer sur la profondeur d'investigation. On cherche les corps électriquement conducteurs dans un environnement résistant.
+Analyse de la résistivité apparente du sous sol (ρa) mesurée par un dispositif quadripôle symétrique (ABMN) pour une succession d'écartements des électrodes AB ->propagation d'un courant électrique dans le sol. Mesure du potentiel électrique **généré par l'injection d'un courant continu** (DC) dans le sol. On va jouer sur la profondeur d'investigation. On cherche les corps électriquement conducteurs dans un environnement résistant.
 On doit utiliser un courant alternatif dans une bobine qui va générer le champ magnétique primaire. Nous allons regarder la variation des deux champ magnétiques.
 
 Résistivités des roches: propriété physique qui détermine la capacité de ce milieu à laisser passer le courant électrique.
@@ -233,8 +248,6 @@ On cherche à déterminer d'où provient le champ secondaire. Pour 3m, on sonde 
 
 Si la conductivité ne varie pas de façon significative à mois d'une distance, on peut considérer que le sol est latéralement uniforme.
 
-### Méthodes : 
-
 - permafrost
 - détection de gravier
 - cartographie d'invasion saline
@@ -245,13 +258,13 @@ Si la conductivité ne varie pas de façon significative à mois d'une distance,
 - détection des tuyaux et conducteurs métalliques 
 
 
-### Outils
+### Outils EM
 
 - EM31, il a un espace de s = 3,7m, il va sonder jusqu'à 6 en verticale et 3m en horizontal. 
 
 - EM34, on peut espacer l'émetteur et le récepteur s =10,20 et 40 m. Il va sonder jusqu'à 60m. Deux grands cerceaux en cuivre au sol. On va aussi mesurer une conductivité apparente. Suivant la distance à laquelle on va positionner nos cerceaux, cela nous permettra d'aller plus profond. Pour aller loin, la fréquence doit être petite avec un temps de période long. Un même matériau ne donnera jamais la même valeur. 
 
-### Avantages
+Avantages :
 
 - excellente résolution de la conductivité
       - l'extension latérale du volume de sol échantillonné est approximativement la même que l'extension verticale
@@ -262,13 +275,13 @@ Si la conductivité ne varie pas de façon significative à mois d'une distance,
 - simplicité d'interprétation 
 - mesures faciles et rapides
 
-### Désavantage
+Inconvénients : 
 
 - attention au milieu conducteur
 - attention au changement de temps
 - "le zéro" il faut un zéro de référence, mettre à un endroit très résistant permettant de normalisé
 
-### Autres outils
+### Outils pour des investigations plus profondes
 
 - système à onde plane (TBF) : très basse fréquence. L'onde va pouvoir pénétrer loin. On a une antenne positionné dans un point donné. Le récepteur sera plus loin. Formations très profondes. On peut aller sur plusieurs dizaines de profondeurs. On peut chercher des cavités. Les fréquences vont pouvoir cartographier la profondeur du site.
 
@@ -284,7 +297,7 @@ Inconvénients : Ne fonctionne pas bien quand c'est trop conducteur et ne foncti
 
 ![TDEM](Images/TDEM.PNG)
 
-## III) Géoradar
+## IV) Géoradar
 
 Un géo-radar est constitué d'un émetteur et d'un récepteur. Également de plusieurs antennes. Il peut se déplacer à plusieurs dizaines de km/h. On va regarder un contraste de constance diélectrique (résistivité) entre la "cible" et l'encaissement. Ce qu'on regarde c'est une reflexion d'onde radar. Un profil en deux dimensions en fonction de z.
 
@@ -301,21 +314,7 @@ Equation de Maxwell :
 Le courant de déplacement doit être plus important que le courant du milieu. On peut changer la fréquence de l'antenne. Pour que l'onde EM s'enfonce dans le sol, il faut qu'elle soir importante. Si l'onde ne se propage pas, nous n'aurons pas de signal. Selon l'importance des pertes du signal, les  champs se déplacent 
 
 - en mode diffusif : diffus (pertes non négligeables)
-- en mode propagatif : faibles pertes
+- en mode propagative : faibles pertes
 
-géo radar = mode propagatif
-
-
-
-
-
-
-
-
-
-
-Pour l'examen : regarder l'unité de mesure
-
-
-
+géo radar = mode propagative
 
