@@ -279,10 +279,34 @@ Avantages : rapidité d'opération, taille du dispositif de l'ordre de la taille
 - résolution latérale (en utilisant des stations adjacentes)
 - résolutions des couches conductrices et réduction du domaine d'équivalence 
 
-Inconvénients : Ne fonctionne pas bien quand c'est trop conducteur et ne fonctionne pas bien en milieu résistant. Peu de moyens d'interprétation, sensible au bruits, il faut déplacer le récepteur à quelque distance de la boucle.
+Inconvénients : Ne fonctionne pas bien quand c'est trop conducteur et ne fonctionne pas bien en milieu résistant. Peu de moyens d'interprétation, sensible au bruits, il faut placer le récepteur à quelque distance de la boucle.
 
 
 ![TDEM](Images/TDEM.PNG)
+
+## III) Géoradar
+
+Un géo-radar est constitué d'un émetteur et d'un récepteur. Également de plusieurs antennes. Il peut se déplacer à plusieurs dizaines de km/h. On va regarder un contraste de constance diélectrique (résistivité) entre la "cible" et l'encaissement. Ce qu'on regarde c'est une reflexion d'onde radar. Un profil en deux dimensions en fonction de z.
+
+### Principe général
+
+On envoie une impulsion EM en haute fréquence. L'impulsion induit une onde électromagnétique qui se propage dans le sol. Quand elle va rencontrer un milieu différent, cela va se réfléchir et se rétracter est enregistrée par une antenne réceptrice. La mesure de cette onde va permettre de construire une image du sous-sol. 
+
+![Principe général du géoradar](Images/georadar.PNG)
+
+Tous les profils avec un temps de ns sont du géo radar. En ms c'est de la sismique. On peut aller jusqu'à plusieurs centaines de mètre.
+
+Equation de Maxwell : 
+
+Le courant de déplacement doit être plus important que le courant du milieu. On peut changer la fréquence de l'antenne. Pour que l'onde EM s'enfonce dans le sol, il faut qu'elle soir importante. Si l'onde ne se propage pas, nous n'aurons pas de signal. Selon l'importance des pertes du signal, les  champs se déplacent 
+
+- en mode diffusif : diffus (pertes non négligeables)
+- en mode propagatif : faibles pertes
+
+géo radar = mode propagatif
+
+
+
 
 
 
