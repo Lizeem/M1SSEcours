@@ -200,7 +200,7 @@ Pour 100m, on peut avoir une profondeur d'investigation entre 25m (conducteur) e
 
 analyse de la résistivité apparente du sous-sol par un quadripôle symétrique ABMN de dimension constante, traîné le long d'un profil -> dimension du dispositif (fixe) induit une profondeur d'investigation à peu près constante
 
-## II) Sondage électrique
+## II) Prospection électromagnétique
 
 ### Mesure
 
@@ -247,9 +247,9 @@ Si la conductivité ne varie pas de façon significative à mois d'une distance,
 
 ### Outils
 
-L'outils qui s'appelle EM31, il a un espace de s = 3,7m, il va sonder jusqu'à 6 en verticale et 3m en horizontal. 
+- EM31, il a un espace de s = 3,7m, il va sonder jusqu'à 6 en verticale et 3m en horizontal. 
 
-L'EM34, on peut espacer l'émetteur et le récepteur s =10,20 et 40 m. Il va sonder jusqu'à 60m.
+- EM34, on peut espacer l'émetteur et le récepteur s =10,20 et 40 m. Il va sonder jusqu'à 60m. Deux grands cerceaux en cuivre au sol. On va aussi mesurer une conductivité apparente. Suivant la distance à laquelle on va positionner nos cerceaux, cela nous permettra d'aller plus profond. Pour aller loin, la fréquence doit être petite avec un temps de période long. Un même matériau ne donnera jamais la même valeur. 
 
 ### Avantages
 
@@ -267,6 +267,30 @@ L'EM34, on peut espacer l'émetteur et le récepteur s =10,20 et 40 m. Il va son
 - attention au milieu conducteur
 - attention au changement de temps
 - "le zéro" il faut un zéro de référence, mettre à un endroit très résistant permettant de normalisé
+
+### Autres outils
+
+- système à onde plane (TBF) : très basse fréquence. L'onde va pouvoir pénétrer loin. On a une antenne positionné dans un point donné. Le récepteur sera plus loin. Formations très profondes. On peut aller sur plusieurs dizaines de profondeurs. On peut chercher des cavités. Les fréquences vont pouvoir cartographier la profondeur du site.
+
+- TDEM : résolution dans le temps. Etude qui sont faites à de très grandes profondeurs. On travaille en fréquence dans le temps. La fréquence ne bouge pas. On va analyser un seul point comme un sondage. On regarde l'évolution de notre champ magnétique une fois qu'on arrête de le générer. Permet de visualiser une coupe. On maintient le courant dans une boucle un certain temps. Le champ magnétique statique va s'établir. On va couper le courant mais la force électromotrice va se déplacer dans le sol. L'intensité du courant va être fonction de la résistivité du sol. On va récupérer le champ magnétique dans le temps. Le champ magnétique va se déplacer et sera différent. Plus le temps passe, plus le champ magnétique va diminuer. 
+
+Avantages : rapidité d'opération, taille du dispositif de l'ordre de la taille de la profondeur d'exploration. L'information sera concentré à la verticale.
+
+- résolution latérale (en utilisant des stations adjacentes)
+- résolutions des couches conductrices et réduction du domaine d'équivalence 
+
+Inconvénients : Ne fonctionne pas bien quand c'est trop conducteur et ne fonctionne pas bien en milieu résistant. Peu de moyens d'interprétation, sensible au bruits, il faut déplacer le récepteur à quelque distance de la boucle.
+
+
+![TDEM](Images/TDEM.PNG)
+
+
+
+
+
+
+
+Pour l'examen : regarder l'unité de mesure
 
 
 
