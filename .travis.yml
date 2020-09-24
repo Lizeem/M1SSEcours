@@ -7,6 +7,6 @@ script:
 deploy:
   provider: pages
   skip-cleanup: true
-  github-token: $GITHUB_TOKEN_COURSL3
+  github-token: $GITHUB_TOKEN
   keep-history: true
   local_dir: site
