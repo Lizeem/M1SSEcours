@@ -307,7 +307,134 @@ Séparation des minéraux
 
 ![Séparation des minéraux](Images/séparationdesminéraux.PNG)
 
-
-
 ## III) Acquisition et traitement des données
+
+Que mesure t-on dans un spectromètre de masse?
+
+Un faisceau d'ion définis par :
+
+- un rapport m/q
+- une énergie E = 1/2 mv² =qv
+
+q = charge élémentaire 1.602 x 10<sub>-19</sub>C
+
+1 A = 1 C/s
+
+### Système de mesure
+
+#### Cage de Faraday
+
+![Cage de Faraday](Images/cagedefaraday.PNG)
+
+N/t = l/q 
+
+1 nano-ampère (10<sup>-9</sup> A) =  6.24 10<sup>9</sup> ions /s.
+
+![Cage de Faraday](Images/cagedefaraday2.PNG)
+
+Mesure directe du potentiel aux bornes d'une grande résistance (typiquement 10<sup>-11</sup>) A ~ 1 volt
+
+Forme allongé + plaques de répulsion -> faible perte d'électrons secondaires
+
+#### Ampèremètre analogique
+
+- ampèremètre magnéto-électrique : galvanomètre  à  cadre  mobile  -> une  bobine  montée  sur  pivot,  dans  le champ magnétique d'un aimant fixe.  Le  courant  induit  dans  la  bobine  un  champ  électromagnétique,  qui  la fait pivoter par répulsion des champs magnétiques.  Plus le courant est intense, plus la bobine bascule.
+
+- ampèremètre ferro-magnétique : deux palettes de fer doux à l'intérieur d'une bobine, l'une fixe, l'autre montée sur pivot.  Quand   le   courant   passe   dans   la   bobine,   les   deux   palettes s'aimantent et se repoussent, quel que soit le sens du courant.  Cet ampèremètre non polarisé, mesure la valeur efficace de courant alternatif de forme quelconque (mais de fréquence faible < 1 kHz).
+
+- ampèremètre thermique :  un  fil  résistant  chauffé  par  effet Joule,  provoque  la  rotation  de  l'aiguille  à  laquelle  il  est  fixé. L'ampèremètre  thermique  n'est  pas  polarisé,  et  peux  mesurer  la valeur efficace des courants alternatifs jusqu'à des fréquences de plusieurs mégahertz
+
+#### Ampèremètre numérique
+
+C'est en fait un voltmètre numérique mesurant la tension produite par le courant à mesurer dans une résistance (appelée shunt). La valeur du shunt dépend du calibre utilisé. En application de la Loi d'Ohm, La tension U mesurée est convertie, en fonction de la valeur de résistance connue R du shunt, en une valeur A correspondant au courant. 
+
+#### Convertisseur analogique, numérique double rampe
+
+
+Convertisseur analogique-numérique double rampe :  transforme une tension en un temps, les 2 grandeurs étant proportionnelles. Le temps est ensuite numérisé à l'aide d'un compteur. fonctionne en deux étapes :  
+
+1. Première étape :  K1 est fermé et K2 est ouvert. intégration de la tension  vx(t) pendant une durée Tint fixe (période d'intégration). La tension en sortie de l'intégrateur est égale à la tension aux bornes du condensateur et a pour expression :    vs (t) = 1/R<sub>1</sub>C∫<sub>0</sub><sup>Tint</sup> v<sub>x</sub>∂t
+     
+2. Deuxième étape. K2 est fermé et K1 est ouvert : décharge à courant constant du condensateur. Un compteur mesure la durée ∆tx nécessaire à la décharge,  proportionnelle à la valeur de la tension atteinte à la fin de l'étape 1.
+
+Ce type de convertisseur est limité des basses fréquences à quelques dizaines de Hz avec des durées d'intégration de ~100 ms. Il constitue le circuit de base des voltmètres numériques. 
+
+#### Multiplicateurs d'électrons
+
+Quand un ion atteint la première dynode -> plusieurs électrons. 
+Le potentiel électrique entre les dynodes accélèrent les électrons émis vers la dynode suivante. A chaque étape, chaque électron -> plusieurs électrons => amplification du signal => **mesure en mode digital ou analogique**.
+
+EM en mode analogique: mesure du courant en sortie
+
+L'amplification est ajustée en changeant la tension du EM (1-3 kV). La sensibilité est ajustée en changeant la résistance (10<sup>9-</sup> 10<sup>11<sup>Ω). Permet de réaliser des mesures à des  taux de comptage plus élevés que le mode digital, et une meilleur sensibilité que les FC. Mesure sur voltmètre numérique, précise et stable.
+
+#### Mesure en mono collection
+
+Instrument ancien, ou mesure à haute résolution  ou grande dispersion de masse. 
+
+Protocole de mesure. 
+
+1. Démarrage de la source, réglage du spectromètre. 
+2. Détermination du champ magnétique pour chaque masse
+3. Acquisition des mesures par saut de pics 
+ 
+Cycle de mesures : TC, TM1, TC, TM2, TC, TM3, ... Bloc de mesures de N cycles  :  interpolation dans le temps, moyenne, Correction du bruit de fond, correction de discrimination de masse. 
+
+4. Accumulation des blocs de mesures jusqu'à  l'obtention d'une précision suffisante ou jusqu'à épuisement de l'échantillon.
+
+#### Mesure en multi collection
+
+Instrument moderne, mesure à moyenne résolution et  dispersion de masse limitée. 
+
+Protocole de mesure. 
+
+1. Démarrage, réglage du spectromètre. 
+2. Alignement des détecteurs 
+3. Acquisition des mesures par blocs, moyenne, Correction du bruit de fond, correction de discrimination de masse. 
+4. Accumulation des blocs ...
+
+### Précision et justesse des mesures
+
+#### Précision interne:
+
+Traitement statistique d'une analyse. Comptage d'ions : Loi  de  poisson  : probabilité  d’un  événement  sur  une  durée,  tel  que  le  nombre  de voitures qui passent un péage par tranche de temps, le nombre de fautes de frappe par page, ou le nombre d'ions 28Si+ comptés par seconde.Une variable aléatoire X suit une loi de poisson de paramètre λ.
+
+Pour 100 ions , la précision est ± 10 %, pour 106 ions  ± 1 ‰ Limite intrinsèque à la précision des mesures en comptage d'ions,  sans tenir compte du bruit ou des différents biais analytiques.
+
+???+ Example
+
+En ajoutant 3,50 g d’un spike contenant 7,50 ppm (μg/g) de Rb à 0,25 g de roche, on obtient un rapport <sup>87</sup>Rb / <sup>85</sup>Rb <sub>mel</sub> de 1,55. Quelle est la concentration en Rb de l'échantillon ? Données : <sup>87</sup>Rb = 86,9092 et <sup>85</sup>Rb = 84,9117,  
+
+Abondances isotopiques :  naturelles :<sup>85</sup>Rb = 72,17%; <sup>87</sup>Rb = 27,83%  du spike, <sup>87</sup>Rb = 99,4%; <sup>85</sup>Rb = 0,6% 
+
+n<sub>e</sub>/n<sub>s</sub>=(Ab<sub>s</sub><sup>A</sup>−R<sub>mel</sub>×Ab<sub>s</sub><sup>B</sup>)/(Ab<sub>e</sub><sup>B</sup>×R<sub>mel</sub>−Ab<sub>e</sub><sup>A</sup>)
+
+Avec  m la masse et  M la masse atomique,
+
+m<sub>e</sub>=m<sub>s</sub>×M<sub>e</sub>/M<sub>s</sub>(0.994−1.55×0.006 /0.7217×1.55−0.2783)
+
+n<sub>e</sub>=m<sub>e</sub>/M<sub>e</sub> et n<sub>s</sub>=m<sub>s</sub>/M<sub>s</sub>
+
+!!! note "Correction"
+
+Calcul des masses atomiques : 
+
+- M<sub>e</sub> = 86,9092 x 0,2783 + 84,9117 x 0,7217 = 85,4676
+- M<sub>s</sub> = 86,9092 x 0,994 + 84,9117 x 0,006 = 86,8972
+
+Calcul de la masse de Rb dans le spike : 
+
+m<sub>s</sub> = 7,5 x 3,5 = 26,25  μg
+
+On a donc 26,25μg de Rb dans le spike.
+
+Calcul de la masse de Rb dans l’échantillon.
+
+me=(26.25×85.4676)/86.8972[0.994−1.55×0.006 / 0.7217×1.55−0.2783]=30.25
+
+soit 30,25μg de Rb dans les 0,25g de roche
+
+[Rb] = 30.25 / 0.25 = 121 μg/g soit 121 ppm.
+
+
 
