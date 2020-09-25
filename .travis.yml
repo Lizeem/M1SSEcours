@@ -1,0 +1,12 @@
+language: python
+install:
+  - pip install mkdocs
+  - pip install mkdocs-material
+script:
+  - mkdocs build --clean --strict
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  keep-history: true
+  local_dir: site
