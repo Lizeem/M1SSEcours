@@ -307,14 +307,45 @@ On envoie une impulsion EM en haute fréquence. L'impulsion induit une onde éle
 
 ![Principe général du géoradar](Images/georadar.PNG)
 
-Tous les profils avec un temps de ns sont du géo radar. En ms c'est de la sismique. On peut aller jusqu'à plusieurs centaines de mètre.
+Tous les profils avec un temps de ns sont du géo radar. En ms c'est de la sismique. On peut aller jusqu'à plusieurs centaines de mètres.
 
-Equation de Maxwell : 
-
-Le courant de déplacement doit être plus important que le courant du milieu. On peut changer la fréquence de l'antenne. Pour que l'onde EM s'enfonce dans le sol, il faut qu'elle soir importante. Si l'onde ne se propage pas, nous n'aurons pas de signal. Selon l'importance des pertes du signal, les  champs se déplacent 
+Le courant de déplacement doit être plus important que le courant du milieu. On peut changer la fréquence de l'antenne. Pour que l'onde EM s'enfonce dans le sol, il faut qu'elle soir importante. Si l'onde ne se propage pas, nous n'aurons pas de signal. Selon l'importance des pertes du signal, les  champs se déplacent : 
 
 - en mode diffusif : diffus (pertes non négligeables)
 - en mode propagative : faibles pertes
 
 géo radar = mode propagative
+
+Si on veut jouer sur le courant de déplacement, on joue sur la fréquence (antennes). La transition se fait à une fréquence qui est fonction des propriétés du sol.
+
+En mode propagatif, les champs EM se propagent comme des ondes, et peuvent être décrits par :
+
+- un front d'onde (surface sur laquelle le champ est en phase)
+- un rai (perpendiculaire au front d'onde, représente le parcours de l'onde entre deux points) 
+
+Si l'onde radar rencontre une interface :
+
+- une partie de l'énergie est réfléchie
+- une partie est réfractée
+
+Soit un sol de 2 couches avec une antenne émettrice et une antenne réceptrice en surface. La vitesse de l'air est plus élevée que la vitesse dans le sol. La vitesse dans la couche vadose est plus élevée que dans la couche saturée.
+
+Ordre de grandeur de déplacement : m/ns entre 0 et 0,3.
+
+Trois questions spécifiques à se poser : 
+
+1. est ce que la cible se trouve à l'intérieur de la portée du système, sans considérer ses propres caractéristiques ?
+2. est ce que la cible peut générer une réponse détectable supérieur au bruit ?
+3. est ce que les conditions de terrain sont favorables ?
+
+![Résultats avec un géoradar](Images/géoradar.PNG)
+
+Le radar fournit une **"image" précise en coupe et en continu** des couches superficielles et du sous-sol. Cette méthode à haut rendement est adaptée aux prospections sur des **tracés linéaires et des surfaces importantes dans des temps d'intervention très courts**. Une **mise en œuvre légère** permet d'intervenir dans des conditions d'accès difficiles, voire de trafic non interrompu. Une **méthodologie adaptée** au cas par cas (configuration de l'ouvrage à prospecter, caractéristiques géologiques et géophysiques) fait de la mesure par radar une solution rapide et très économique.
+
+- Faible pénétration: quelques cm à quelques m 
+- Fréquence élevée = meilleure résolution = moindre pénétration 
+- Fréquence basse = meilleure pénétration = moindre résolution 
+- Forte conductivité (argile, eau (de mer)) = faible pénétration et forte atténuation = utilisation radar interdite 
+- Compromis entre résolution et pénétration: choix antenne et échantillonnage p/r taille et profondeur cible + la nature du sol
+
 
