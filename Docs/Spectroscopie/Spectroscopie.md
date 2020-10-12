@@ -270,7 +270,7 @@ Si c'est trop dilué on ajoute un détecteur de fluorescence X. On peut l'observ
 
 On utilise un microscope électronique à transmission. Certains électrons vont perdre plus ou moins de l'énergie. Il vont être dévié selon leur énergie. Il faut que le MET fasse de la perte d'énergie.
 
-Inconvéniant : 
+Inconvenient : 
 
 - on ne peut pas faire de liquide ou de gaz car sous vide.
 - préparation de l'échantillon
@@ -279,4 +279,113 @@ Inconvéniant :
 Avantages : 
 
 - toutes les Universités ont un MET
-- résolution spatiale et imbattable (on peut voir les atomes) 
+- résolution spatiale et imbattable (on peut voir les atomes)
+
+## RMN Résonance Magnétique Nucléaire
+
+### Qu'est ce ?
+
+La spectroscopie par résonance magnétique nucléaire RMN (NMR an anglais) est fondée sur la mesure de l'absorption d'un rayonnement radiofréquence par le noyau des atomes. L'environnement local autour d'un noyau donné dans une molécule va perturber le champ magnétique local exercé sur ce noyau et affecter son énergie de transition. Cette dépendance permet la détermination de la structure moléculaire. Somme vectorielle de tous les nucléons. Technique isotopique. Tout ce qu'il y a autour du noyau va être perturbé par son champ magnétique. Ce champ est un objet quantique. On aura des niveaux d'énergie. Ce sont ces énergies absorbées que l'on va observer avec la radio-fréquence. **Technique moléculaire**
+
+### Spin nucléaire
+
+Les noyaux possèdent un nombre quantique de spin nucléaire entier ou demi-entier. Seul les noyaux ayant un nombre pair de protons et de neutrons on un spin nul. Le spin peut être compris comme un vecteur de moment angulaire. Dans le cas général, la somme des vecteurs moment angulaire de spin nucléaire est nulle. Le nombre de spin donne le nombre d'état possible. Pour n : [-n, n+1,...+n].
+
+Le noyau est une particule chargée. Une particule chargée accélérée crée un champ magnétique. Le noyau a donc un moment magnétique nucléaire dû au spin. Dans un champ magnétique intense (B0), les moments magnétiques nucléaires vont s’orienter en fonction du champ magnétique imposé. La somme de tous les spins est nulle.
+
+Les moments magnétiques nucléaires ne vont pas s’aligner avec le champ magnétique imposé, ils vont être animés d’un mouvement de précession à une vitesse angulaire ω0=-γB0.
+
+(image)
+
+### Introduction d'un champ magnétique B1 normal à B0
+
+Nous voulons voir l'effet du changement de spin à 0. On voit la résultante en créant une impulsion, cela va permettre de tous les grouper.
+Le nombre d’angles possibles entre le moment magnétique nucléaire et B0 dépend du nombre de spin (I). Il y a 2I+1 valeurs possibles (I, I-1, I-2,... -I). Chaque angle caractérise un état d’énergie. L'impulsion est sinusoïdale.
+
+En présence d’un champ B1 sinusoïdal de fréquence ω0, les photons correspondant àce champ ont l’énergie permettant d’exciter le spin nucléaire (basculement du spin). En présence d’un champ B1sinusoïdal de fréquence ω0, les moments magnétiques nucléaires peuvent acquérir une cohérence de phase (somme non colinéaire à B0). 
+
+## Détection
+
+On peut:
+
+- soit balayer les fréquence et mesurer l’absorption de l’échantillon pour connaître les fréquences correspondant à des basculements de spins
+- soit mesurer la relaxation suite à une impulsion de B1
+
+On peut utiliser la même bobine pour exciter et pour observer la réception. Ce qui est émit et à la même énergie que ce qui est absorbé. Les vitesses de retour est fonction de l'angle et du temps que les spins retournent à la normale.
+
+## Spectre 
+
+Le spectre RMN dans le domaine du temps dépend du champ B0appliqué. Pour pouvoir comparer les spectres d’un appareil à l’autre il faut s’affranchir des contraintes expérimentales particulières. On comparera donc le signal de l’échantillon à celui d’un standard. Le spectre en fréquence dépend de B0.
+
+La position du signal d’une espèce chimique par rapport à celle du standard sera appelé déplacement (δ). δ=(ν<sub>El</sub>-ν<sub>std</sub>)/ν0ν=ІωІ/2π. 
+
+Les déplacements sont très faibles (10<sup>-6</sub>) et seront donc exprimés en millionièmes, ou parties par million (ppm).
+
+(image)
+
+### Que représente le déplacement chimique ?
+
+Proton seul : pas d'électron, le champ ressenti au niveau du noyau est celui émis par l'aimant.
+
+H dans une molécule: les électrons de la molécule blindent le noyau qui ressent un champ B0 plus faible que le champ B appliqué par l’aimant. Il faut augmenter B pour que B0 assure la résonance (ω0=-γB0). 
+
+(image)
+
+C'est pour cela, que l'on va retrouver différentes fréquence sur le spectre. La vitesse de rotation est proportionnel à ce qu'il ressente. Plus ils sont blindés, plus leur rotation est faible, plus il sont à gauche sur le spectre. Plus le voisin attire à lui des électrons moins H est blindé, plus il tournera vite.
+
+Comme Si blinde le plus fortement, on a choisi le T.M.S. (Tétraméthylsilane, Si(CH3)4) comme standard. Par comparaison, les autres liaisons apparaîtront déblindées (δ positifs).
+
+### Ordres de grandeur
+
+- B0 : 1 à 20 T
+- B1 : 10<sup>-3</sup> T
+- durée d'impulsion : 10µs
+- temps de relaxation : quelques secondes à quelques minutes
+
+### Utilisation
+
+Si on a un corps pure, la technique est extrêmement puissante. Elle n'est pas très courante. Elle est plus courante en partie minérale. Cette technique est sensible aux problèmes d'anisotropie, les solutions sont préférables. Les solides sont aussi possible mais de préférence les poudres sont utilisées.
+
+Utilisé en imagerie médicale. Le principe de base est la RMN. Pour la localisation spatiale des protons, l’IRM utilise une propriété habituellement traitée comme un défaut: si B0 n’est pas constant le déplacement ne sera pas le même pour tous les protons. Le champ magnétique est absolument homogène en IRM. En RMN, il varie mais on connaît les valeurs en chaque point. On peut localiser spatialement où le signal à été émis. On regarde que le signal de l'hydrogène dans notre corps en IRM. Il va regarder les tissus mous enrichis en eau. Contrairement au scanner qui travaille sur les parties durs (os).
+
+## RPE Résonance Paramagnétique Électronique
+
+### Qu'est ce ?
+
+La spectroscopie RPE mesure l'absorption d'un rayonnement micro-onde par un électron non apparié quand il est placé dans un champ magnétique intense.RPE = RSE (résonance de spin électronique), ESR et EPR en anglais. C'est une résonance, l'absorption sera la même que l'émission. On regarde un éléctron qui doit être seul dans son orbital.
+
+### Concepts de base
+
+Les concepts de base sont analogues en RMN et RPE.Le spin électronique peut être compris comme un vecteur de moment angulaire.Le spin électronique vaut +1/2 ou-1/2. Les concepts de base sont analogues en RMN et RPE mais:
+
+- la masse de l’électron est beaucoup plus faible que celle du proton donc les champs nécessaires sont plus faibles (0.1 à 1T)
+- les différences d’énergie entre les niveaux de spin sont plus élevées, donc les fréquences utilisées sont plus élevées (GHZ), nous sommes dans les micro-ondes et pas dans les radio-fréquences.
+
+### Spin électronique dans un champ magnétique
+
+Les moments magnétiques électroniques ne vont pas s’aligner avec le champ magnétique imposé, ils vont être animés d’un mouvement de précession à une vitesse angulaire ω0=-γB0. (ν0=Іγ.B0І/2π).
+
+### Type d'analyse
+
+Contrairement à la RMN, le RPE se fait principalement en ondes continues (RMN en mode pulsé). C’est dû principalement àla difficulté de création d’ondes de durée de vie assez courte (relaxation beaucoup plus rapide en RPE) associées à des champs plus intenses.
+
+### Enregistrement du spectre
+
+ν0=Іγ.B0І/2π
+
+En pratique on fait varier le champ magnétique (plus précis) et on enregistre l’absorption à fréquence constante. Les abscisses du spectre sont donc graduées en Gauss (10-4T). Pour augmenter la sensibilité de détection on envoie un fréquence légèrement modulée, ce qui permet de mesurer directement la dérivée de l’absorption (axe des ordonnées).
+
+(image)
+
+### Paramètres lus sur le spectre RPE
+
+On va mesurer :
+
+- amplitude pic-à-pic (nombre d'électron non couplés). 
+- largeur pic-à-pic (concentration)  
+- la position du facteur g (facteur de Landé, degré de localisation des électrons).
+
+### Difficultés des spectres RPE
+
+Chaque transition d'un multiplet donne naissance à une raie d'absorption. Les électrons non appariés sont très mobiles et sont donc très sensibles à l'environnement. Les spectres RPE n'ont pas de table comparables aux tables de déplacement de la RMN.
+
