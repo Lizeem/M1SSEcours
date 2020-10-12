@@ -141,11 +141,11 @@ Le verre et le quartz absorbent toutes les ondes en dessous de 200nm. Il faut op
 
 Un orbitale moléculaire est deux atomes qui ne vont pas être fixes l'un par rapport à l'autre mais vibre tant qu'on est pas au 0 absolu.
 
-![Vibration](Images/Vibration UV.PNG)
+![Vibration](Images/Vibration-UV.PNG)
 
 ![Courbe de Morse](Images/courbedemorse.PNG)
 
-Toutes les orbitales ont une orbitale de basse énergie et des orbitales vacantes qui ont un plus grande énergie. Nous allons regarder depuis la haute occupé à la basse vacante.
+Toutes les orbitales ont une orbitale de basse énergie et des orbitales vacantes qui ont un plus grande énergie. Nous allons regarder depuis la haute occupé à la basse vacante. Une courbe de Morse par orbital moléculaire. La courbe représente l'énergie potentiel de la liaison. 
 
 a dernière orbitale moléculaire remplie est nommée HO (haute occupée)La première orbitale moléculaire vide est nommée BV (basse vacante)Ce sont les orbitales frontières
 
@@ -162,10 +162,11 @@ Les transitions détectées sont généralement π→n ou n→π* caractéristiq
 
 Certaines longueurs de vibrations sont autorisés et d'autres sont interdit. Plus on monte en énergie, plus le va et vient de l'atome sera plus grand. On envoie un photon qui va permettre de montée un électron sur une orbitale moléculaire supérieure et sa distance de va et vient sera plus grande. L'émission est en IR. 
 
+Détecteurs : CCD. Matériau qui reçoit un photon fait une impulsion électrique. Qui va se voir en IR ou en UV.
 
 ## IR
 
-En IR on regarde l'absorption. Le photon doit avoir la bonne énergie pour faire monter l'électron. On a plus de place d'avoir des signaux séparés dans l'IR que dans l'UV. La spectroscopie IR mesure l'absorption d'un rayonnement infrarouge par une molécule. Cette absorption correspond à l’excitation des mouvements de vibration et de rotation des molécules.Deux chemins optiques suivis par deux faisceaux d’ondes IR. L’un traverse l’échantillon, l’autre non. Le rapport d’intensité entre les deux faisceaux caractérise l’absorption des IR par l’échantillon. Le miroir change la longueur du chemin des ondes selon qu’elles passent par le miroir fixe ou mobile. L’onde incidente est cohérente donc il se produit des interférences positives ou négatives.La source est polychromatique, toutes les longueurs d’ondes IR (proche et moyen) sont présentes en même temps.
+En IR on regarde l'absorption. Le photon doit avoir la bonne énergie pour faire monter l'électron. On a plus de place d'avoir des signaux séparés dans l'IR que dans l'UV. La spectroscopie IR mesure l'absorption d'un rayonnement infrarouge par une molécule. Cette absorption correspond à l’excitation des mouvements de vibration et de rotation des molécules.Deux chemins optiques suivis par deux faisceaux d’ondes IR. L’un traverse l’échantillon, l’autre non. Le rapport d’intensité entre les deux faisceaux caractérise l’absorption des IR par l’échantillon. Le miroir change la longueur du chemin des ondes selon qu’elles passent par le miroir fixe ou mobile. L’onde incidente est cohérente donc il se produit des interférences positives ou négatives.La source est polychromatique, toutes les longueurs d’ondes IR (proche et moyen) sont présentes en même temps. On regarde l'énergie entre deux moment de vibration d'une même orbital.
 
 Interféromètre : système de mesure où on envoie la lumière polychromatique sur un miroir semi-transparent. L’interférogramme est la représentation de l’intensité reçue par le détecteur en fonction de la position du miroirLa Transformation de Fourier permet de décomposer l’interférogramme en une somme de fonctions sinusoïdales, représentant chacune une onde donnée. Nécessite moins d’optiques, notamment d’optiques dispersives, donc maximise l’intensité transmise par le système: plus de photons sur l’échantillonLe mouvement du miroir est très rapide (s), on peut accumuler les spectre (les sommer avant transformation de Fourier)La position du miroir est repérée par laser dans le domaine visible: précis et répétable.
 
@@ -205,3 +206,77 @@ Le spectre Raman montre les mêmes vibrations que l'IR. Les ordonnées sont en I
 
 ![Spectre Raman](Images/spectreraman.PNG)
 
+Détecteur :  CCD
+
+## Mossbauer : résonance nucléaire sans recul
+
+Absorption emission de même énergie par le noyau et se fait sans recul (même énergie) entre l'absorption et l'émission.
+On va regarder le niveau d'énergie dans le noyau. On va regarder les niveaux d'énergie des nucléons entre eux.
+Un noyau excité va se relaxer par émission d’un rayon γ. Ce rayon γ va exciter un noyau identique qui va lui-même se relaxer par émission d’un rayon γ de même λ. C’est un phénomène de résonance qui ne peut se faire que si les noyaux ne sont affectés par aucun recul qui provoquerait des pertes d’énergie. Si on change le nombre de neutron on change le niveau d'énergie du noyau. Technique qui va sonder les isotopes d'un élément donné. Le noyau d'un isotope donné va recevoir un photon et le noyau va s'exciter et va redescendre et émettre un photon. 
+Les raies d’émission n’ont pas une énergie unique, elles ont une dispersion autour d’une valeur moyenne. Cette dispersion est due au principe d’indétermination d’Heisenberg (durée de vie finie du niveau excité) et à l’effet Doppler (agitation thermique).
+
+![Condition de résonance](Images/conditionrésonance.PNG)
+
+Si un noyau est lié de manière rigide au réseau, alors le recul doit affecter tout le système cristallin. La masse du solide rend ce mouvement extrêmement faible, donc le recul nul. Il en va de même pour le noyau absorbeur.
+Tous les atomes ont une fraction f qui présente cette caractéristique (f=facteur de Lamb-Mössbauer). f augmente quand T diminue.
+
+Il existe dans les solides une fraction du noyau qui est attaché à leur voisin. La résonance nucléaire s'explique pour les noyaux car ils sont liés de façon rigide au réseau cristallin. Cela marche plus dans certain isotopes que d'autres, et le fer.
+
+![Raies d'émission et d'absorption](Images/raiesd'emissionetd'absorption.PNG)
+
+Si on met des orbitales s dans le noyau, on va déplacer les deux niveaux orbitales. La largeur de la raie d’absorption est très faible (10-8 eV) par rapport à son énergie (~x10keV) On cherche donc à sonder la variation d’absorption en fonction de l’énergie incidente, avec une très forte résolution sur l’énergie incidente.
+
+![Interactions entre le noyau et son environnement](Images/interactions.PNG)
+
+Mossbäuer va choisir un noyau en particulier dans un environnement chimique. **Technique de spéciation**. Car les niveaux d'énergie d'un noyau change en fonction de ce qu'il se passe autour. Connaître son degré d'oxydation, nombre de voisins, nature des voisins, distances et angles de ces voisins.
+
+La source est composé d’un noyau parent radioactif se décomposant en un noyau fils stable identique à celui analysé (Co57 donnant du Fe57 pour analyser un échantillon de Fe). Le noyau fils est généralement excité et se relaxe en émettant un rayon γ. La durée de vie du noyau fils est infinie, donc la raie d’émission est très précise (incertitude d’Heisenberg). On doit mesurer l’absorption en fonction de l’énergie. Pour moduler précisément cette énergie on utilise l’effet Doppler en bougeant la source radioactive. On représente la variation de transmission de flux de photons en fonction de la vitesse de déplacement de la source.
+
+On cherche un élement pair radioactif qui se désintègre dans un isotope à analyser et dans un son état excité.
+
+Si on a une énergie de 10kev, on a une résolution de 10<sup>-7</sup> keV. 
+
+On va donner à la source un mouvement oscillant. Pour faire la même chose que l'effet de Doppler. L'axe des abscisse est en mm/s. 
+
+Contraintes : 
+
+- sur les solides
+- il faut un facteur f important et donc le travailler à plusieurs température.
+- trouver un élément pair suffisamment exciter et une durée de demi-vie suffisante du père pour l'isotope radioactif.
+- manip longue qui peut prendre une semaine 
+
+On fait le fer57. Il se fait à la température ambiante. L'étain également. On regarde les autres éléments en azotes liquide ou en hélium liquide.
+
+## XAFS : X-Ray Absorption Fine Structure
+
+La spectroscopie d’absorption des rayons X est l’étude des variations des structures fines à proximité du seuil d’absorption d’un élément. Cette zone permet de sonder la spéciation d’un élément cible.
+
+(image1)
+
+C'est une techniques de spéciation, Connaître son degré d'oxydation, nombre de voisins, nature des voisins, distances et angles de ces voisins. Déformation d'un nuage électronique par un électron provenant des voisins.
+
+![XAFS](Images/xafselectrionsurnuageelectronique.PNG)
+
+lors d'une absorption, le photoélectron émis est rétrodiffusé par les atomes voisins, et l'onde rétrodiffusée vient interférer avec la densité électronique de l'atome absorbeur en modifiant l'absorption et la diffusion de cet atome. Les interférences dépendront donc de l’atome cible de la nature des voisins et des distances à ces voisins. L'électron revient vers le noyau initial avec les informations des voisins (bleu au départ et revient vert car noyau jaune).
+En absorption (A=log(I0/I)). Très précis, rapide, limites de détection moyennes. En fluorescence: Très bonnes limites de détection, complications supplémentaires (probabilité de fluorescence, autoabsorption).
+
+A partir du signal où on reconnaît les voisins avec EXAFS, on fait des hypothèse et on les simule. XANES permet de tout voir dans la globalité. 
+
+Il faut envoyer des rayons X monochromatique sur l'échantillon. C'est une technique de synchroton. Rayonnement généré par l’accélération de particules chargées (e- ou e+). Décalage en énergie par effet Doppler (particules circulant à une vitesse relativiste).
+
+Si c'est trop dilué on ajoute un détecteur de fluorescence X. On peut l'observer sur liquide, gaz et solide.
+
+## EELS : Electron Loss Spectroscopy
+
+On utilise un microscope électronique à transmission. Certains électrons vont perdre plus ou moins de l'énergie. Il vont être dévié selon leur énergie. Il faut que le MET fasse de la perte d'énergie.
+
+Inconvéniant : 
+
+- on ne peut pas faire de liquide ou de gaz car sous vide.
+- préparation de l'échantillon
+- on ne peut pas voir les choses trop dilués
+
+Avantages : 
+
+- toutes les Universités ont un MET
+- résolution spatiale et imbattable (on peut voir les atomes) 
