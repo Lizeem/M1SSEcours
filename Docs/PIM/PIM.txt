@@ -36,3 +36,7 @@ articles :
 -https://doi.org/10.1016/j.soilbio.2020.107846
 -https://doi.org/10.1016/j.scitotenv.2020.139124
 -https://www.sciencedirect.com/science/article/abs/pii/S0038071720301437
+-https://doi.org/10.1016/j.ecolind.2020.107039
+-https://doi.org/10.1016/j.ese.2020.100063
+-https://doi.org/10.1016/j.ecolind.2020.107039
+-https://doi.org/10.1016/bs.agron.2019.11.001
