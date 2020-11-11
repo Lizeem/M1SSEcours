@@ -69,7 +69,6 @@ Une partie est groupée, dense, mitoyenne.    Une autre est certes groupée mais
 #### Croquis
 
 
-
 #### Analyser
 
 Faire les statistiques sur la croissance démographique, le zonage des aires urbaines, le taux d'actifs travaillant en ville...
@@ -86,5 +85,33 @@ second plan faciès villageois en blanc qui se subdivise entre un noyau dense co
 
 Forme d'organisation que l'on retrouve sur les côte de la Meuse. Les villageois vont avoir trois espaces qui ont des ressources complémentaires. Les vignes apprécient le calcaire, la vigne à horreur de l'eau. Elle va chercher des sols bien drainés. La vigne a horreur des gelés, le moment le plus froid dans la journée est juste avant le levé du Soleil. Celui qui veut avoir le moins froid possible se met dans les versants pleines est où on a installé des vignes. Avant Nancy, tout le talus est recouverts de vignobles.
 
-#### Croquis
+### Troisième photo
+
+usoire : organisation de la ferme Lorraine
+
+Le village Lorrain était peuplé de manouvrier. Au début du 20e elle était polyvalente avec devant l'usoire et derrière le potager : le meix. L'usoire la maison et le meix sont des espaces privés. Avant la révolution agricole, chacun détenait des petites parcelles dispersé dans tout le banc rural. On le divisait en trois zones dans lequel on faisait des alternance de culture. (céréales, fourragères, jachère puis en fourragère après la révolution agricole).
+
+La construction des bâtiments à l'arrière du village se sont fait avec la mécanisation. Elles posent un problème aujourd'hui, car on limite l'exploitation agricole qui ne peut plus s'installer à proximité des maisons mais à l'extérieur du village. Pour développer les nouveaux lotissements ont se retrouve en conflit avec les bâtiments agricoles. Le système est rural, agri forestier, basé sur l'agriculture et l'élevage, peut de signe de croissance démographique : déclinant.
+
+### Quatrième photo 
+
+Pierre - percée, deux barrages et deux lacs. Dominé par la forêt, le vert sombre. La forêt montre un relief. Au fond on voit des bâtiments. Lac artificiel, on a une retenue. Le lac participe au refroidissement des centrales nucléaires. 
+
+### Cinquième photo 
+
+Saint Clément : majoritairement du vert, noyau villageois avec une grande route principal, bâtiments jointifs. Au fond on a toute la forêt, en avant on a une gravière avec un deux étangs. A droite, c'est la marque du fond de vallée. La forêt est située sur les parties les plus élevée. Le grand axe routier avec en parallèle un axe de chemin de fer. Saint Clément est donc bien desservi. Ancienne usine, un des plus vielle usine de faïence de Lorraine qui est aujourd'hui fermé. Cela montre que le noyau villageois et situé sur deux axes principaux. En arrière plan on voit des pavillons, ainsi que proche du chemin de fer. Le village se prolonge jusqu'au bord de la photo où on a un cordon pavillonnaire qui a relié les deux villages. La Lorraine est une terre de ressource minéral (charbon, fer, sel) mais c'est assez une des plus grosse réserve de sable de notre pays (Meuse et Meurthe). Sable pour les bâtiments. 
+
+### Sixième photo
+
+Les paysages de sel : cité HLM en premier plan, lotissements au dernier plan. cités jumelles. Elles ont une construction qui a bien vieilli. Les personnes qui travaillent dedans ne travaillent plus forcément dans le sel.    Le sel va être exploité en profondeur, on injecte de l'eau puis on pompe de l'eau salée. On va remplir des bassins et laisser l'eau s'évaporer et récupérer le sel. On en fait de la soude pour toute une industrie. Le sel va donner lieu une industrie chimique pour les produits d'entretien mais aussi pour les engrais. Gros trou : affaissement où on a exploité le sel.
+
+### Septième photo 
+
+Lunéville : couleur dominante rouge et blanc, espace urbain. portion de Lunéville récente où on peut voir plusieurs faciès : bâtis, collectif de couleur blanche et gris clair, au premier plan avec une toiture rouge, pas de la même époque (gendarmerie). Au centre on a de gros bâtiments  blanc et rouge : caserne militaire du XIXe siècle. Chemin de fer (premier plan vers arrière plan) et fait une bifurcation vers la droite direction St diez. Le long on voit des bâtiments allongé avec des toits sombres et à shed. Marqueur des industries. A droite du bâtiment à shed on a une cité ouvrière. Dans les cités, ont a les mêmes maisons. De l'autre côté du chemin de fer on a une friche, on est dans une reconstruction. Derrière on a une zone activité avec un village, avec un lotissement avec un noyau villageois. Derrière les casernes, on a un terrain militaire. Vers la gauche on a des grands bâtiments : espace éducatif. Après on a une alternance de pavillons, église, espace plus dense, on s'approche du coeur de Lunéville.
+
+### Conclusion
+
+Paysage : outils d'analyse qui est subjectif incomplet, on doit ensuite aller chercher et interpréter. Proposer des éléments de synthèse. Il intérêt en fonction de sa qualité et de son attraction, il va évoluer. C'est plus facile pour nous d'interpreter.
+
+Ce travail là nous permet de regarder la cohérence du territoire qui permet de nous aider à la décision.
 
