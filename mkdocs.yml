@@ -15,7 +15,6 @@ theme:
         link: "https://github.com/Lizeem"
       - type: "linkedin"
         link: "https://www.linkedin.com/in/emma-lizeski-837899149/"
-
 markdown_extensions:
   - admonition
   - footnotes
@@ -38,4 +37,4 @@ markdown_extensions:
   - pymdownx.tabbed
   - pymdownx.tilde
   - toc:
-      permalink: true
+      permalink: true 
