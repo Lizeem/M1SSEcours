@@ -42,7 +42,7 @@ Jusqu'en 2004, le France exporte plus qu'elle n'en importe. L'élément qui est 
 - tensions politiques
 - idée de fin du monde
 
-### Toujours plus
+### A) Toujours plus
 
 Nous sommes de plus nombreux, on veut tous être plus gourmand. Cette organisation à l'échelle planétaire donne de plus en plus d'injustice.
 
@@ -54,26 +54,21 @@ La première cause de la baisse de mortalité en Europe est l'amélioration de l
 
 ![Les phases de la transition démographique](Images/demographie.PNG)
 
+Le maximum du taux de croissance qu'one st connu est dans les années soixante. Le moment où on a atteint le rythme de croissance mondial le plus élevé. **La population cessera de croître lorsque tous ses habitants auront atteint un stade de développement économique suffisant.**
 
-### Il faudrait peut-être 3 planètes
-
-Si on veut généraliser le modèle actuel que les américains utilisent, il nous faudrait 3 planètes.
+Si on veut généraliser le modèle actuel que les américains utilisent, il nous faudrait 3 planètes. Les facteurs sont :
 
 - niveau de carbonation 
-- empreinte
+- niveau de vie
 - croissance de la population
 
-conséquence de la décentralisation lié à la mondialisation : population diminue
+conséquence de la décentralisation lié à la mondialisation : population diminue. 2 000 milliardaires en 2019 dû la concentration financière des industries. On a une hausse du niveau de vie mais les inégalités sont plus grandes.
 
-2 000 milliardaires en 2019 car concentration industriel
+Nous avons une désertification rurale et un étalement urbain.
 
-on a une hausse du niveau de vie mais les inégalités sont plus grandes.
-
-## II) Tous drogués
+## B) Tous drogués
 
 On utilisent de l'énergie fossile tous les jours. Sans énergie et sans argent, on ne fait rien.
-
-### C'est quoi la richesse ?
 
 La richesse est l'énergie. La richesse d'un territoire est l'ensemble des biens et services disponibles pour la satisfaction des besoins de la population de ce territoire.
 
@@ -95,13 +90,21 @@ En modifiant nos façons de faire :
 4. augmentation de la capacité de travail de l'Homme
 5. augmentation de la productivité humaine
 
+Tous cela grâce : 
+
+- nouvelles techniques d'assolement
+- par la sélection
+- par l'emploi de pesticides et insecticides
+- maîtrise de l'eau
+- l'emploi d'engrais naturels ou chimiques
+
 ### 200 esclaves chacun
 
 Si on passe notre vie à pédaler, on ne peut pas alimenter le frigo. Aujourd'hui dans le monde chaque individu consomme 200 esclaves énergétiques. On consomme une énergie de plus en plus et elle est de plus en plus concentrée. La puissance est en kW, la production est en W/h. Dans un litre d'essence, on a 23 tonnes de biomasse pour avoir au final 9KW. On consomme de plus e plus, les pays occidentaux on atteint un palier, voir commence à décliner. La Chine augmenta la capacité. On a actuellement décentralisé et délocaliser donc on ne peut pas dire qu'on est passé à la transition énergétique. 1Kg de tomates sous serre chauffée correspond à 1 litre de pétrole pour l'alimenter en engrais et chauffer la serre. Le coût d'un baril de pétrole est fonction de la zone où ce dernier à été exploité.
 
 ### Les signaux passent au rouge
 
-Le rayonnement solaire passe à travers l'atmosphère claire. Une partie du rayonnement solaire est réfléchie par l'atmosphère et la surface de la Terre. L'énergie solaire est absorbée par la surface de la Terre et la réchauffe. Elle est ensuite convertie en chaleur renvoyant l'émission d'un rayonnent IR vers l'atmosphère. Une partie du rayonnement infrarouge est absorbée et ré émise par les molécules de gaz à effet de serre. a conséquence directe est la réchauffement de la surface de la Terre et de la troposphère. Une partie du rayonnement solaire passe à travers l'atmosphère et se perd dans l'espace
+Le rayonnement solaire passe à travers l'atmosphère claire. Une partie du rayonnement solaire est réfléchie par l'atmosphère et la surface de la Terre. L'énergie solaire est absorbée par la surface de la Terre et la réchauffe. Elle est ensuite convertie en chaleur renvoyant l'émission d'un rayonnent IR vers l'atmosphère. Une partie du rayonnement infrarouge est absorbée et ré émise par les molécules de gaz à effet de serre. a conséquence directe est la réchauffement de la surface de la Terre et de la troposphère. Une partie du rayonnement solaire passe à travers l'atmosphère et se perd dans l'espace.
 
 ## II) Comment faire un TEPOS
 
@@ -128,15 +131,29 @@ Le recyclage n'est pas encore généralisé. Il y a su silicium, phosphore, bore
 
 Agromine : Chercher des gisements à faible concentration. On a des pistes de recherches Econick.
 
+### Éolien
+
+Hydrolienne : pas en pointe en France mais potentiel intéressant (2 GW en France). On résonne mixte renouvelable : complémentarité
+
+### Fracturation du sous-sol
+
+La température à 5 000 m de profondeur est constante à 250°C, y envoyer l'eau et la repomper. La dilatation se fait sur plusieurs kilomètres, donc il faut trouver un bon alliage. On peut les récupérer dans des sous-sols sédimentaires. Aujourd'hui l'installation permet d'avoir une suffisance pour une ville de 20 000 habitants en Alsace.
+
+### Biocarburants
+
+Cultivé du colza pour le transformer en bioéthanol. On a un pourcentage 10% de bioéthanol dans notre essence pour voiture. Ce bioéthanol va consommer de la terre agricole et avec des engrais chimique, bilan carbone plutôt négatif.
+
 ### Pétrole via les algues
 
-dépôt de bilan
-
-pour nourrir les algues, l'entrepise récupérer le CO2 d'une cimenterie et nourrissait les algues avec l'intégralité. 
+Pour nourrir les algues, l'entreprise récupérer le CO2 d'une cimenterie et nourrissait les algues avec l'intégralité. Le rendement est 100 fois supérieur à celui du colza par unité de surface. Les algues ne sont pas en compétition avec notre nourriture. 
 
 ### Pile à combustible
 
+L'idée est de stocker des bonbonnes d'hydrogènes. L'hydrogène est explosif. Le risque 0 n'est pas encore atteint. Comment on fait pour alimenter els bonbonnes en hydrogène. Une fois que l'on a consommé de l'hydrogène, on rejette de l'eau. La pollution peut être en amont. Si on utilise de l'hydrogène avec du méthane, il ya un risque où on émettra du CO2. Cela n'a de sens que si on utilise un outils propre pour transformer du gaz ou de l'eau en hydrogène.
+
 ### Biomasse
+
+En Autriche, une ville développe une usine qui récupère les résidus de bois pour les br^ler et produire du gaz, de la chaleur et de l'électricité. Elle a rendement efficace car toute l'énergie émise sera récupérer soit sous trois formes qui vont permettre d'alimenter les bâtiments ou les véhicules qui peuvent fonctionner au gaz.
 
 ### Toilèttes seches
 
@@ -158,7 +175,7 @@ Le 100% renouvelable est inévitable. Quand est ce qu'on décide d'y aller. Le b
 
 ### La ferme du bec Hellouin
 
-1000 arbres avec 500 variéé=té, 8 personnes à temps plein sur 20 ha?
+1000 arbres avec 500 variété=té, 8 personnes à temps plein sur 20 ha?
 Pas de pétrole, pas d'engrais chimique, pas de pesticide
 
 Agriculture conventionnelle : 1 calorie alimentaire produite pour 10 calories fossiles consommées. Un écosystème optimisé, compris, réfléchi. Un laboratoire suivi par l'INRA.
@@ -166,8 +183,4 @@ Agriculture conventionnelle : 1 calorie alimentaire produite pour 10 calories fo
 ### Ville en transition
 
 Avec la fin du pétrole, la théorie de la rente de Ricardo irait au rebu. Devient ITD intégration territoire développement.
-
-### VäXJÖ
-
-Après la mise en oeuvre de l'agenda 21, la décision .....
 

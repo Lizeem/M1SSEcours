@@ -66,16 +66,13 @@ Une partie est groupée, dense, mitoyenne.    Une autre est certes groupée mais
 
 3 cercles : village, champ et forêt
 
-#### Croquis
-
+### Croquis
 
 #### Analyser
 
 Faire les statistiques sur la croissance démographique, le zonage des aires urbaines, le taux d'actifs travaillant en ville...
 
 ### Deuxième photo
-
-#### Observation
 
 faciès premier plan : forme géométrique jaune verte : champ
 second plan faciès villageois en blanc qui se subdivise entre un noyau dense contigus rouge et blanc aligné le long d'un axe. En avant de se village on retrouve un faciès bâti dense non mitoyen plus lâche de type lotissement. Autour on trouve des vergers et des jardins, le **meix**. De part et d'autre du noyau villageois et de ces meix, on distingue bien qu'on est implanté sur un talus où on a des vergers et des vignes. En arrière plan on retrouve le plateau boisé avec quelques clairières cultivées. Le village est organisé selon un triptyque : plaine, talus, plateau:    
