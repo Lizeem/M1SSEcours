@@ -1,0 +1,818 @@
+
+<!doctype html>
+<html lang="fr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.0">
+    
+    
+      
+        <title>Les régimes hydrologiques - Cours de première année de Master SSE</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.33e2939f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ef6f36e2.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#2094f3">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="blue" data-md-color-accent="light-blue">
+  
+    
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#les-regimes-hydrologiques" class="md-skip">
+          Aller au contenu
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Cours de première année de Master SSE" class="md-header__button md-logo" aria-label="Cours de première année de Master SSE" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Cours de première année de Master SSE
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Les régimes hydrologiques
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Cours de première année de Master SSE" class="md-nav__button md-logo" aria-label="Cours de première année de Master SSE" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Cours de première année de Master SSE
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      <label class="md-nav__link" for="__nav_2">
+        Isotopie
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Isotopie" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Isotopie
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Isotopie/G%C3%A9ochimie%20isotopique/" class="md-nav__link">
+        Outils d'observation et d'analyse en Géosciences
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      <label class="md-nav__link" for="__nav_3">
+        Spectroscopie
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Spectroscopie" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Spectroscopie
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Spectroscopie/Spectroscopie/" class="md-nav__link">
+        Techniques
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      <label class="md-nav__link" for="__nav_4">
+        Aménagement du territoire
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Aménagement du territoire" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Aménagement du territoire
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../am%C3%A9nagement%20du%20territoire/Paysage/" class="md-nav__link">
+        Du paysage au système géographique
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../am%C3%A9nagement%20du%20territoire/TEPOS/" class="md-nav__link">
+        Objectif TEPOS
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../am%C3%A9nagement%20du%20territoire/mobilite%20de%20demain/" class="md-nav__link">
+        Mobilité de demain
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
+      
+      <label class="md-nav__link" for="__nav_5">
+        Eaux continentales
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Eaux continentales" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Eaux continentales
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Le%20climat/" class="md-nav__link">
+        Le climat
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Les régimes hydrologiques
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Les régimes hydrologiques
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#i-bassin-versant-et-reseau-hydrographique" class="md-nav__link">
+    I) Bassin versant et réseau hydrographique
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ii-la-donnee-hydrologique" class="md-nav__link">
+    II) La donnée hydrologique
+  </a>
+  
+    <nav class="md-nav" aria-label="II) La donnée hydrologique">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lame-deau" class="md-nav__link">
+    Lame d'eau
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#le-debit" class="md-nav__link">
+    Le débit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#les-regimes" class="md-nav__link">
+    Les régimes
+  </a>
+  
+    <nav class="md-nav" aria-label="Les régimes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pluvial-oceanique" class="md-nav__link">
+    Pluvial océanique
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pluvial-mediterraneen" class="md-nav__link">
+    Pluvial méditerranéen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pluvial-equatorial" class="md-nav__link">
+    Pluvial équatorial
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pluvial-tropical" class="md-nav__link">
+    Pluvial tropical
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#le-regime-thermique" class="md-nav__link">
+    Le régime thermique
+  </a>
+  
+    <nav class="md-nav" aria-label="Le régime thermique">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#le-regime-glaciaire" class="md-nav__link">
+    Le régime glaciaire
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#le-regime-thermique-nival" class="md-nav__link">
+    Le régime thermique nival
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#le-regime-thermique-nival-de-plaine" class="md-nav__link">
+    Le régime thermique nival de plaine
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#le-regime-nivo-pluvial-oceanique" class="md-nav__link">
+    Le régime nivo - pluvial océanique
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#regime-complexe" class="md-nav__link">
+    Régime complexe
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#i-bassin-versant-et-reseau-hydrographique" class="md-nav__link">
+    I) Bassin versant et réseau hydrographique
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ii-la-donnee-hydrologique" class="md-nav__link">
+    II) La donnée hydrologique
+  </a>
+  
+    <nav class="md-nav" aria-label="II) La donnée hydrologique">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lame-deau" class="md-nav__link">
+    Lame d'eau
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#le-debit" class="md-nav__link">
+    Le débit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#les-regimes" class="md-nav__link">
+    Les régimes
+  </a>
+  
+    <nav class="md-nav" aria-label="Les régimes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pluvial-oceanique" class="md-nav__link">
+    Pluvial océanique
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pluvial-mediterraneen" class="md-nav__link">
+    Pluvial méditerranéen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pluvial-equatorial" class="md-nav__link">
+    Pluvial équatorial
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pluvial-tropical" class="md-nav__link">
+    Pluvial tropical
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#le-regime-thermique" class="md-nav__link">
+    Le régime thermique
+  </a>
+  
+    <nav class="md-nav" aria-label="Le régime thermique">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#le-regime-glaciaire" class="md-nav__link">
+    Le régime glaciaire
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#le-regime-thermique-nival" class="md-nav__link">
+    Le régime thermique nival
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#le-regime-thermique-nival-de-plaine" class="md-nav__link">
+    Le régime thermique nival de plaine
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#le-regime-nivo-pluvial-oceanique" class="md-nav__link">
+    Le régime nivo - pluvial océanique
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#regime-complexe" class="md-nav__link">
+    Régime complexe
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="les-regimes-hydrologiques">Les régimes hydrologiques<a class="headerlink" href="#les-regimes-hydrologiques" title="Permanent link">&para;</a></h1>
+<h2 id="i-bassin-versant-et-reseau-hydrographique">I) Bassin versant et réseau hydrographique<a class="headerlink" href="#i-bassin-versant-et-reseau-hydrographique" title="Permanent link">&para;</a></h2>
+<p>Espace drainé par un cours d’eau et ses affluents. Espace topographique, délimité par des lignes de crêtes, que drainent un cours d’eau principal et ses affluents vers un point  de sortie unique, appelé l’exutoire. Lieu par où s’écoulent toutes les eaux courantes d’un bassin versant</p>
+<h2 id="ii-la-donnee-hydrologique">II) La donnée hydrologique<a class="headerlink" href="#ii-la-donnee-hydrologique" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Le débit m3/s … mal connu : pas d'outils pour le mesurer directement </li>
+<li>Le débit spécifique l/s/km²</li>
+<li>La lame d’eau équivalente mm</li>
+</ul>
+<p>La hauteur d’eau, lue à l’échelle limnimétrique, est la seule donnée hydrométrique observable et enregistrable. Le  débit peut être mesuré ponctuellement : il est connu seulement lors de la mesure, et encore, avec une précision de l’ordre de  ± 10% dans le cas de bonnes conditions de mesure.</p>
+<p>On établi ensuite une relation entre la hauteur d'eau et le débit.</p>
+<p><img alt="Courbe de tarage" src="../Images/courbedetarage.PNG" /></p>
+<h3 id="lame-deau">Lame d'eau<a class="headerlink" href="#lame-deau" title="Permanent link">&para;</a></h3>
+<p><img alt="Lame d'eau" src="../Images/lameeau.PNG" /></p>
+<p><img alt="Résumé" src="../Images/r%C3%A9sum%C3%A9.PNG" /></p>
+<h3 id="le-debit">Le débit<a class="headerlink" href="#le-debit" title="Permanent link">&para;</a></h3>
+<p>L'équation du débit <strong>Q = P - E (∆réserves)</strong></p>
+<p>Avec l'expression en lames d'eau (mm) l'écoulement peut - être comparé à la pluie et à l'évapotranspiration et permettre à la pluie et à l'évaporation et permettre d'établir un bilan de l'eau.</p>
+<p>Le débit spécifique est simplement le débit divisé par la surface de bassin versant. Comme la lame d’eau, il représente le rendement moyen d’une unité de surface du BV et permet ainsi de comparer tous les cours d’eau entre eux. On l’exprime en litres et non en m3 par commodité. À la différence des lames d’eau, qu’on somme, le débit spécifique moyen annuel (ou module spécifique) est bien une moyenne.  </p>
+<p><strong>Qspé = Q (m3/s) / SBV (km²)  x 1000 (litres/m3)</strong></p>
+<p>Période de hautes eaux lorsque le débit fort durant les périodes hivernales  et les périodes de basses eaux, l'été quand le débit est plus faible.</p>
+<h3 id="les-regimes">Les régimes<a class="headerlink" href="#les-regimes" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Régime pluvial : pluie</li>
+<li>Régime thermique : température chaude qui font fondre la neige</li>
+</ul>
+<p><img alt="Les régimes simples" src="../Images/regimessimples.PNG" /></p>
+<h4 id="pluvial-oceanique">Pluvial océanique<a class="headerlink" href="#pluvial-oceanique" title="Permanent link">&para;</a></h4>
+<p>Haute eaux en Hiver lié aux pluies. Les basses eaux correspondent à l'augmentation des températures qui évaporent plus.</p>
+<p>La différence d'écoulement entre les mois est le fait de l'<strong>evaporation</strong> : forte en été et quasi-nulle en Hiver, non des précipitations, relativement constantes en moyenne. La <strong>pondération</strong> dépend de la présence de nappes souterraines dans le bassin.</p>
+<h4 id="pluvial-mediterraneen">Pluvial méditerranéen<a class="headerlink" href="#pluvial-mediterraneen" title="Permanent link">&para;</a></h4>
+<p>L'écoulement est lié à la <strong>saison des pluies</strong> ( de l'automne au printemps); léger creux au coeur de l'Hiver. La <strong>pondération</strong> : régime très excessif, en raison d'une saison quasi sans écoulement et des impacts cumulés de la pluie et de la température.</p>
+<h4 id="pluvial-equatorial">Pluvial équatorial<a class="headerlink" href="#pluvial-equatorial" title="Permanent link">&para;</a></h4>
+<p>L’<strong>écoulement est lié à la saison quasi-continue des pluies</strong>. 
+La <strong>pondération</strong> est bonne : régime moyennement pondéré  par l’existence de deux maximums pluviométriques (en général dissymétriques).</p>
+<h4 id="pluvial-tropical">Pluvial tropical<a class="headerlink" href="#pluvial-tropical" title="Permanent link">&para;</a></h4>
+<p>Une saison sèche et une très forte saison des pluies de juillet à octobre.</p>
+<h3 id="le-regime-thermique">Le régime thermique<a class="headerlink" href="#le-regime-thermique" title="Permanent link">&para;</a></h3>
+<h4 id="le-regime-glaciaire">Le régime glaciaire<a class="headerlink" href="#le-regime-glaciaire" title="Permanent link">&para;</a></h4>
+<p>Le régime hydrologique :  régime thermique glaciaire de montagne</p>
+<p>L’écoulement est complètement lié à la température parce que les glaciers et neiges éternelles occupent plus de 10%  du bassin 
+à la fin de l’été, le stock neige-glace n’est pas fondu (septembre en hautes eaux) mais les températures baissent, le gel revient. La pondération est mauvaise : régime excessif</p>
+<h4 id="le-regime-thermique-nival">Le régime thermique nival<a class="headerlink" href="#le-regime-thermique-nival" title="Permanent link">&para;</a></h4>
+<p>L’écoulement est lié à la température mais il n’y a pas de neiges éternelles (ou moins de 2%  du bassin) : c’est la fonte de printemps. En été, le stock de neige est fondu ; avant la reprise du gel en automne, les écoulements viennent des pluies.  La pondération est mauvaise  dans les petits bassins versants : régime excessif. Au mois de mai, on est déjà au période de haute eaux. Le stock de neige fond rapidement.</p>
+<h4 id="le-regime-thermique-nival-de-plaine">Le régime thermique nival de plaine<a class="headerlink" href="#le-regime-thermique-nival-de-plaine" title="Permanent link">&para;</a></h4>
+<p>L’écoulement est lié à la température mais la fonte de printemps intervient en masse : c’est la raspoutitza
+En été, les précipitations modestes du climat continental ne compensent pas l’évaporation : avant la reprise du gel en automne, les écoulements restent faibles. 
+La pondération est mauvaise : régime  excessif.</p>
+<p>Le régime d’un cours d’eau des hautes latitudes (limite zone froide) prend les caractéristiques du régime glaciaire de montagne mais le BV est immense et l’abondance spécifique faible (pas de confusion possible) :  l’été est court.</p>
+<h4 id="le-regime-nivo-pluvial-oceanique">Le régime nivo - pluvial océanique<a class="headerlink" href="#le-regime-nivo-pluvial-oceanique" title="Permanent link">&para;</a></h4>
+<p>L'influence des températures domine dans le régime avec la fonte de printemps et la rétention nival d'hiver (cmd&lt;1). Mais les caractères du régime pluvial océanique sont sensible : baisse appuyée des écoulements en été du fait de l'évaporation et remontée en automne. La pondération est produite par les deux influences.</p>
+<h4 id="regime-complexe">Régime complexe<a class="headerlink" href="#regime-complexe" title="Permanent link">&para;</a></h4>
+<p>Le rhône connaît plusieurs régimes. En amont il est en régime thermique en montagne. Puis il a un régime méditerranéen du fait de différentes rivières de ce régime qui influe sur son régime.</p>
+<p><img alt="Régime exemple" src="../Images/regimeexemple.PNG" /></p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="../Le%20climat/" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Précédent
+              </span>
+              Le climat
+            </div>
+          </div>
+        </a>
+      
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copier dans le presse-papier", "clipboard.copied": "Copi\u00e9 dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d892486b.min.js"></script>
+      
+    
+  </body>
+</html>

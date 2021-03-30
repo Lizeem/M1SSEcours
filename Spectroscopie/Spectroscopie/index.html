@@ -1,0 +1,819 @@
+
+<!doctype html>
+<html lang="fr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.0">
+    
+    
+      
+        <title>Techniques - Cours de première année de Master SSE</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.33e2939f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ef6f36e2.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#2094f3">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="blue" data-md-color-accent="light-blue">
+  
+    
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#techniques" class="md-skip">
+          Aller au contenu
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Cours de première année de Master SSE" class="md-header__button md-logo" aria-label="Cours de première année de Master SSE" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Cours de première année de Master SSE
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Techniques
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Cours de première année de Master SSE" class="md-nav__button md-logo" aria-label="Cours de première année de Master SSE" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Cours de première année de Master SSE
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      <label class="md-nav__link" for="__nav_2">
+        Isotopie
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Isotopie" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Isotopie
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Isotopie/G%C3%A9ochimie%20isotopique/" class="md-nav__link">
+        Outils d'observation et d'analyse en Géosciences
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      <label class="md-nav__link" for="__nav_3">
+        Spectroscopie
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Spectroscopie" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Spectroscopie
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Techniques
+      </a>
+      
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      <label class="md-nav__link" for="__nav_4">
+        Aménagement du territoire
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Aménagement du territoire" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Aménagement du territoire
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../am%C3%A9nagement%20du%20territoire/Paysage/" class="md-nav__link">
+        Du paysage au système géographique
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../am%C3%A9nagement%20du%20territoire/TEPOS/" class="md-nav__link">
+        Objectif TEPOS
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../am%C3%A9nagement%20du%20territoire/mobilite%20de%20demain/" class="md-nav__link">
+        Mobilité de demain
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      <label class="md-nav__link" for="__nav_5">
+        Eaux continentales
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Eaux continentales" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Eaux continentales
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../eaux%20continentales/Le%20climat/" class="md-nav__link">
+        Le climat
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../eaux%20continentales/Les%20regimes%20hydrologiques/" class="md-nav__link">
+        Les régimes hydrologiques
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="techniques">Techniques<a class="headerlink" href="#techniques" title="Permanent link">&para;</a></h1>
+<p>Préparation d'échantillons : lithopréparation, séparations, extractions...</p>
+<p>Observations et analyses : techniques chimiques, physiques, spectrométrie (masse), spectroscopies (photons, électrons, protons, ions...)</p>
+<p>Compréhension des résultats : statistiques, traitements d'images..</p>
+<h1 id="objectifs">Objectifs<a class="headerlink" href="#objectifs" title="Permanent link">&para;</a></h1>
+<ul>
+<li>Savoir sur quelle technique se tourner pour résoudre un problème en géosciences</li>
+<li>Savoir reconnaître une technique à partir d'éléments limités (spectre, unités...)</li>
+<li>Comprendre les processus physiques sous-tendant les techniques d'analyse </li>
+<li>Connaître les limites actuelles des différentes techniques</li>
+<li>Connaître les principales contraintes sur la préparation des échantillons</li>
+</ul>
+<p><a href="https://sourceforge.net/project/pymca">https://sourceforge.net/project/pymca</a> </p>
+<p>Observation de la force électromagnétique. Toutes les particules se comportent avec une equation de rotation. Les caractéristiques spins sont les porteurs du magnétisme.</p>
+<p>Liaison covalente : mise en commun de deux électrons</p>
+<p>Agitation dans l'infrarouge</p>
+<p>Atome = noyau + électrons occupant des orbitales atomiques qui ne sont pas des orbitales circulaires</p>
+<p>Spin -&gt; changement de rotation de l'axe d'une particule</p>
+<p><img alt="Atome en mécanique quantique" src="../Images/spin.PNG" /></p>
+<p>En transférant de l'énergie à un électron, on peut aussi lui faire changer d'orbitale atomique</p>
+<p><img alt="Energie" src="../Images/%C3%A9nergie.PNG" /></p>
+<p>Règle de Klechkowski permettant de reconstruire l’ordre des énergies croissantes des énergies croissantes des sous-couches électroniques.</p>
+<p><img alt="Règle de Klechkowski" src="../Images/r%C3%A8gledeklechkowski.PNG" /></p>
+<p>Molécule : assemblage d'atomes liés par des liaisons chimiques</p>
+<p>Liaisons chimique : mise en commun d'électrons dans des orbitales moléculaires</p>
+<p>Orbitale moléculaire :  combinaison linéaire d'orbitales atomiques</p>
+<p>Comme pour les orbitales atomiques, seules les orbitales de plus basse énergie sont remplies. Les orbitales de plus haute énergie sont vides à l’état fondamental. Comme pour les orbitales atomiques, en transférant de l’énergie à un électron, on peut le faire changer d’orbitale moléculaire. Pour simplifier et par analogie avec les atomes: les noyaux sont formés de plusieurs nucléons qui peuvent occuper dans le noyaux des niveaux discrets d’énergie. Il existe donc un état d’énergie. Il existe donc un état fondamental (énergie minimale) et des états excités. En transférant de l’énergie à un noyau, on peut le faire passer dans un état excité. Les techniques spectroscopiques vont toutes faire interférer des ondes électromagnétiques avec les orbitales atomiques ou moléculaires ou encore atomiques ou moléculaires ou encore avec les spins électroniques ou nucléaires.</p>
+<p>IRM : rayonnement du noyau d'hydrogène</p>
+<p>Raman : niveau de vibration des molécules</p>
+<p>IR : niveau de vibration de même molécules</p>
+<p>Diffusion : électron qui change de phase, d'énergie ou de trajectoire</p>
+<h1 id="ondes-electromagnetiques">Ondes électromagnétiques<a class="headerlink" href="#ondes-electromagnetiques" title="Permanent link">&para;</a></h1>
+<p>représentent la propagation d’un champ électrique et d’un champ magnétique alternatifs et perpendiculaires. Sont portées par un photon.</p>
+<p><img alt="Ondes électromagnétiques" src="../Images/ondes.PNG" />
+<img alt="Spectre électromagnétique" src="../Images/ondes2.PNG" /></p>
+<p>3 caractéristiques chimiques : </p>
+<ul>
+<li>techniques élémentaires : caractéristiques sur les éléments</li>
+<li>techniques moléculaire : caractéristiques sur la molécule</li>
+<li>spéciation : environnement chimique local</li>
+</ul>
+<p>Pour chaque techniques :</p>
+<ul>
+<li>le principe physique (domaine spectral et le mode d'interaction entre les photons et la matière)</li>
+<li>appareillage (exciter et détecter)</li>
+<li>spectre </li>
+<li>infos diverses</li>
+<li>a quoi ça sert</li>
+</ul>
+<h2 id="fluorescence-x-xrf">Fluorescence X, XRF<a class="headerlink" href="#fluorescence-x-xrf" title="Permanent link">&para;</a></h2>
+<h3 id="quest-ce">Qu'est-ce ?<a class="headerlink" href="#quest-ce" title="Permanent link">&para;</a></h3>
+<p>La fluorescence X correspond à la relaxation d’un atome dont un des e-de couche de cœur a été éjecté dans le continuum. Lors de la relaxation de fluorescence, un e-d’une couche externe vient combler la lacune de la couche interne. Cet e-cède son excédent d’énergie en émettant un photon dans le domaine des rayons X.
+XRF (X-Ray Fluorescence) : émission de rayon X lié à la relaxation d'un atome. Il est excité car il a une lacune en couche profonde. La <strong>relaxation</strong> est faite par le <strong>transfert</strong> d'un électron d'une <strong>couche externe vers une couche profonde</strong>. L'ionisation en couche profonde est dûe par l'absorption d'un photon X incident.</p>
+<p><img alt="XRF" src="../Images/XFR.PNG" /></p>
+<h3 id="detection">Détection<a class="headerlink" href="#detection" title="Permanent link">&para;</a></h3>
+<p>WDX (WDS): détecteur dispersif en longueur d’onde. Très bonne résolution en énergie, jeu d’éléments à choisir au préalable, cristaux à déplacer (lenteur)EDX (EDS): détecteur dispersif en énergie. Moyenne résolution en énergie, pas de choix préalable sur les éléments à détecter, analyse rapide.</p>
+<ul>
+<li>Dispersion en énergie : utiliser les photons de la lumière et les trier en fonction de l'énergie du photon sur un semi-conducteur. Pas toujours de photons car XRF est en compétition avec des électrons Auger. On voit tous les élements.</li>
+</ul>
+<p><img alt="Semi-conducteur" src="../Images/semi-conducteur.PNG" /></p>
+<ul>
+<li>dispersion en longueur d'onde : le détecteur va permettre de compter les photons. Les photons arrivent au cristal analyseur et repartent vers le détecteur. Les rayons arrivent en parallèles 2d sinθ. Les chemins ont la même longueur entre la source, le cristal et le détecteur. Pas de spectre. On sélectionne les élements. Equation de Bragues.</li>
+</ul>
+<p><img alt="Dispersion en longueur d'onde" src="../Images/dispersion.PNG" /></p>
+<h3 id="spectre-xrf">Spectre XRF<a class="headerlink" href="#spectre-xrf" title="Permanent link">&para;</a></h3>
+<p>Rayons X sont ceux de haute énergie. L'unité d'énergie est en keV en abscisse. En ordonnée on a une émission en Intensité du signal (AU ou cp ou cp/s). On représente l’intensité de fluorescence mesurée en fonction de l’énergie (eV, keV) ou de la longueur d’onde.</p>
+<p><img alt="Spectre XRF" src="../Images/spectreXRF.PNG" /></p>
+<h3 id="types-de-sources">Types de sources<a class="headerlink" href="#types-de-sources" title="Permanent link">&para;</a></h3>
+<ol>
+<li>on utilise un élément radioactif (100 euros)</li>
+<li>tube à rayons x : on fait interagir des électrons avec une cible en métal (100K d'euros)</li>
+</ol>
+<p><img alt="Tube à rayon X" src="../Images/tube%C3%A0rayonx.PNG" />
+<img alt="Tube à rayon x" src="../Images/tube%C3%A0ryaonx.PNG" /></p>
+<ol>
+<li>rayonnement synchrotron : appareil dans lequel on fait tourner des photons à la vitesses de la lumière (1 milliard d'euros)</li>
+</ol>
+<h3 id="utilite">Utilité<a class="headerlink" href="#utilite" title="Permanent link">&para;</a></h3>
+<p>La fluorescence permet une analyse élémentaire qualitative et/ou quantitativeIl existe des ensembles source/détecteur portables (pistolet) manipulables sur le terrain.Méthode peu sensible aux conditions de T, P,... et aux liaisons chimiquesMéthode non destructive</p>
+<p>Infos diverses : Les éléments doivent avoir une couche L. Seulement à partir du Bore qu'on peut l'observer. Plus on avance dans le tableau, les résultats sont meilleurs pas de H, He, Li, Be et les plus légers. </p>
+<h2 id="libs">Libs<a class="headerlink" href="#libs" title="Permanent link">&para;</a></h2>
+<h3 id="quest-ce_1">Qu'est-ce ?<a class="headerlink" href="#quest-ce_1" title="Permanent link">&para;</a></h3>
+<p>Transfert électronique entre le continuum et une couche interne. Technique élémentaire : composition élémentaire de l'échantillon. Emission optique induite par laser. On fait une émission optique. Un électron est éjecté, un électron sera mis à sa place en émettant un photon proche UV-IR.</p>
+<p><img alt="Libs" src="../Images/libs.PNG" /></p>
+<h3 id="spectre">Spectre<a class="headerlink" href="#spectre" title="Permanent link">&para;</a></h3>
+<p><strong>Domaine spectral</strong> : proche UV- IR</p>
+<p>Spectre avec des longueur d'onde de <strong>250 à 900 nm</strong>. Beaucoup plus de pics et plus fins. L'excitation sera du au <strong>laser</strong>. La détection est une <strong>caméra optique CCD</strong>.</p>
+<p><img alt="Spectre Libs" src="../Images/spectrelibs.PNG" /></p>
+<h3 id="utilite_1">Utilité<a class="headerlink" href="#utilite_1" title="Permanent link">&para;</a></h3>
+<p>En Libs, on voit tous les éléments. Efficace sur les éléments légers. Différence entre XRF et Libs, le calcul des quantités. Libs se base sur la physique des plasmas. Plus compliqué pour doser.</p>
+<h2 id="drf">DRF<a class="headerlink" href="#drf" title="Permanent link">&para;</a></h2>
+<p>Diffraction des rayons X</p>
+<p><img alt="Diffraction" src="../Images/diffraction.PNG" /></p>
+<h2 id="uv-visible">UV - Visible<a class="headerlink" href="#uv-visible" title="Permanent link">&para;</a></h2>
+<h3 id="quest-ce_2">Qu'est-ce ?<a class="headerlink" href="#quest-ce_2" title="Permanent link">&para;</a></h3>
+<p>On peut mesurer deux choses en UV-Visible : </p>
+<ul>
+<li>absorption</li>
+<li>émission</li>
+</ul>
+<p><img alt="UV-Visible" src="../Images/UV-Visible.PNG" /></p>
+<p>La spectroscopie UV-visible (UV-vis) mesure l'absorption d'un rayonnement ultra-violet ou visible par une molécule. Cette absorption correspond à l’excitation des électrons impliqués dans les orbitales moléculaires vers des états excitésLes rayonnements UV-vis peuvent aussi être utilisés pour stimuler et mesurer la fluorescence émise par les molécules cibles</p>
+<p>Le verre et le quartz absorbent toutes les ondes en dessous de 200nm. Il faut opérer avec un miroir sous vide. On se limite à la gamme de liaison pi et pi*. Les orbitales sont sigma sont plus énergétiques et donc en dessous de 200nm.</p>
+<h3 id="orbitales-moleculaire">Orbitales moléculaire<a class="headerlink" href="#orbitales-moleculaire" title="Permanent link">&para;</a></h3>
+<p>Un orbitale moléculaire est deux atomes qui ne vont pas être fixes l'un par rapport à l'autre mais vibre tant qu'on est pas au 0 absolu. En transférant de l’énergie à un électron on peut lui faire changer d’orbitale atomique.</p>
+<ul>
+<li>Molécule: assemblage d’atomes liés par des liaisons chimiques</li>
+<li>Liaison chimique = mise en commun d’e-dans des orbitales moléculaires</li>
+<li>Orbitale moléculaire: combinaison linéaire d’orbitales atomiques</li>
+</ul>
+<p><img alt="Vibration" src="../Images/Vibration-UV.PNG" /></p>
+<p><img alt="Courbe de Morse" src="../Images/courbedemorse.PNG" /></p>
+<p>Toutes les orbitales ont une orbitale de basse énergie et des orbitales vacantes qui ont un plus grande énergie. Nous allons regarder depuis la haute occupé à la basse vacante. Une courbe de Morse par orbital moléculaire. La courbe représente l'énergie potentiel de la liaison. La dernière orbitale moléculaire remplie est nommée HO (haute occupée)La première orbitale moléculaire vide est nommée BV (basse vacante)Ce sont les orbitales frontières. Comme pour les orbitales atomiques, seules les orbitales de plus basse énergie sont rempliesLes orbitales de plus haute énergie sont vides à l’état fondamentalComme pour les orbitales atomiques, en transférant de l’énergie à un électron, on peut le faire changer d’orbitale moléculaire.</p>
+<p><img alt="Orbitales moléculaire" src="../Images/orbitalesmol%C3%A9culaires.PNG" /></p>
+<p>Lorsque l'on regarder une transition d'une orbitale excité vers un orbitale mois excité, ça provoque de la luminescence. 
+La fluorescence se compte à une dizaine de nano-seconde. La longueur d'onde est plus grande à la descente qu'à la montée.</p>
+<h3 id="spectre_1">Spectre<a class="headerlink" href="#spectre_1" title="Permanent link">&para;</a></h3>
+<p>On représente A (absorption) ou є(coefficient d’absorption molaire du soluté) en fonction de la longueur d’onde.</p>
+<p><img alt="Spectre UV" src="../Images/SpectreUV.PNG" /></p>
+<p>Limites: faible concentration, pas de réaction entre solvant et soluté, pas de dissociation, pas d’autre soluté ou solvant absorbant, lumière monochromatique. Marche très bien si le minéral est dilué.</p>
+<p>Les transitions détectées sont généralement π→n ou n→π* caractéristiques de nombreux de composés organiques.Les transitions σ→σ* et n→σ* sont trop énergétiques pour être facilement observées ( opération sous vide). Il faut aussi connaître les choses qu'on étudie. Ce n'est adapté pour savoir ce qu'il y a dans une solution.</p>
+<p>Certaines longueurs de vibrations sont autorisés et d'autres sont interdit. Plus on monte en énergie, plus le va et vient de l'atome sera plus grand. On envoie un photon qui va permettre de montée un électron sur une orbitale moléculaire supérieure et sa distance de va et vient sera plus grande. L'émission est en IR. </p>
+<p>Détecteurs : CCD. Matériau qui reçoit un photon fait une impulsion électrique. Qui va se voir en IR ou en UV.</p>
+<h2 id="ir">IR<a class="headerlink" href="#ir" title="Permanent link">&para;</a></h2>
+<h3 id="quest-ce_3">Qu'est-ce ?<a class="headerlink" href="#quest-ce_3" title="Permanent link">&para;</a></h3>
+<p>En IR on regarde l'absorption. Le photon doit avoir la bonne énergie pour faire monter l'électron. On a plus de place d'avoir des signaux séparés dans l'IR que dans l'UV. La spectroscopie IR mesure l'absorption d'un rayonnement infrarouge par une molécule. Cette absorption correspond à l’excitation des mouvements de vibration et de rotation des molécules.Deux chemins optiques suivis par deux faisceaux d’ondes IR. L’un traverse l’échantillon, l’autre non. Le rapport d’intensité entre les deux faisceaux caractérise l’absorption des IR par l’échantillon. Le miroir change la longueur du chemin des ondes selon qu’elles passent par le miroir fixe ou mobile. L’onde incidente est cohérente donc il se produit des interférences positives ou négatives.La source est polychromatique, toutes les longueurs d’ondes IR (proche et moyen) sont présentes en même temps. On regarde l'énergie entre deux moment de vibration d'une même orbital.</p>
+<h3 id="domaine-position-domaine-frequence">Domaine position - domaine fréquence<a class="headerlink" href="#domaine-position-domaine-frequence" title="Permanent link">&para;</a></h3>
+<p>Interféromètre : système de mesure où on envoie la lumière polychromatique sur un miroir semi-transparent. L’interférogramme est la représentation de l’intensité reçue par le détecteur en fonction de la position du miroirLa Transformation de Fourier permet de décomposer l’interférogramme en une somme de fonctions sinusoïdales, représentant chacune une onde donnée. Nécessite moins d’optiques, notamment d’optiques dispersives, donc maximise l’intensité transmise par le système: plus de photons sur l’échantillonLe mouvement du miroir est très rapide (s), on peut accumuler les spectre (les sommer avant transformation de Fourier)La position du miroir est repérée par laser dans le domaine visible: précis et répétable.</p>
+<p><img alt="FTIR" src="../Images/FTIR.PNG" />
+<img alt="Analogie du ressort" src="../Images/hertz.PNG" /></p>
+<p>N =  nombre de vibrations par seconde. Donc utilisation du nombre d'onde.</p>
+<p>Les valeurs en Hertz sont trop grandes, on les exprime en nombre d’onde (cm-1) (division par c, célérité de la lumière dans le vide). </p>
+<p>V_ = N/C (cm/s)</p>
+<h3 id="spectre_2">Spectre<a class="headerlink" href="#spectre_2" title="Permanent link">&para;</a></h3>
+<p>Le spectre représente les liaisons entre deux types d'atome. On peut donc connaître la nature d'un élément mais pas la quantité. On voit les liaisons mais pas toutes. On voit les liaisons qui provoquent un moment dipolaire sur les deux atomes. Si les atomes ne sont pas identiques, (diatomique), il n'y a pas de moment dipolaire. Si il n'y a pas de moment dipolaire ni de variations, on ne voir rien avec l'infra-rouge.</p>
+<p><img alt="Spectre IR" src="../Images/spectreIR.PNG" /></p>
+<h3 id="mouvements">Mouvements<a class="headerlink" href="#mouvements" title="Permanent link">&para;</a></h3>
+<p>Il faut observer ça avec trois atomes (H<sub>2</sub>O, CO<sub>2</sub>). Sur l'eau, on a une charge moins sur l'oxygène et une charge plus sur l'hydrogène. On peut faire trois rotations, trois translations et trois déformations (symétrique, anti-symétrique et changement d'angle qui va entraîner un changement dipolaire). Des vibrations seront invisibles et d'autres seront visibles. Une vibration se verra d'autant plus, la vibration sera grande. Des vibrations auront le même niveau d'énergie <strong>niveaux dégénérés</strong>. Chacun des atomes de molécules ont des degrés de liberté. Il arrive qu'il y ai des rotations qu'on ne voit pas bien. Pour les molécules linaires, on ne voit pas les rotations. Un atome a trois coordonnées dans l’espace, donc trois degrés de libertéUne molécule n’est pas un assemblage rigide, donc son degré de liberté total est la somme des degrés de liberté de ses n atomes constituants: 3n.</p>
+<ul>
+<li>3n - 6 quantité de vibration dans une molécule</li>
+<li>3n - 5</li>
+</ul>
+<p>Certaines vibrations peuvent être situé au même endroit. Grande gamme spectrale avec des pics bien définis.</p>
+<p>Problème : l'eau absorbe très bien l'IR. Et des molécules sont inactives.</p>
+<h2 id="raman">Raman<a class="headerlink" href="#raman" title="Permanent link">&para;</a></h2>
+<h3 id="quest-ce_4">Qu'est-ce ?<a class="headerlink" href="#quest-ce_4" title="Permanent link">&para;</a></h3>
+<p>En Raman, on va regarder les mêmes niveaux de vibrations des mêmes liaisons moléculaires. En Raman, on fait une <strong>diffusion inélastique</strong> des photons. Le photon a juste donné ou prit une énergie et continu sa route. La diffusion est 10Gx moins probable que l'IR. Il faut un laser. La diffusion Raman est une diffusion (le photon n’est pas annihilé) inélastique (avec perte ou gain d’énergie) pendant laquelle la molécule cible change de niveau de vibration ou de rotation.La longueur d’onde du faisceau incident ne doit pas correspondre à un saut d’énergie quantifié.</p>
+<p>Soit il fait monter un niveau d'excitation soit il le fait descendre. Il est beaucoup plus intense vers le haut que vers le bas où il gagnera de l'énergie. Le principe de la diffusion Raman se base sur la variation de polarisabilité de la molécule sous l’effet du champ électrique de la radiation incidente.Pour avoir un effet Raman, la vibration de la molécule doit produire une variation de polarisabilité dont la dérivée est non nulle.</p>
+<p><img alt="Raman" src="../Images/Raman.PNG" /></p>
+<h3 id="liaisons-actives">Liaisons actives<a class="headerlink" href="#liaisons-actives" title="Permanent link">&para;</a></h3>
+<p>Le principe de la diffusion Raman se base sur la variation de polarisabilité de la molécule sous l’effet du champ électrique de la radiation incidente. Pour avoir un effet Raman, la vibration de la molécule doit produire une variation de polarisabilité dont la dérivée est non nulle.</p>
+<h3 id="mesures">Mesures<a class="headerlink" href="#mesures" title="Permanent link">&para;</a></h3>
+<p>Le qui est caractéristique de l’effet Raman est le déplacement en longueur d’onde de la radiation diffusée. Ce déplacement ne dépend pas de la longueur d’onde de la radiation incidente</p>
+<h3 id="spectre_3">Spectre<a class="headerlink" href="#spectre_3" title="Permanent link">&para;</a></h3>
+<p>Le spectre Raman montre les mêmes vibrations que l'IR. Les ordonnées sont en I (intensité). La polarisabilité de la liaison est une dérivée non nulle à la position de repos de la vibration. Même pour des liaisons diatomiques. Elle ne doit pas être la même entre de une vibration et une autre. (antisymétrique ne marche pas pour une molécule linéaire). Il peut potentiellement avoir de la fluorescence. On voit dans le Raman la même gamme spectrale que l'IR.</p>
+<p><img alt="Spectre Raman" src="../Images/spectreraman.PNG" /></p>
+<h3 id="spectrometres-raman-en-transformee-de-fourier">Spectromètres Raman en transformée de Fourier<a class="headerlink" href="#spectrometres-raman-en-transformee-de-fourier" title="Permanent link">&para;</a></h3>
+<p>Pour éviter les phénomènes de fluorescence on peut irradier dans le proche infrarouge et utiliser une détection par interféromètre pour mesurer les déplacements en longueur d’onde de la radiation diffusée.</p>
+<h3 id="interet-de-la-spectroscopie-raman">Intérêt de la spectroscopie Raman<a class="headerlink" href="#interet-de-la-spectroscopie-raman" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Non-destructif</li>
+<li>Peu de préparation</li>
+<li>Mesures in-situ</li>
+<li>Indépendant de λ excitatrice</li>
+<li>Efficace sur les molécules diatomiques homonucléaires</li>
+<li>Efficace en présence d’eau</li>
+</ul>
+<h3 id="limites">Limites<a class="headerlink" href="#limites" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Fluorescence d’un composé de l’échantillon</li>
+<li>Décomposition par échauffement</li>
+<li>Réactions photochimiques</li>
+</ul>
+<p>Détecteur :  CCD</p>
+<h2 id="mossbauer-resonance-nucleaire-sans-recul">Mossbauer : résonance nucléaire sans recul<a class="headerlink" href="#mossbauer-resonance-nucleaire-sans-recul" title="Permanent link">&para;</a></h2>
+<h3 id="quest-ce_5">Qu'est-ce ?<a class="headerlink" href="#quest-ce_5" title="Permanent link">&para;</a></h3>
+<p>Absorption emission de même énergie par le noyau et se fait sans recul (même énergie) entre l'absorption et l'émission.
+On va regarder le niveau d'énergie dans le noyau. On va regarder les niveaux d'énergie des nucléons entre eux.
+Un noyau excité va se relaxer par émission d’un rayon γ. Ce rayon γ va exciter un noyau identique qui va lui-même se relaxer par émission d’un rayon γ de même λ. C’est un phénomène de résonance qui ne peut se faire que si les noyaux ne sont affectés par aucun recul qui provoquerait des pertes d’énergie. Si on change le nombre de neutron on change le niveau d'énergie du noyau. Technique qui va sonder les isotopes d'un élément donné. Le noyau d'un isotope donné va recevoir un photon et le noyau va s'exciter et va redescendre et émettre un photon. 
+Les raies d’émission n’ont pas une énergie unique, elles ont une dispersion autour d’une valeur moyenne. Cette dispersion est due au principe d’indétermination d’Heisenberg (durée de vie finie du niveau excité) et à l’effet Doppler (agitation thermique).</p>
+<h3 id="resonance-nucleaire">Résonance γ nucléaire<a class="headerlink" href="#resonance-nucleaire" title="Permanent link">&para;</a></h3>
+<p>L’élargissement thermique des raies permet un recouvrement. Les basses T devraient limiter la résonance: ce n’est pas le cas</p>
+<p><img alt="Condition de résonance" src="../Images/conditionr%C3%A9sonance.PNG" /></p>
+<p>Si un noyau est lié de manière rigide au réseau, alors le recul doit affecter tout le système cristallin. La masse du solide rend ce mouvement extrêmement faible, donc le recul nul. Il en va de même pour le noyau absorbeur.
+Tous les atomes ont une fraction f qui présente cette caractéristique (f=facteur de Lamb-Mössbauer). f augmente quand T diminue.</p>
+<p>Il existe dans les solides une fraction du noyau qui est attaché à leur voisin. La résonance nucléaire s'explique pour les noyaux car ils sont liés de façon rigide au réseau cristallin. Cela marche plus dans certain isotopes que d'autres, et le fer.</p>
+<h3 id="forme-des-raies-demission-et-dabsorption">Forme des raies d'émission et d'absorption<a class="headerlink" href="#forme-des-raies-demission-et-dabsorption" title="Permanent link">&para;</a></h3>
+<p>Les raies d’émission n’ont pas une énergie unique, elles ont une dispersion autour d’une valeur moyenne. Cette dispersion est due au principe d’indétermination d’Heisenberg (durée de vie finie du niveau excité) et à l’effet Doppler (agitation thermique)</p>
+<p><img alt="Raies d'émission et d'absorption" src="../Images/raiesd%27emissionetd%27absorption.PNG" /></p>
+<p>Si on met des orbitales s dans le noyau, on va déplacer les deux niveaux orbitales. La largeur de la raie d’absorption est très faible (10-8 eV) par rapport à son énergie (~x10keV) On cherche donc à sonder la variation d’absorption en fonction de l’énergie incidente, avec une très forte résolution sur l’énergie incidente.</p>
+<p><img alt="Interactions entre le noyau et son environnement" src="../Images/interactions.PNG" /></p>
+<p>Mossbäuer va choisir un noyau en particulier dans un environnement chimique. <strong>Technique de spéciation</strong>. Car les niveaux d'énergie d'un noyau change en fonction de ce qu'il se passe autour. Connaître son degré d'oxydation, nombre de voisins, nature des voisins, distances et angles de ces voisins.</p>
+<h3 id="source">Source γ<a class="headerlink" href="#source" title="Permanent link">&para;</a></h3>
+<p>La source est composé d’un noyau parent radioactif se décomposant en un noyau fils stable identique à celui analysé (Co57 donnant du Fe57 pour analyser un échantillon de Fe). Le noyau fils est généralement excité et se relaxe en émettant un rayon γ. La durée de vie du noyau fils est infinie, donc la raie d’émission est très précise (incertitude d’Heisenberg). On doit mesurer l’absorption en fonction de l’énergie. Pour moduler précisément cette énergie on utilise l’effet Doppler en bougeant la source radioactive. On représente la variation de transmission de flux de photons en fonction de la vitesse de déplacement de la source.</p>
+<h3 id="spectre_4">Spectre<a class="headerlink" href="#spectre_4" title="Permanent link">&para;</a></h3>
+<p>On représente la variation de transmission de flux de photons en fonction de la vitesse de déplacement de la source.</p>
+<p>On cherche un élement pair radioactif qui se désintègre dans un isotope à analyser et dans un son état excité.</p>
+<p>Si on a une énergie de 10kev, on a une résolution de 10<sup>-7</sup> keV. </p>
+<p>On va donner à la source un mouvement oscillant. Pour faire la même chose que l'effet de Doppler. L'axe des abscisse est en mm/s. </p>
+<h3 id="contraintes">Contraintes<a class="headerlink" href="#contraintes" title="Permanent link">&para;</a></h3>
+<ul>
+<li>sur les solides</li>
+<li>il faut un facteur f important et donc le travailler à plusieurs température.</li>
+<li>trouver un élément pair suffisamment exciter et une durée de demi-vie suffisante du père pour l'isotope radioactif.</li>
+<li>manip longue qui peut prendre une semaine </li>
+</ul>
+<p>On fait le fer57. Il se fait à la température ambiante. L'étain également. On regarde les autres éléments en azotes liquide ou en hélium liquide.</p>
+<h2 id="xafs-x-ray-absorption-fine-structure">XAFS : X-Ray Absorption Fine Structure<a class="headerlink" href="#xafs-x-ray-absorption-fine-structure" title="Permanent link">&para;</a></h2>
+<h3 id="quest-ce_6">Qu'est-ce ?<a class="headerlink" href="#quest-ce_6" title="Permanent link">&para;</a></h3>
+<p>La spectroscopie d’absorption des rayons X est l’étude des variations des structures fines à proximité du seuil d’absorption d’un élément. Cette zone permet de sonder la spéciation d’un élément cible.
+Lors d'une absorption, le photoélectron émis est rétrodiffusé par les atomes voisins, et l'onde rétrodiffusée vient interférer avec la densité électronique de l'atome absorbeur en modifiant l'absorption et la diffusion de cet atome.Les interférences dépendront donc de l’atome cible de la nature des voisins et des distances à ces voisins. </p>
+<p><img alt="XAFS" src="../Images/XAFS1.PNG" /></p>
+<p>C'est une techniques de spéciation, Connaître son degré d'oxydation, nombre de voisins, nature des voisins, distances et angles de ces voisins. Déformation d'un nuage électronique par un électron provenant des voisins.</p>
+<p><img alt="XAFS" src="../Images/xafselectrionsurnuageelectronique.PNG" /></p>
+<h3 id="detection-du-signal-dabsorption">Detection du signal d'absorption<a class="headerlink" href="#detection-du-signal-dabsorption" title="Permanent link">&para;</a></h3>
+<p>lors d'une absorption, le photoélectron émis est rétrodiffusé par les atomes voisins, et l'onde rétrodiffusée vient interférer avec la densité électronique de l'atome absorbeur en modifiant l'absorption et la diffusion de cet atome. Les interférences dépendront donc de l’atome cible de la nature des voisins et des distances à ces voisins. L'électron revient vers le noyau initial avec les informations des voisins (bleu au départ et revient vert car noyau jaune).
+En absorption (A=log(I0/I)). Très précis, rapide, limites de détection moyennes. En fluorescence: Très bonnes limites de détection, complications supplémentaires (probabilité de fluorescence, autoabsorption).</p>
+<h3 id="domaines-des-spectres-xafs">Domaines des spectres XAFS<a class="headerlink" href="#domaines-des-spectres-xafs" title="Permanent link">&para;</a></h3>
+<p>A partir du signal où on reconnaît les voisins avec EXAFS, on fait des hypothèse et on les simule. XANES permet de tout voir dans la globalité : identification de la spéciation par comparaison avec des standards. EXAFS permet de déterminer la nature des voisins, la distance des voisins et la géométrie du site.</p>
+<p><img alt="XAFS" src="../Images/XAFS2.PNG" /></p>
+<p>Il faut envoyer des rayons X monochromatique sur l'échantillon. C'est une technique de synchroton. Rayonnement généré par l’accélération de particules chargées (e- ou e+). Décalage en énergie par effet Doppler (particules circulant à une vitesse relativiste). Rayonnement généré par l’accélération de particules chargées (e-ou e+).Décalage en énergie par effet Doppler (particules circulant à une vitesse relativiste)</p>
+<p>Si c'est trop dilué on ajoute un détecteur de fluorescence X. On peut l'observer sur liquide, gaz et solide.</p>
+<p><img alt="XAFS" src="../Images/XAFS3.PNG" /></p>
+<h2 id="eels-electron-loss-spectroscopy">EELS : Electron Loss Spectroscopy<a class="headerlink" href="#eels-electron-loss-spectroscopy" title="Permanent link">&para;</a></h2>
+<h3 id="quest-ce_7">Qu'est-ce ?<a class="headerlink" href="#quest-ce_7" title="Permanent link">&para;</a></h3>
+<p>EELS = Electron Energy Loss Spectroscopy ou spectroscopie des pertes d’énergie. Détection de la perte d’énergie subie par des électrons traversant un échantillon mince. Ces pertes d’énergie reflètent les excitations possibles de la matière traversée.</p>
+<p>On utilise un microscope électronique à transmission. Certains électrons vont perdre plus ou moins de l'énergie. Il vont être dévié selon leur énergie. Il faut que le MET fasse de la perte d'énergie.</p>
+<h3 id="niveaux-denergie">Niveaux d'énergie<a class="headerlink" href="#niveaux-denergie" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Phonons: vibrations atomiques dans le solide = énergie thermique (~1eV)</li>
+<li>Plasmons: vibration résonante des électrons de valence du solide (~5-30eV)</li>
+<li>Ionisations: éjection d’électrons dans le continuum  (~x10eV →~x10keV)</li>
+<li>Rayonnement de freinage: décélération des électrons par interaction avec le champ électrique du noyau.</li>
+</ul>
+<h3 id="spectres-eels">Spectres EELS<a class="headerlink" href="#spectres-eels" title="Permanent link">&para;</a></h3>
+<p>Les pertes d’énergie dépendent de la nature des éléments chimiques et des liaisons dans lesquelles ces éléments sont engagés</p>
+<p><img alt="EELS" src="../Images/EELS.PNG" /></p>
+<h3 id="images-et-pertes-denergie">Images et pertes d'énergie<a class="headerlink" href="#images-et-pertes-denergie" title="Permanent link">&para;</a></h3>
+<p>Les électrons élastiques ne permettent pas de visualiser le tube de C. L’image basée sur les électrons ayant perdu l’énergie correspondant à l’énergie de liaison entre les électrons et le noyau des atomes de C permet de visualiser le tube.</p>
+<h3 id="avantages-et-inconvenients">Avantages et inconvénients<a class="headerlink" href="#avantages-et-inconvenients" title="Permanent link">&para;</a></h3>
+<p>Inconvénient : </p>
+<ul>
+<li>on ne peut pas faire de liquide ou de gaz car sous vide.</li>
+<li>préparation de l'échantillon</li>
+<li>on ne peut pas voir les choses trop dilués</li>
+</ul>
+<p>Avantages : </p>
+<ul>
+<li>toutes les Universités ont un MET</li>
+<li>résolution spatiale et imbattable (on peut voir les atomes)</li>
+</ul>
+<h2 id="rmn-resonance-magnetique-nucleaire">RMN Résonance Magnétique Nucléaire<a class="headerlink" href="#rmn-resonance-magnetique-nucleaire" title="Permanent link">&para;</a></h2>
+<h3 id="quest-ce_8">Qu'est ce ?<a class="headerlink" href="#quest-ce_8" title="Permanent link">&para;</a></h3>
+<p>La spectroscopie par résonance magnétique nucléaire RMN (NMR an anglais) est fondée sur la mesure de l'absorption d'un rayonnement radiofréquence par le noyau des atomes. L'environnement local autour d'un noyau donné dans une molécule va perturber le champ magnétique local exercé sur ce noyau et affecter son énergie de transition. Cette dépendance permet la détermination de la structure moléculaire. Somme vectorielle de tous les nucléons. Technique isotopique. Tout ce qu'il y a autour du noyau va être perturbé par son champ magnétique. Ce champ est un objet quantique. On aura des niveaux d'énergie. Ce sont ces énergies absorbées que l'on va observer avec la radio-fréquence. <strong>Technique moléculaire</strong></p>
+<h3 id="spin-nucleaire">Spin nucléaire<a class="headerlink" href="#spin-nucleaire" title="Permanent link">&para;</a></h3>
+<p>Les noyaux possèdent un nombre quantique de spin nucléaire entier ou demi-entier. Seul les noyaux ayant un nombre pair de protons et de neutrons on un spin nul. Le spin peut être compris comme un vecteur de moment angulaire. Dans le cas général, la somme des vecteurs moment angulaire de spin nucléaire est nulle. Le nombre de spin donne le nombre d'état possible. Pour n : [-n, n+1,...+n].</p>
+<p>Le noyau est une particule chargée. Une particule chargée accélérée crée un champ magnétique. Le noyau a donc un moment magnétique nucléaire dû au spin. Dans un champ magnétique intense (B0), les moments magnétiques nucléaires vont s’orienter en fonction du champ magnétique imposé. La somme de tous les spins est nulle.</p>
+<p>Les moments magnétiques nucléaires ne vont pas s’aligner avec le champ magnétique imposé, ils vont être animés d’un mouvement de précession à une vitesse angulaire ω0=-γB0.</p>
+<h3 id="introduction-dun-champ-magnetique-b1-normal-a-b0">Introduction d'un champ magnétique B1 normal à B0<a class="headerlink" href="#introduction-dun-champ-magnetique-b1-normal-a-b0" title="Permanent link">&para;</a></h3>
+<p>Nous voulons voir l'effet du changement de spin à 0. On voit la résultante en créant une impulsion, cela va permettre de tous les grouper.
+Le nombre d’angles possibles entre le moment magnétique nucléaire et B0 dépend du nombre de spin (I). Il y a 2I+1 valeurs possibles (I, I-1, I-2,... -I). Chaque angle caractérise un état d’énergie. L'impulsion est sinusoïdale.</p>
+<p>En présence d’un champ B1 sinusoïdal de fréquence ω0, les photons correspondant àce champ ont l’énergie permettant d’exciter le spin nucléaire (basculement du spin). En présence d’un champ B1sinusoïdal de fréquence ω0, les moments magnétiques nucléaires peuvent acquérir une cohérence de phase (somme non colinéaire à B0). </p>
+<p><img alt="RMN" src="../Images/RMN1.PNG" /></p>
+<h3 id="detection_1">Détection<a class="headerlink" href="#detection_1" title="Permanent link">&para;</a></h3>
+<p>On peut:</p>
+<ul>
+<li>soit balayer les fréquence et mesurer l’absorption de l’échantillon pour connaître les fréquences correspondant à des basculements de spins</li>
+<li>soit mesurer la relaxation suite à une impulsion de B1</li>
+</ul>
+<p>On peut utiliser la même bobine pour exciter et pour observer la réception. Ce qui est émit et à la même énergie que ce qui est absorbé. Les vitesses de retour est fonction de l'angle et du temps que les spins retournent à la normale.</p>
+<h3 id="spectre_5">Spectre<a class="headerlink" href="#spectre_5" title="Permanent link">&para;</a></h3>
+<p>Le spectre RMN dans le domaine du temps dépend du champ B0appliqué. Pour pouvoir comparer les spectres d’un appareil à l’autre il faut s’affranchir des contraintes expérimentales particulières. On comparera donc le signal de l’échantillon à celui d’un standard. Le spectre en fréquence dépend de B0.</p>
+<p>La position du signal d’une espèce chimique par rapport à celle du standard sera appelé déplacement (δ). δ=(ν<sub>El</sub>-ν<sub>std</sub>)/ν0ν=ІωІ/2π. </p>
+<p>Les déplacements sont très faibles (10<sup>-6</sub>) et seront donc exprimés en millionièmes, ou parties par million (ppm).</p>
+<p><img alt="RMN" src="../Images/RMN2.PNG" /></p>
+<h3 id="que-represente-le-deplacement-chimique">Que représente le déplacement chimique ?<a class="headerlink" href="#que-represente-le-deplacement-chimique" title="Permanent link">&para;</a></h3>
+<p>Proton seul : pas d'électron, le champ ressenti au niveau du noyau est celui émis par l'aimant.</p>
+<p>H dans une molécule: les électrons de la molécule blindent le noyau qui ressent un champ B0 plus faible que le champ B appliqué par l’aimant. Il faut augmenter B pour que B0 assure la résonance (ω0=-γB0). </p>
+<p><img alt="RMN" src="../Images/RMN3.PNG" /></p>
+<p>C'est pour cela, que l'on va retrouver différentes fréquence sur le spectre. La vitesse de rotation est proportionnel à ce qu'il ressente. Plus ils sont blindés, plus leur rotation est faible, plus il sont à gauche sur le spectre. Plus le voisin attire à lui des électrons moins H est blindé, plus il tournera vite.</p>
+<p>Comme Si blinde le plus fortement, on a choisi le T.M.S. (Tétraméthylsilane, Si(CH3)4) comme standard. Par comparaison, les autres liaisons apparaîtront déblindées (δ positifs).</p>
+<h3 id="ordres-de-grandeur">Ordres de grandeur<a class="headerlink" href="#ordres-de-grandeur" title="Permanent link">&para;</a></h3>
+<ul>
+<li>B0 : 1 à 20 T</li>
+<li>B1 : 10<sup>-3</sup> T</li>
+<li>durée d'impulsion : 10µs</li>
+<li>temps de relaxation : quelques secondes à quelques minutes</li>
+</ul>
+<h3 id="utilisation">Utilisation<a class="headerlink" href="#utilisation" title="Permanent link">&para;</a></h3>
+<p>Si on a un corps pure, la technique est extrêmement puissante. Elle n'est pas très courante. Elle est plus courante en partie minérale. Cette technique est sensible aux problèmes d'anisotropie, les solutions sont préférables. Les solides sont aussi possible mais de préférence les poudres sont utilisées.</p>
+<p>Utilisé en imagerie médicale. Le principe de base est la RMN. Pour la localisation spatiale des protons, l’IRM utilise une propriété habituellement traitée comme un défaut: si B0 n’est pas constant le déplacement ne sera pas le même pour tous les protons. Le champ magnétique est absolument homogène en IRM. En RMN, il varie mais on connaît les valeurs en chaque point. On peut localiser spatialement où le signal à été émis. On regarde que le signal de l'hydrogène dans notre corps en IRM. Il va regarder les tissus mous enrichis en eau. Contrairement au scanner qui travaille sur les parties durs (os).</p>
+<h2 id="rpe-resonance-paramagnetique-electronique">RPE Résonance Paramagnétique Électronique<a class="headerlink" href="#rpe-resonance-paramagnetique-electronique" title="Permanent link">&para;</a></h2>
+<h3 id="quest-ce_9">Qu'est ce ?<a class="headerlink" href="#quest-ce_9" title="Permanent link">&para;</a></h3>
+<p>La spectroscopie RPE mesure l'absorption d'un rayonnement micro-onde par un électron non apparié quand il est placé dans un champ magnétique intense.RPE = RSE (résonance de spin électronique), ESR et EPR en anglais. C'est une résonance, l'absorption sera la même que l'émission. On regarde un éléctron qui doit être seul dans son orbital.</p>
+<h3 id="concepts-de-base">Concepts de base<a class="headerlink" href="#concepts-de-base" title="Permanent link">&para;</a></h3>
+<p>Les concepts de base sont analogues en RMN et RPE.Le spin électronique peut être compris comme un vecteur de moment angulaire.Le spin électronique vaut +&frac12; ou-&frac12;. Les concepts de base sont analogues en RMN et RPE mais:</p>
+<ul>
+<li>la masse de l’électron est beaucoup plus faible que celle du proton donc les champs nécessaires sont plus faibles (0.1 à 1T)</li>
+<li>les différences d’énergie entre les niveaux de spin sont plus élevées, donc les fréquences utilisées sont plus élevées (GHZ), nous sommes dans les micro-ondes et pas dans les radio-fréquences.</li>
+</ul>
+<h3 id="spin-electronique-dans-un-champ-magnetique">Spin électronique dans un champ magnétique<a class="headerlink" href="#spin-electronique-dans-un-champ-magnetique" title="Permanent link">&para;</a></h3>
+<p>Les moments magnétiques électroniques ne vont pas s’aligner avec le champ magnétique imposé, ils vont être animés d’un mouvement de précession à une vitesse angulaire ω0=-γB0. (ν0=Іγ.B0І/2π).</p>
+<h3 id="type-danalyse">Type d'analyse<a class="headerlink" href="#type-danalyse" title="Permanent link">&para;</a></h3>
+<p>Contrairement à la RMN, le RPE se fait principalement en ondes continues (RMN en mode pulsé). C’est dû principalement àla difficulté de création d’ondes de durée de vie assez courte (relaxation beaucoup plus rapide en RPE) associées à des champs plus intenses.</p>
+<h3 id="enregistrement-du-spectre">Enregistrement du spectre<a class="headerlink" href="#enregistrement-du-spectre" title="Permanent link">&para;</a></h3>
+<p>ν0=Іγ.B0І/2π</p>
+<p>En pratique on fait varier le champ magnétique (plus précis) et on enregistre l’absorption à fréquence constante. Les abscisses du spectre sont donc graduées en Gauss (10-4T). Pour augmenter la sensibilité de détection on envoie un fréquence légèrement modulée, ce qui permet de mesurer directement la dérivée de l’absorption (axe des ordonnées).</p>
+<p><img alt="RPE" src="../Images/RPE.PNG" /></p>
+<h3 id="parametres-lus-sur-le-spectre-rpe">Paramètres lus sur le spectre RPE<a class="headerlink" href="#parametres-lus-sur-le-spectre-rpe" title="Permanent link">&para;</a></h3>
+<p>On va mesurer :</p>
+<ul>
+<li>amplitude pic-à-pic (nombre d'électron non couplés). </li>
+<li>largeur pic-à-pic (concentration)  </li>
+<li>la position du facteur g (facteur de Landé, degré de localisation des électrons).</li>
+</ul>
+<h3 id="difficultes-des-spectres-rpe">Difficultés des spectres RPE<a class="headerlink" href="#difficultes-des-spectres-rpe" title="Permanent link">&para;</a></h3>
+<p>Chaque transition d'un multiplet donne naissance à une raie d'absorption. Les électrons non appariés sont très mobiles et sont donc très sensibles à l'environnement. Les spectres RPE n'ont pas de table comparables aux tables de déplacement de la RMN.</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="../../Isotopie/G%C3%A9ochimie%20isotopique/" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Précédent
+              </span>
+              Outils d'observation et d'analyse en Géosciences
+            </div>
+          </div>
+        </a>
+      
+      
+        <a href="../../am%C3%A9nagement%20du%20territoire/Paysage/" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Suivant
+              </span>
+              Du paysage au système géographique
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copier dans le presse-papier", "clipboard.copied": "Copi\u00e9 dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d892486b.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,1342 @@
+
+<!doctype html>
+<html lang="fr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.0">
+    
+    
+      
+        <title>Outils d'observation et d'analyse en Géosciences - Cours de première année de Master SSE</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.33e2939f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ef6f36e2.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#2094f3">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="blue" data-md-color-accent="light-blue">
+  
+    
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#outils-dobservation-et-danalyse-en-geosciences" class="md-skip">
+          Aller au contenu
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Cours de première année de Master SSE" class="md-header__button md-logo" aria-label="Cours de première année de Master SSE" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Cours de première année de Master SSE
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Outils d'observation et d'analyse en Géosciences
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Cours de première année de Master SSE" class="md-nav__button md-logo" aria-label="Cours de première année de Master SSE" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Cours de première année de Master SSE
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      <label class="md-nav__link" for="__nav_2">
+        Isotopie
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Isotopie" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Isotopie
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Outils d'observation et d'analyse en Géosciences
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Outils d'observation et d'analyse en Géosciences
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#i-spectrometrie-de-masse-principes-et-instruments" class="md-nav__link">
+    I) Spectrométrie de Masse : principes et instruments
+  </a>
+  
+    <nav class="md-nav" aria-label="I) Spectrométrie de Masse : principes et instruments">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-introduction" class="md-nav__link">
+    A) Introduction
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-principe-general-dun-spectrometre-de-masse" class="md-nav__link">
+    B) Principe général d'un spectromètre de masse
+  </a>
+  
+    <nav class="md-nav" aria-label="B) Principe général d'un spectromètre de masse">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#les-differents-filtres-de-masse-existantes" class="md-nav__link">
+    Les différents filtres de masse existantes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acceleration-des-ions" class="md-nav__link">
+    Accélération des ions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spectrometre-magnetique" class="md-nav__link">
+    Spectromètre magnétique
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mesure-des-energies-cinetiques" class="md-nav__link">
+    Mesure des énergies cinétiques
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#appareil-a-double-focalisation" class="md-nav__link">
+    Appareil à double focalisation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#avantages-desavantages" class="md-nav__link">
+    Avantages / désavantages
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-spectrometres-a-temps-de-vol" class="md-nav__link">
+    C) Spectromètres à temps de vol
+  </a>
+  
+    <nav class="md-nav" aria-label="C) Spectromètres à temps de vol">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#avantages-desavantages_1" class="md-nav__link">
+    Avantages / désavantages
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d-spectrometrie-de-masse-quadripolaire" class="md-nav__link">
+    D) Spectrométrie de masse Quadripolaire
+  </a>
+  
+    <nav class="md-nav" aria-label="D) Spectrométrie de masse Quadripolaire">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#avantages-desavantages_2" class="md-nav__link">
+    Avantages / désavantages
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d-spectrometre-infra-rouge-a-transforme-de-fourier-ft-icr" class="md-nav__link">
+    D) Spectromètre Infra rouge à transformé de Fourier (FT-ICR)
+  </a>
+  
+    <nav class="md-nav" aria-label="D) Spectromètre Infra rouge à transformé de Fourier (FT-ICR)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#avantages-desavantages_3" class="md-nav__link">
+    Avantages / désavantages
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-les-differentes-techniques-dionisation" class="md-nav__link">
+    E) Les différentes techniques d'ionisation
+  </a>
+  
+    <nav class="md-nav" aria-label="E) Les différentes techniques d'ionisation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#analyses" class="md-nav__link">
+    Analyses
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ii-techniques-de-preparation-des-echantillons-et-separation-chimique-protocoles-analytiques" class="md-nav__link">
+    II) Techniques de préparation des échantillons et séparation chimique, protocoles analytiques
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iii-acquisition-et-traitement-des-donnees" class="md-nav__link">
+    III) Acquisition et traitement des données
+  </a>
+  
+    <nav class="md-nav" aria-label="III) Acquisition et traitement des données">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#systeme-de-mesure" class="md-nav__link">
+    Système de mesure
+  </a>
+  
+    <nav class="md-nav" aria-label="Système de mesure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cage-de-faraday" class="md-nav__link">
+    Cage de Faraday
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#amperemetre-analogique" class="md-nav__link">
+    Ampèremètre analogique
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#amperemetre-numerique" class="md-nav__link">
+    Ampèremètre numérique
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#convertisseur-analogique-numerique-double-rampe" class="md-nav__link">
+    Convertisseur analogique, numérique double rampe
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multiplicateurs-delectrons" class="md-nav__link">
+    Multiplicateurs d'électrons
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mesure-en-mono-collection" class="md-nav__link">
+    Mesure en mono collection
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mesure-en-multi-collection" class="md-nav__link">
+    Mesure en multi collection
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#precision-et-justesse-des-mesures" class="md-nav__link">
+    Précision et justesse des mesures
+  </a>
+  
+    <nav class="md-nav" aria-label="Précision et justesse des mesures">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#precision-interne" class="md-nav__link">
+    Précision interne:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      <label class="md-nav__link" for="__nav_3">
+        Spectroscopie
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Spectroscopie" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Spectroscopie
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Spectroscopie/Spectroscopie/" class="md-nav__link">
+        Techniques
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      <label class="md-nav__link" for="__nav_4">
+        Aménagement du territoire
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Aménagement du territoire" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Aménagement du territoire
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../am%C3%A9nagement%20du%20territoire/Paysage/" class="md-nav__link">
+        Du paysage au système géographique
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../am%C3%A9nagement%20du%20territoire/TEPOS/" class="md-nav__link">
+        Objectif TEPOS
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../am%C3%A9nagement%20du%20territoire/mobilite%20de%20demain/" class="md-nav__link">
+        Mobilité de demain
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      <label class="md-nav__link" for="__nav_5">
+        Eaux continentales
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Eaux continentales" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Eaux continentales
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../eaux%20continentales/Le%20climat/" class="md-nav__link">
+        Le climat
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../eaux%20continentales/Les%20regimes%20hydrologiques/" class="md-nav__link">
+        Les régimes hydrologiques
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#i-spectrometrie-de-masse-principes-et-instruments" class="md-nav__link">
+    I) Spectrométrie de Masse : principes et instruments
+  </a>
+  
+    <nav class="md-nav" aria-label="I) Spectrométrie de Masse : principes et instruments">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-introduction" class="md-nav__link">
+    A) Introduction
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-principe-general-dun-spectrometre-de-masse" class="md-nav__link">
+    B) Principe général d'un spectromètre de masse
+  </a>
+  
+    <nav class="md-nav" aria-label="B) Principe général d'un spectromètre de masse">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#les-differents-filtres-de-masse-existantes" class="md-nav__link">
+    Les différents filtres de masse existantes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acceleration-des-ions" class="md-nav__link">
+    Accélération des ions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spectrometre-magnetique" class="md-nav__link">
+    Spectromètre magnétique
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mesure-des-energies-cinetiques" class="md-nav__link">
+    Mesure des énergies cinétiques
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#appareil-a-double-focalisation" class="md-nav__link">
+    Appareil à double focalisation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#avantages-desavantages" class="md-nav__link">
+    Avantages / désavantages
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-spectrometres-a-temps-de-vol" class="md-nav__link">
+    C) Spectromètres à temps de vol
+  </a>
+  
+    <nav class="md-nav" aria-label="C) Spectromètres à temps de vol">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#avantages-desavantages_1" class="md-nav__link">
+    Avantages / désavantages
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d-spectrometrie-de-masse-quadripolaire" class="md-nav__link">
+    D) Spectrométrie de masse Quadripolaire
+  </a>
+  
+    <nav class="md-nav" aria-label="D) Spectrométrie de masse Quadripolaire">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#avantages-desavantages_2" class="md-nav__link">
+    Avantages / désavantages
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d-spectrometre-infra-rouge-a-transforme-de-fourier-ft-icr" class="md-nav__link">
+    D) Spectromètre Infra rouge à transformé de Fourier (FT-ICR)
+  </a>
+  
+    <nav class="md-nav" aria-label="D) Spectromètre Infra rouge à transformé de Fourier (FT-ICR)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#avantages-desavantages_3" class="md-nav__link">
+    Avantages / désavantages
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-les-differentes-techniques-dionisation" class="md-nav__link">
+    E) Les différentes techniques d'ionisation
+  </a>
+  
+    <nav class="md-nav" aria-label="E) Les différentes techniques d'ionisation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#analyses" class="md-nav__link">
+    Analyses
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ii-techniques-de-preparation-des-echantillons-et-separation-chimique-protocoles-analytiques" class="md-nav__link">
+    II) Techniques de préparation des échantillons et séparation chimique, protocoles analytiques
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iii-acquisition-et-traitement-des-donnees" class="md-nav__link">
+    III) Acquisition et traitement des données
+  </a>
+  
+    <nav class="md-nav" aria-label="III) Acquisition et traitement des données">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#systeme-de-mesure" class="md-nav__link">
+    Système de mesure
+  </a>
+  
+    <nav class="md-nav" aria-label="Système de mesure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cage-de-faraday" class="md-nav__link">
+    Cage de Faraday
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#amperemetre-analogique" class="md-nav__link">
+    Ampèremètre analogique
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#amperemetre-numerique" class="md-nav__link">
+    Ampèremètre numérique
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#convertisseur-analogique-numerique-double-rampe" class="md-nav__link">
+    Convertisseur analogique, numérique double rampe
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multiplicateurs-delectrons" class="md-nav__link">
+    Multiplicateurs d'électrons
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mesure-en-mono-collection" class="md-nav__link">
+    Mesure en mono collection
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mesure-en-multi-collection" class="md-nav__link">
+    Mesure en multi collection
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#precision-et-justesse-des-mesures" class="md-nav__link">
+    Précision et justesse des mesures
+  </a>
+  
+    <nav class="md-nav" aria-label="Précision et justesse des mesures">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#precision-interne" class="md-nav__link">
+    Précision interne:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="outils-dobservation-et-danalyse-en-geosciences">Outils d'observation et d'analyse en Géosciences<a class="headerlink" href="#outils-dobservation-et-danalyse-en-geosciences" title="Permanent link">&para;</a></h1>
+<h2 id="i-spectrometrie-de-masse-principes-et-instruments">I) Spectrométrie de Masse : principes et instruments<a class="headerlink" href="#i-spectrometrie-de-masse-principes-et-instruments" title="Permanent link">&para;</a></h2>
+<h3 id="a-introduction">A) Introduction<a class="headerlink" href="#a-introduction" title="Permanent link">&para;</a></h3>
+<p>En 1834, Michael Faraday définit les ions comme les espèces chimiques responsables de la conductivité électrique. En 1898 Wien a montré qu'un flux d'ions peut-être dévié par un champ électrique et magnétique. En 1912 Thomson montre l'existence de deux isotopes du néon en utilisant un simple appareil à déflexion magnétique. En 1918 Dempster et en 1919 Aston fabriquent des appareils plus élaborés qui permettent de mesurer l'abondance relative de différents isotopes. Les premières spectromètres de masse réellement utilisables ont été mis au point pour l'industrie du pétrole dans les années 50. Ils permettaient d'analyser des molécules organiques de masse environ 500 et avec un point de "fusion" en dessous de 350-C.</p>
+<p><img alt="Instrument de mesure" src="../Images/instrument.PNG" /></p>
+<p>A partir de ces isotopes, nous pouvons dater des roches et ainsi déterminer l'âge du système solaire à l'aide de météorites.</p>
+<p>Fractionnement isotopique des éléments légers :</p>
+<ul>
+<li>géothermométrie et géobarométrie</li>
+<li>identification des processus de surface et des processus biogénique</li>
+<li>environnement, paléoclimat, paléo environnement</li>
+</ul>
+<h3 id="b-principe-general-dun-spectrometre-de-masse">B) Principe général d'un spectromètre de masse<a class="headerlink" href="#b-principe-general-dun-spectrometre-de-masse" title="Permanent link">&para;</a></h3>
+<h4 id="les-differents-filtres-de-masse-existantes">Les différents filtres de masse existantes<a class="headerlink" href="#les-differents-filtres-de-masse-existantes" title="Permanent link">&para;</a></h4>
+<ol>
+<li><strong>Secteur magnétique</strong> : séparation des ions par un champ</li>
+<li><strong>Temps de vol</strong> : séparation des ions en fonction de leur temps de vol</li>
+<li><strong>Quadripolaires</strong> : séparation des ions par un champ électrique modulé</li>
+<li><strong>Transformée de Fourier (FT-ICR)</strong>: mesure des rapports isotopiques par spectrométrie infra-rouge. Les fréquences de rotation ou de vibration d'une molécule dépendent de la masse des atomes qui la composent. Résolution très bonne aux faibles masses.</li>
+</ol>
+<h4 id="acceleration-des-ions">Accélération des ions<a class="headerlink" href="#acceleration-des-ions" title="Permanent link">&para;</a></h4>
+<p>Les ions placés dans un champ électrostatique subissent l'action d'une force constante qui leur communique un mouvement uniformément accéléré. L'énergie cinétique acquise en fin d'accélération est égale à zV.</p>
+<p>zV = &frac12; mv² </p>
+<p>A la sortie du champ électrostatique, tous les ions ayant la même énergie cinétique, leur vitesse dépendant de leur masse.
+Un champ élevé (x kV) permet une meilleure résolution (énergie cinétique des ions &lt;&lt; zV) et donc la mesure de masses plus élevées.</p>
+<p><img alt="Acceleration des ions" src="../Images/acceleration.PNG" /></p>
+<h4 id="spectrometre-magnetique">Spectromètre magnétique<a class="headerlink" href="#spectrometre-magnetique" title="Permanent link">&para;</a></h4>
+<p>Un ion accéléré à une vitesse v sous l'action d'un champ magnétique B perpendiculaire à sa trajectoire est soumis à une force perpendiculaire à v et à B, suivant la règle d'AMPERE et de valeur Bzv. Cette force est la force centripète d'un mouvement circulaire uniforme de rayon R,
+que l'on sait être égale à mv² / R :</p>
+<p>F = Bzv = mv²/R d'où R = mv/Bz</p>
+<p>Pour B donné,</p>
+<p>mv/z = (2Vm/z)^&frac12; d'où R = (2Vm/B²z)^&frac12;</p>
+<p>et</p>
+<p>m/z = B²R² /2V</p>
+<p>z étant la charge de l'ion.</p>
+<p><img alt="Champ magnétique" src="../Images/champmagn%C3%A9tique.PNG" /></p>
+<h4 id="mesure-des-energies-cinetiques">Mesure des énergies cinétiques<a class="headerlink" href="#mesure-des-energies-cinetiques" title="Permanent link">&para;</a></h4>
+<p>Un ion placé dans un champ électrostatique circulaire E perpendiculaire à sa trajectoire est soumis à une force zE perpendiculaire à sa trajectoire. C'est la force centripète d'un mouvement circulaire de rayon r tel que <strong>zE = mv² /r</strong></p>
+<p>R ne dépend que du rapport V/E.</p>
+<p>L'énergie cinétique totale des ions comprend :</p>
+<ul>
+<li>l'énergie d'accélération (zV<sub>0</sub>);</li>
+<li>l 'énergie d'émission</li>
+<li>les perte d'énergie (choc ou fragmentation)</li>
+</ul>
+<p><img alt="Champ électrostatique" src="../Images/champelectrostatique.PNG" /></p>
+<h4 id="appareil-a-double-focalisation">Appareil à double focalisation<a class="headerlink" href="#appareil-a-double-focalisation" title="Permanent link">&para;</a></h4>
+<p><strong>Focalisation en direction</strong></p>
+<p>Les ions issus d'une fente ont des trajectoires divergentes. Entre cette dernière
+et la fente du collecteur s'exerce l'action focalisante des champs magnétique et
+électrostatique.</p>
+<p><strong>Focalisation en énergie</strong></p>
+<p>La double déflection des ions par un champ électrostatique et un champ magnétique
+permet de corriger cette dispersion en énergie et d'obtenir une "haute résolution".</p>
+<p><img alt="Focalisation" src="../Images/focalisation.PNG" /></p>
+<h4 id="avantages-desavantages">Avantages / désavantages<a class="headerlink" href="#avantages-desavantages" title="Permanent link">&para;</a></h4>
+<p>Ils peuvent atteindre des résolutions de masse très élevées. Ils sont très stables et peuvent accumuler des mesures sur de longues périodes -&gt; grandes précisions des mesures</p>
+<p>Cependant, le temps des mesure est long. La gamme de masse réduite en multcollection. Les instruments sont souvent massif et coûteux.</p>
+<h3 id="c-spectrometres-a-temps-de-vol">C) Spectromètres à temps de vol<a class="headerlink" href="#c-spectrometres-a-temps-de-vol" title="Permanent link">&para;</a></h3>
+<p>Les Spectromètres à temps de vol sont les instruments les plus simples.
+Des ions de masses différentes quittant la source simultanément
+avec la même énergie mettent un temps différent
+pour atteindre le détecteur.</p>
+<p>-&gt; sources à courte durée de temps (sources pulsées)
+-&gt; collecteur à haute résolution dans le temps.</p>
+<p>Des ions de masses m1 et m2 auront des vitesses: vi = 2V^&frac12;/ mi^&frac12;.</p>
+<p>Si la distance du trajet est d, le temps mis ti est :</p>
+<p>ti =d mi^&frac12; / 2V^&frac12;,</p>
+<p>t1/t2 = v2/v1 = (m1/m2)^&frac12;</p>
+<p>Le pouvoir de résolution est donné par :
+m/dm = &frac12;t/dt </p>
+<p>v= 1,39. 104 (zV/m)&frac12;</p>
+<p>Si V = 5000 V et m = 2500 D,</p>
+<p>v = 2 . 104 m sec-1 (20 km/sec ou 7200 km/h)</p>
+<p>Pour un trajet entre la source et le collecteur est de 2 m, t = 10-4 sec.
+Si le plus petit intervalle de temps qui peut-être mesuré par le collecteur est de 5nsec, le pouvoir de résolution est de ~10 000.</p>
+<h4 id="avantages-desavantages_1">Avantages / désavantages<a class="headerlink" href="#avantages-desavantages_1" title="Permanent link">&para;</a></h4>
+<p>Très grande sensibilité : tous les ions émis sont détecter. Analyse de surface. Technologie simple, peu encombrantes. Différents systèmes d'ionisation possible (faisceau d'ion, laser, haute tension)</p>
+<p>Temps de mesures longs, à cause des délais entre chaque acquisition. La précision est limitée.</p>
+<h3 id="d-spectrometrie-de-masse-quadripolaire">D) Spectrométrie de masse Quadripolaire<a class="headerlink" href="#d-spectrometrie-de-masse-quadripolaire" title="Permanent link">&para;</a></h3>
+<p>Le premier spectromètre de masse a été développé par Paul et al dans les années 60 et maintenant c'est le type de spectromètre le plus utilisé.</p>
+<p>Un quadripôle est constitué de quatre électrodes parallèles de section hyperbolique ou cylindrique. Les électrodes opposées distantes de 2 r0 sont reliées entre elles et soumises au même potentiel.</p>
+<p>Les électrodes adjacentes sont portées à des potentiels de même valeur, mais opposés de sorte que l'écart de potentiel soit égal à Φ0. Ce potentiel Φ0 résulte
+de la combinaison de tensions, l'une continue (U) l'autre alternative (V) de haute
+fréquence f : </p>
+<p>Φ0 = U-V . Cos(2pi f t)</p>
+<p>Un point de coordonnées (x,y,z) situé dans le champ électrique sera soumis au potentiel : </p>
+<p>Φ = Φ0 (x²-y²)/r0²</p>
+<p>La tension continue appliquée seule va extraire les ions du quadrupôle, en les attirant vers l'extérieur si leur trajectoire n'est pas exactement centrée. La tension alternative va leur donner un mouvement circulaire et des trajectoires en hélice.</p>
+<p>La trajectoire d'un ion pénétrant dans le quadripôle sera décrite par les équations de Mathieu selon les deux autres axes.
+Il est possible de définir des valeurs U et V des zones de stabilité telles que les coordonnées x et y de l'ion restent
+strictement inférieures à r0. Les ions qui se trouvent dans cette zone auront donc une trajectoire stable dans le
+quadripole et seront détectés. Avec U/V constant, un balayage de U permet l'observation successive des ions de masse croissante. La résolution entre ces ions est d'autant plus grande que la pente de la droite est élevée.</p>
+<h4 id="avantages-desavantages_2">Avantages / désavantages<a class="headerlink" href="#avantages-desavantages_2" title="Permanent link">&para;</a></h4>
+<p>Il ne nécessite par d'aimant et il est très compact. Il n'est pas nécessaire d'avoir un potentiel très élevé pour la source. Le temps de balayage de la plage de masse peut - être très rapide. On a pas besoin des fentes et il possède un haut niveau de transmission des ions. </p>
+<p>Comparé à un spectromètre magnétique sa plage de masse et son pouvoir de résolution sont beaucoup trop modestes.</p>
+<h3 id="d-spectrometre-infra-rouge-a-transforme-de-fourier-ft-icr">D) Spectromètre Infra rouge à transformé de Fourier (FT-ICR)<a class="headerlink" href="#d-spectrometre-infra-rouge-a-transforme-de-fourier-ft-icr" title="Permanent link">&para;</a></h3>
+<p>Séparations des ions par mesure de la fréquence de vibration d'un ion qui est inversement proportionnelle à la masse.</p>
+<p>Principe: : mesure de l’absorbance α à partir du spectre d’absorption</p>
+<p><img alt="Spectromètre infra-rouge" src="../Images/infra-rouge.PNG" />
+<img alt="Spectromètre infra-rouge" src="../Images/infra-rouge2.PNG" /></p>
+<h4 id="avantages-desavantages_3">Avantages / désavantages<a class="headerlink" href="#avantages-desavantages_3" title="Permanent link">&para;</a></h4>
+<p>Mesure de la concentration totale satisfaisante. Instrument adaptable à la mesure précise moyennement : changement de la source laser et adaptation du trajet optique</p>
+<p>La fréquence élevée d'acquisition des mesures de concentration -&gt; interêt pour les espèces à variation photochimique rapide comme NO, NO<sub>2</sub> ou O<sub>3</sub>.</p>
+<h3 id="e-les-differentes-techniques-dionisation">E) Les différentes techniques d'ionisation<a class="headerlink" href="#e-les-differentes-techniques-dionisation" title="Permanent link">&para;</a></h3>
+<p><strong>Impact Electronique EI</strong> : Les électrons, émis par un filament chauffé, et accélérés par un potentiel (70 eV) interagissent avec les molécules sous forme gazeuse de l'échantillon.</p>
+<p><strong>Ionisation chimique CI</strong> : Ionisation par impact électronique sur un gaz réactif (CH4 ou NH3) en large excès par rapport à l'échantillon (A). L'ionisation du réactif est suivi par une réaction ion/molécule.</p>
+<p><strong>Fast Atom Bombardment</strong> : Les molécules fragiles comme les peptides sont dissous dans une goutte de glycérol. Cette solution est déposée sur une cible qui est bombardée par des atomes accélérés d'un gaz comme l'argon ou le xénon. Ue onde de choc se propage et expulse la molécule chargée avec un proton.</p>
+<p><strong>TIMS</strong> : L'échantillon (après séparation chimique) est déposé sur un filament (Ta, W, Re, Pt). Lors du chauffage, l'évaporation et l'ionisation sont soit simultanées (filament simple) soit consécutives (filament double ou triple). Chaque échantillon est déposé sur un filament qui va être placé dans un barillet pouvant contenir treize filaments. Le filament est chauffé entre 800 et 1000K, ce qui permet à l'échantillon de s'ioniser. Le faisceau obtenu est optimisé en ajustant le barillet, en réglant la vitesse du faisceau ou en réglant la focalisation verticale et horizontale.</p>
+<p><strong>MC-ICP MS</strong> : Échantillon liquide : ionisé dans un plasma d'Ar à 6000K. Cônes : interface source / analyseur : ne laissent passer qu'une partie des particules selon leur masse. On injecte des aérosol dans la torche, tout sera transformé en ion avec la température très importante. L'analyseur va sélectionner les ions selon leur énergie cinétique. L'électro - aimant sépare les ions selon leur masse.</p>
+<p><strong>SIMS</strong> : Determination des variations isotopiques et géochimiques à très courte échelle. Imagerie isotopique et géochimique. Pas de chimie mais les rapports isotopiques obtenus sont normalement moins précis que ceux déterminés après séparation chimique par les autres méthodes. Des ions primaires sont crées à partir d'un gaz (en général O, Ar, ..) dans une source à impact électronique ou par thermo-ionisation (Cs). Ils sont ensuite accélérés et localisés dans la colonne primaire sur une zone de l'échantillon (0,2 à 10µm selon l'élément et de la sonde). Combinaison de deux secteurs électrostatiques et magnétique en couplant les deux secteurs dans l'espace de manière à obtenir la double focalisation.</p>
+<p><strong>Détecteurs</strong> : </p>
+<ul>
+<li>
+<p>Cage de Faraday : Quand le faisceau d'ions frappe le fond de la cage Faraday, un courant électrique est produit. Ce courant est mesuré à travers une très grande résistance (typiquement 10^11 Ω). La forme allongée de la cage, ainsi que les plaques de suppression d'électrons, minimise la perte d'éventuels électrons secondaires, qui altéreraient le signal. Mesuré ainsi, un signal de 10^-11 A générera un signal de 1Volt. </p>
+</li>
+<li>
+<p>Multiplicateur d'électrons : Quand un ion atteint la première dynode, plusieurs électrons sont émis. Le potentiel électrique qui est imposé entre les dynodes successives, accélèrent les électrons émis vers la dynode suivante. Chaque électron qui frappe une dynode provoque l'émission de plusieurs autres électrons, qui sont à leur tour accélérés ….</p>
+</li>
+<li>
+<p>Galette à micro canaux : utilisée pour l'imagerie ionique, composée de milliers de petits multiplicateurs à dynodes continus. Le gain engendré par une plaque dans les SIMS permet d'atteindre facilement un gain de 10^6.</p>
+</li>
+</ul>
+<h4 id="analyses">Analyses<a class="headerlink" href="#analyses" title="Permanent link">&para;</a></h4>
+<p>Standard : échantillon dont la composition isotopique est connue et reconnue internationalement.</p>
+<p>Chaque session d'analyse débute par le passage de standards.</p>
+<p>Les analyses au spectromètre de masse introduisent un fractionnement isotopique instrumental. Tous les isotopes d'un même élément n'ont pas le même rendement d'ionisation. Il est lié soit au processus d'ionisation, soit à la transmission du spectromètre, soit au fonctionnement du collecteur. Chaque technique analytique a donc un fractionnement qui lui est propre.</p>
+<p>Dans le cas de l'analyse d'éléments avec au moins deux isotopes non radiogéniques, une normalisation interne peut être réalisée en utilisant une valeur reconnue au niveau international.</p>
+<p>146Nd/144Nd = 0,7219, 86Sr/88Sr = 0,1194</p>
+<p>Grâce à ces rapports connus, une correction du fractionnement dépendant de la masse induit par l'analyse peut être effectuée. Cette correction suit une loi linéaire, puissance ou exponentielle.</p>
+<p>Dans le cas d’isotopes stables, ou lorsque l’élément
+analysé ne possède pas deux isotopes non
+radiogéniques : </p>
+<p>– la correction se fait par comparaison avec un
+standard analysé dans les mêmes conditions que
+l’échantillon
+– ajouter un autre élément, d'une masse semblable
+à celle de l'élément étudié, avec deux isotopes
+non-radiogéniques qui peuvent être utilisés pour
+une correction interne.</p>
+<h2 id="ii-techniques-de-preparation-des-echantillons-et-separation-chimique-protocoles-analytiques">II) Techniques de préparation des échantillons et séparation chimique, protocoles analytiques<a class="headerlink" href="#ii-techniques-de-preparation-des-echantillons-et-separation-chimique-protocoles-analytiques" title="Permanent link">&para;</a></h2>
+<p>Quelles méthodes ou quels outils pour répondre aux mêmes questions ?</p>
+<p>Quel est l'âge de la Terre : les dépôts sédimentaires en aval d'un fleuve</p>
+<p>Quel est l'âge des continents et des océans : marges de l'Océan Pacifique</p>
+<p>Ou trouver le cuivre et du zinc : prospection de recherche en remontant les filières</p>
+<p>Quelle était la température des océans à l'archéen : minéraux formés dans l'Océan</p>
+<p>L'échantillonnage est important pour la colecte des données et pour l'analyse et l'interprétation des résultatd.</p>
+<p>Les questions initiales : </p>
+<ul>
+<li>combien d'échantillons inclure dans mon étude?</li>
+<li>quels critères devrais-je utiliser pour les choisir?</li>
+<li>combien d'analyses faire ?</li>
+</ul>
+<p>Les réponses à ces questions : </p>
+<ul>
+<li>le nombre nécessaire pour obtenir des réponses significatives</li>
+<li>les critères qui reflètent les objectifs de votre étude</li>
+<li>le nombre nécessaire pour obtenir les informations que vous recherchez dans les limites de vos ressources (humaines, matérielles et de temps)</li>
+</ul>
+<p>La stratégie d'échantillonnage va introduire une démarcation claire entre les études quantitatives et les études qualitatives.</p>
+<p>|| Etude qualitative || Etude | quantitative| 
+|--------|--------|
+| nombre d'échantillons restreints analysés en profondeur, échantillons ciblés et non aléatoire, sous ensemble plus spécifique | grand nombre d'échantillons indépendamment de leur contexte(signification statistique).échantillonnage aléatoire |
+| attention particulière au caractère unique, spécifique.les échelles employées adaptées pour tenir compte des variations individuelles. | échelles normalisées, nombre restreint de dimensions pré établies.Analyse statistique: tendances médianes - moyennes et écarts type |</p>
+<p>Faire la distinction entre les stratégies d'échantillonnage ciblées et aléatoires</p>
+<p>La nature exacte d'un échantillonnage ciblé peut évoluer au cours de l'étude</p>
+<p><a href="../Images/strategieanalytique.PNG">Stratégie analytique</a></p>
+<p><img alt="Stratégie d'échantillonnage" src="../Images/strategie.PNG" /></p>
+<p><img alt="Caractérisation de l'hétérogénéité" src="../Images/caracterisationheterogeneite.PNG" /></p>
+<p><img alt="Prélèvements d'échantillons" src="../Images/prelevements.PNG" />
+<img alt="Prélèvement des échantillons" src="../Images/pr%C3%A9levements2.PNG" /></p>
+<p>Mise en solution par voie humide :</p>
+<ul>
+<li>Acide Fluorhydrique HF: dissous la silice H<sub>2</sub>SiF<sub>6 (l)</sub>  SiF<sub>4(g)</sub> dangereux, sels insoluble de Ca, Mg, ... volatiles B, As,Ge, Sb</li>
+<li>Acide Chlorhydrique HCl: peu utilisé seul, sauf pour les carbonates.</li>
+<li>Acide Nitrique HNO<sub>3</sub>  : mise en solution des sulfures, arséniures.HNO<sub>3</sub> HCl (1:3) : eau régale, mise en solution des métaux lourds</li>
+<li>Acide Perchlorique HClO<sub>4</sub> : acide le plus fort. Seul les alcalins sont insolubles. Reprise en HCl dilué.Oxydation de MO. Dangereux.</li>
+<li>Acide Sulfurique H<sub>2</sub>SO<sub>4</sub>: oxidant,mais forme des sulfates peu solubles.utilisé en mélange avec HF, notamment pour doser le F.</li>
+</ul>
+<p>Mise en solution des silicates : </p>
+<ul>
+<li>Avec perte de silice Mélange HClO<sub>4</sub> : HF à 200°C</li>
+<li>Sans perte de siliceHF seul, HF-HCl</li>
+</ul>
+<p>Mise en solution des minéraux réfractaires :</p>
+<ul>
+<li>Sulfures :dissolution en  H<sub>2</sub>SO<sub>4</sub></li>
+<li>Sulfates : fusion avec Na<sub>2</sub>CO<sub>3</sub></li>
+<li>Silicates:  zircon, tourmaline, béryle, topaze, disthène, .. - Oxydes : corindon, rutile, spinelles (Al ou Cr)...
+        -mise en solution en bombe (110-250°, 80 - 300105Pa)Fusion au métaborate(Li<sub>2</sub>O B<sub>2</sub>O<sub>3</sub>), reprise en HCl ou HNO<sub>3</sub></li>
+</ul>
+<p>Echangeurs cationiques : ce sont en général des polymères organiques contenant des fonctions -C-OH=O ou -SO3H (acide sulfonique) de la forme </p>
+<p><img alt="Acide sulfonique" src="../Images/acidesulfonique.PNG" /></p>
+<p>Une résine cationique retient mieux les cations de charge ionique plus élevée,par exemple la fixation des ions va diminuer dans le sens :Th<sub>4</sub><sup>+</sup>  &gt; Ac<sub>3</sub><sup>+</sup>  &gt; Ra<sub>2</sub><sup>+</sup> &gt; Fr<sup>+</sup> (éléments de la 7ème période de rayon ionique équivalent)</p>
+<p>ou à charge ionique constante , les cations de rayon ionique plus grand :Cs<sup>+</sup> &gt; Rb<sup>+</sup>  &gt;K<sup>+</sup>  &gt; Na<sup>+</sup> &gt; H<sup>+</sup></p>
+<p>Résines amioniques : polymères organiques, genre styrène ou divinyl-benzène avec des groupements NH<sub>3</sub><sup>+</sup> dans lesquelles le contre - ion est de type Cl<sup>-</sup> ou OH<sup>-</sup>.</p>
+<p>On peut séparer un grand nombre de cations sur des résines anioniques en complexant le cation sous formes anioniques mono ou multi chargées.</p>
+<p><img alt="Séparation chimique" src="../Images/s%C3%A9paration.PNG" /></p>
+<p>Schéma  simplifié  du  spectromètres  de  masseMC-ICPMS  Nu  Plasma  utilisés  pour  les  mesures des  compositions  isotopiques  du  magnésium à l'ENS de Lyon.</p>
+<p><img alt="Spectromètre de masse" src="../Images/spectrometredemasse.PNG" /></p>
+<p>Séparation des minéraux</p>
+<p><img alt="Séparation des minéraux" src="../Images/s%C3%A9parationdesmin%C3%A9raux.PNG" /></p>
+<h2 id="iii-acquisition-et-traitement-des-donnees">III) Acquisition et traitement des données<a class="headerlink" href="#iii-acquisition-et-traitement-des-donnees" title="Permanent link">&para;</a></h2>
+<p>Que mesure t-on dans un spectromètre de masse?</p>
+<p>Un faisceau d'ion définis par :</p>
+<ul>
+<li>un rapport m/q</li>
+<li>une énergie E = &frac12; mv² =qv</li>
+</ul>
+<p>q = charge élémentaire 1.602 x 10<sub>-19</sub>C</p>
+<p>1 A = 1 C/s</p>
+<h3 id="systeme-de-mesure">Système de mesure<a class="headerlink" href="#systeme-de-mesure" title="Permanent link">&para;</a></h3>
+<h4 id="cage-de-faraday">Cage de Faraday<a class="headerlink" href="#cage-de-faraday" title="Permanent link">&para;</a></h4>
+<p><img alt="Cage de Faraday" src="../Images/cagedefaraday.PNG" /></p>
+<p>N/t = l/q </p>
+<p>1 nano-ampère (10<sup>-9</sup> A) =  6.24 10<sup>9</sup> ions /s.</p>
+<p><img alt="Cage de Faraday" src="../Images/cagedefaraday2.PNG" /></p>
+<p>Mesure directe du potentiel aux bornes d'une grande résistance (typiquement 10<sup>-11</sup>) A ~ 1 volt</p>
+<p>Forme allongé + plaques de répulsion -&gt; faible perte d'électrons secondaires</p>
+<h4 id="amperemetre-analogique">Ampèremètre analogique<a class="headerlink" href="#amperemetre-analogique" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p>ampèremètre magnéto-électrique : galvanomètre  à  cadre  mobile  -&gt; une  bobine  montée  sur  pivot,  dans  le champ magnétique d'un aimant fixe.  Le  courant  induit  dans  la  bobine  un  champ  électromagnétique,  qui  la fait pivoter par répulsion des champs magnétiques.  Plus le courant est intense, plus la bobine bascule.</p>
+</li>
+<li>
+<p>ampèremètre ferro-magnétique : deux palettes de fer doux à l'intérieur d'une bobine, l'une fixe, l'autre montée sur pivot.  Quand   le   courant   passe   dans   la   bobine,   les   deux   palettes s'aimantent et se repoussent, quel que soit le sens du courant.  Cet ampèremètre non polarisé, mesure la valeur efficace de courant alternatif de forme quelconque (mais de fréquence faible &lt; 1 kHz).</p>
+</li>
+<li>
+<p>ampèremètre thermique :  un  fil  résistant  chauffé  par  effet Joule,  provoque  la  rotation  de  l'aiguille  à  laquelle  il  est  fixé. L'ampèremètre  thermique  n'est  pas  polarisé,  et  peux  mesurer  la valeur efficace des courants alternatifs jusqu'à des fréquences de plusieurs mégahertz</p>
+</li>
+</ul>
+<h4 id="amperemetre-numerique">Ampèremètre numérique<a class="headerlink" href="#amperemetre-numerique" title="Permanent link">&para;</a></h4>
+<p>C'est en fait un voltmètre numérique mesurant la tension produite par le courant à mesurer dans une résistance (appelée shunt). La valeur du shunt dépend du calibre utilisé. En application de la Loi d'Ohm, La tension U mesurée est convertie, en fonction de la valeur de résistance connue R du shunt, en une valeur A correspondant au courant. </p>
+<h4 id="convertisseur-analogique-numerique-double-rampe">Convertisseur analogique, numérique double rampe<a class="headerlink" href="#convertisseur-analogique-numerique-double-rampe" title="Permanent link">&para;</a></h4>
+<p>Convertisseur analogique-numérique double rampe :  transforme une tension en un temps, les 2 grandeurs étant proportionnelles. Le temps est ensuite numérisé à l'aide d'un compteur. fonctionne en deux étapes :  </p>
+<ol>
+<li>
+<p>Première étape :  K1 est fermé et K2 est ouvert. intégration de la tension  vx(t) pendant une durée Tint fixe (période d'intégration). La tension en sortie de l'intégrateur est égale à la tension aux bornes du condensateur et a pour expression :    vs (t) = 1/R<sub>1</sub>C∫<sub>0</sub><sup>Tint</sup> v<sub>x</sub>∂t</p>
+</li>
+<li>
+<p>Deuxième étape. K2 est fermé et K1 est ouvert : décharge à courant constant du condensateur. Un compteur mesure la durée ∆tx nécessaire à la décharge,  proportionnelle à la valeur de la tension atteinte à la fin de l'étape 1.</p>
+</li>
+</ol>
+<p>Ce type de convertisseur est limité des basses fréquences à quelques dizaines de Hz avec des durées d'intégration de ~100 ms. Il constitue le circuit de base des voltmètres numériques. </p>
+<h4 id="multiplicateurs-delectrons">Multiplicateurs d'électrons<a class="headerlink" href="#multiplicateurs-delectrons" title="Permanent link">&para;</a></h4>
+<p>Quand un ion atteint la première dynode -&gt; plusieurs électrons. 
+Le potentiel électrique entre les dynodes accélèrent les électrons émis vers la dynode suivante. A chaque étape, chaque électron -&gt; plusieurs électrons =&gt; amplification du signal =&gt; <strong>mesure en mode digital ou analogique</strong>.</p>
+<p>EM en mode analogique: mesure du courant en sortie</p>
+<p>L'amplification est ajustée en changeant la tension du EM (1-3 kV). La sensibilité est ajustée en changeant la résistance (10<sup>9-</sup> 10<sup>11<sup>Ω). Permet de réaliser des mesures à des  taux de comptage plus élevés que le mode digital, et une meilleur sensibilité que les FC. Mesure sur voltmètre numérique, précise et stable.</p>
+<h4 id="mesure-en-mono-collection">Mesure en mono collection<a class="headerlink" href="#mesure-en-mono-collection" title="Permanent link">&para;</a></h4>
+<p>Instrument ancien, ou mesure à haute résolution  ou grande dispersion de masse. </p>
+<p>Protocole de mesure. </p>
+<ol>
+<li>Démarrage de la source, réglage du spectromètre. </li>
+<li>Détermination du champ magnétique pour chaque masse</li>
+<li>Acquisition des mesures par saut de pics </li>
+</ol>
+<p>Cycle de mesures : TC, TM1, TC, TM2, TC, TM3, ... Bloc de mesures de N cycles  :  interpolation dans le temps, moyenne, Correction du bruit de fond, correction de discrimination de masse. </p>
+<ol>
+<li>Accumulation des blocs de mesures jusqu'à  l'obtention d'une précision suffisante ou jusqu'à épuisement de l'échantillon.</li>
+</ol>
+<h4 id="mesure-en-multi-collection">Mesure en multi collection<a class="headerlink" href="#mesure-en-multi-collection" title="Permanent link">&para;</a></h4>
+<p>Instrument moderne, mesure à moyenne résolution et  dispersion de masse limitée. </p>
+<p>Protocole de mesure. </p>
+<ol>
+<li>Démarrage, réglage du spectromètre. </li>
+<li>Alignement des détecteurs </li>
+<li>Acquisition des mesures par blocs, moyenne, Correction du bruit de fond, correction de discrimination de masse. </li>
+<li>Accumulation des blocs ...</li>
+</ol>
+<h3 id="precision-et-justesse-des-mesures">Précision et justesse des mesures<a class="headerlink" href="#precision-et-justesse-des-mesures" title="Permanent link">&para;</a></h3>
+<h4 id="precision-interne">Précision interne:<a class="headerlink" href="#precision-interne" title="Permanent link">&para;</a></h4>
+<p>Traitement statistique d'une analyse. Comptage d'ions : Loi  de  poisson  : probabilité  d’un  événement  sur  une  durée,  tel  que  le  nombre  de voitures qui passent un péage par tranche de temps, le nombre de fautes de frappe par page, ou le nombre d'ions 28Si+ comptés par seconde.Une variable aléatoire X suit une loi de poisson de paramètre λ.</p>
+<p>Pour 100 ions , la précision est ± 10 %, pour 106 ions  ± 1 ‰ Limite intrinsèque à la précision des mesures en comptage d'ions,  sans tenir compte du bruit ou des différents biais analytiques.</p>
+<details class="example" open="open"><summary>Example</summary></details>
+<p>En ajoutant 3,50 g d’un spike contenant 7,50 ppm (μg/g) de Rb à 0,25 g de roche, on obtient un rapport <sup>87</sup>Rb / <sup>85</sup>Rb <sub>mel</sub> de 1,55. Quelle est la concentration en Rb de l'échantillon ? Données : <sup>87</sup>Rb = 86,9092 et <sup>85</sup>Rb = 84,9117,  </p>
+<p>Abondances isotopiques :  naturelles :<sup>85</sup>Rb = 72,17%; <sup>87</sup>Rb = 27,83%  du spike, <sup>87</sup>Rb = 99,4%; <sup>85</sup>Rb = 0,6% </p>
+<p>n<sub>e</sub>/n<sub>s</sub>=(Ab<sub>s</sub><sup>A</sup>−R<sub>mel</sub>×Ab<sub>s</sub><sup>B</sup>)/(Ab<sub>e</sub><sup>B</sup>×R<sub>mel</sub>−Ab<sub>e</sub><sup>A</sup>)</p>
+<p>Avec  m la masse et  M la masse atomique,</p>
+<p>m<sub>e</sub>=m<sub>s</sub>×M<sub>e</sub>/M<sub>s</sub>(0.994−1.55×0.006 /0.7217×1.55−0.2783)</p>
+<p>n<sub>e</sub>=m<sub>e</sub>/M<sub>e</sub> et n<sub>s</sub>=m<sub>s</sub>/M<sub>s</sub></p>
+<div class="admonition note">
+<p class="admonition-title">Correction</p>
+</div>
+<p>Calcul des masses atomiques : </p>
+<ul>
+<li>M<sub>e</sub> = 86,9092 x 0,2783 + 84,9117 x 0,7217 = 85,4676</li>
+<li>M<sub>s</sub> = 86,9092 x 0,994 + 84,9117 x 0,006 = 86,8972</li>
+</ul>
+<p>Calcul de la masse de Rb dans le spike : </p>
+<p>m<sub>s</sub> = 7,5 x 3,5 = 26,25  μg</p>
+<p>On a donc 26,25μg de Rb dans le spike.</p>
+<p>Calcul de la masse de Rb dans l’échantillon.</p>
+<p>me=(26.25×85.4676)/86.8972[0.994−1.55×0.006 / 0.7217×1.55−0.2783]=30.25</p>
+<p>soit 30,25μg de Rb dans les 0,25g de roche</p>
+<p>[Rb] = 30.25 / 0.25 = 121 μg/g soit 121 ppm.</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="../.." class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Précédent
+              </span>
+              Home
+            </div>
+          </div>
+        </a>
+      
+      
+        <a href="../../Spectroscopie/Spectroscopie/" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Suivant
+              </span>
+              Techniques
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copier dans le presse-papier", "clipboard.copied": "Copi\u00e9 dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d892486b.min.js"></script>
+      
+    
+  </body>
+</html>

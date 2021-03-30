@@ -1,0 +1,1017 @@
+
+<!doctype html>
+<html lang="fr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.0">
+    
+    
+      
+        <title>Objectif TEPOS - Cours de première année de Master SSE</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.33e2939f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ef6f36e2.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#2094f3">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="blue" data-md-color-accent="light-blue">
+  
+    
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#objectif-tepos" class="md-skip">
+          Aller au contenu
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Cours de première année de Master SSE" class="md-header__button md-logo" aria-label="Cours de première année de Master SSE" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Cours de première année de Master SSE
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Objectif TEPOS
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Cours de première année de Master SSE" class="md-nav__button md-logo" aria-label="Cours de première année de Master SSE" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Cours de première année de Master SSE
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      <label class="md-nav__link" for="__nav_2">
+        Isotopie
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Isotopie" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Isotopie
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Isotopie/G%C3%A9ochimie%20isotopique/" class="md-nav__link">
+        Outils d'observation et d'analyse en Géosciences
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      <label class="md-nav__link" for="__nav_3">
+        Spectroscopie
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Spectroscopie" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Spectroscopie
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Spectroscopie/Spectroscopie/" class="md-nav__link">
+        Techniques
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+      
+      <label class="md-nav__link" for="__nav_4">
+        Aménagement du territoire
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Aménagement du territoire" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Aménagement du territoire
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Paysage/" class="md-nav__link">
+        Du paysage au système géographique
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Objectif TEPOS
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Objectif TEPOS
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#quest-ce-quun-geographe" class="md-nav__link">
+    Qu'est ce qu'un géographe ?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#les-bases-du-nouveau-sga" class="md-nav__link">
+    Les bases du nouveau SGA
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#elements-de-contexte" class="md-nav__link">
+    Elements de contexte
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#i-un-constat-inquietant" class="md-nav__link">
+    I) Un constat inquiétant
+  </a>
+  
+    <nav class="md-nav" aria-label="I) Un constat inquiétant">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-toujours-plus" class="md-nav__link">
+    A) Toujours plus
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b-tous-drogues" class="md-nav__link">
+    B) Tous drogués
+  </a>
+  
+    <nav class="md-nav" aria-label="B) Tous drogués">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#200-esclaves-chacun" class="md-nav__link">
+    200 esclaves chacun
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#les-signaux-passent-au-rouge" class="md-nav__link">
+    Les signaux passent au rouge
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ii-comment-faire-un-tepos" class="md-nav__link">
+    II) Comment faire un TEPOS
+  </a>
+  
+    <nav class="md-nav" aria-label="II) Comment faire un TEPOS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#8000-fois-nos-besoins" class="md-nav__link">
+    8000 fois nos besoins
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#le-photovoltaique" class="md-nav__link">
+    Le photovoltaïque
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eolien" class="md-nav__link">
+    Éolien
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fracturation-du-sous-sol" class="md-nav__link">
+    Fracturation du sous-sol
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#biocarburants" class="md-nav__link">
+    Biocarburants
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#petrole-via-les-algues" class="md-nav__link">
+    Pétrole via les algues
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pile-a-combustible" class="md-nav__link">
+    Pile à combustible
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#biomasse" class="md-nav__link">
+    Biomasse
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#toilettes-seches" class="md-nav__link">
+    Toilèttes seches
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metanisation" class="md-nav__link">
+    Métanisation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#troisieme-revolution-industrielle" class="md-nav__link">
+    Troisième révolution industrielle
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#de-lage-du-carbone-a-lage-du-solaire" class="md-nav__link">
+    De l'âge du carbone à l'âge du solaire
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#la-ferme-du-bec-hellouin" class="md-nav__link">
+    La ferme du bec Hellouin
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ville-en-transition" class="md-nav__link">
+    Ville en transition
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mobilite%20de%20demain/" class="md-nav__link">
+        Mobilité de demain
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      <label class="md-nav__link" for="__nav_5">
+        Eaux continentales
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Eaux continentales" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Eaux continentales
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../eaux%20continentales/Le%20climat/" class="md-nav__link">
+        Le climat
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../eaux%20continentales/Les%20regimes%20hydrologiques/" class="md-nav__link">
+        Les régimes hydrologiques
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#quest-ce-quun-geographe" class="md-nav__link">
+    Qu'est ce qu'un géographe ?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#les-bases-du-nouveau-sga" class="md-nav__link">
+    Les bases du nouveau SGA
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#elements-de-contexte" class="md-nav__link">
+    Elements de contexte
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#i-un-constat-inquietant" class="md-nav__link">
+    I) Un constat inquiétant
+  </a>
+  
+    <nav class="md-nav" aria-label="I) Un constat inquiétant">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-toujours-plus" class="md-nav__link">
+    A) Toujours plus
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#b-tous-drogues" class="md-nav__link">
+    B) Tous drogués
+  </a>
+  
+    <nav class="md-nav" aria-label="B) Tous drogués">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#200-esclaves-chacun" class="md-nav__link">
+    200 esclaves chacun
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#les-signaux-passent-au-rouge" class="md-nav__link">
+    Les signaux passent au rouge
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ii-comment-faire-un-tepos" class="md-nav__link">
+    II) Comment faire un TEPOS
+  </a>
+  
+    <nav class="md-nav" aria-label="II) Comment faire un TEPOS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#8000-fois-nos-besoins" class="md-nav__link">
+    8000 fois nos besoins
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#le-photovoltaique" class="md-nav__link">
+    Le photovoltaïque
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eolien" class="md-nav__link">
+    Éolien
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fracturation-du-sous-sol" class="md-nav__link">
+    Fracturation du sous-sol
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#biocarburants" class="md-nav__link">
+    Biocarburants
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#petrole-via-les-algues" class="md-nav__link">
+    Pétrole via les algues
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pile-a-combustible" class="md-nav__link">
+    Pile à combustible
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#biomasse" class="md-nav__link">
+    Biomasse
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#toilettes-seches" class="md-nav__link">
+    Toilèttes seches
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metanisation" class="md-nav__link">
+    Métanisation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#troisieme-revolution-industrielle" class="md-nav__link">
+    Troisième révolution industrielle
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#de-lage-du-carbone-a-lage-du-solaire" class="md-nav__link">
+    De l'âge du carbone à l'âge du solaire
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#la-ferme-du-bec-hellouin" class="md-nav__link">
+    La ferme du bec Hellouin
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ville-en-transition" class="md-nav__link">
+    Ville en transition
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="objectif-tepos">Objectif TEPOS<a class="headerlink" href="#objectif-tepos" title="Permanent link">&para;</a></h1>
+<h2 id="quest-ce-quun-geographe">Qu'est ce qu'un géographe ?<a class="headerlink" href="#quest-ce-quun-geographe" title="Permanent link">&para;</a></h2>
+<ul>
+<li>analyse territoriale : on voit les forces et les faiblesse d'un territoire et on imagine un projet idéal pour le territoire </li>
+<li>préservation des espaces naturels et patrimoniaux </li>
+<li>aménagement du territoire </li>
+<li>développement des territoires</li>
+</ul>
+<h2 id="les-bases-du-nouveau-sga">Les bases du nouveau SGA<a class="headerlink" href="#les-bases-du-nouveau-sga" title="Permanent link">&para;</a></h2>
+<p>Depuis 20 ans, on vit une époque de transformation qui touche tous les domaines de la société. Le TEPOS touchent à pleins de domaines. Nous allons nous concentrer sur le domaine de l'énergie.</p>
+<p>Un TEPOS est un est un territoire à énergie positive : territoire qui produit plus d'énergie qu'il n'en consomme mais qu'il ne repose que sur ses ressources naturelles renouvelables. Environnementalement c'est possible, technologiquement possible. Cependant l'appareil actuel de distribution de toutes les biens et services de nos besoins ne sont pas organiser pour ça. C'est donc une question d'organisation des territoires.</p>
+<p>Les territoires ruraux ont une grande facilités à se transformer en énergie positive. En ville, la chose est tout autre. Il faut que le territoire soit exportateur pour alimenter les villes. Il faut un échange entre les villes et les campagnes.</p>
+<p>Le concept de TEPOS est né dans les années 80 aux USA. C'est un ingénieur en énergie Amory Lovis, en créant un article sur  l'énergie et la transition énergétique. Sa secrétaire se trouve est inscrit Négawatt au lieu de Mégawatt. L'ingénieur va se rendre compte que la solution pour la transition énergétique repose dans l'efficacité, la sobriété. Si on veut avoir un système basé sur les energies renouvelables, il faut arrêter de gaspiller. Pour cela il faut arrêter le système, d4eXtraction, production, stockage, transport, distribution de l'énergie. </p>
+<p>Si on veut avoir unn système basé sur les énergies renouvelables, il faut arrêter de gaspiller. Cependant, il faut au moins 30 ans pour le faire. Cela est possible. </p>
+<ul>
+<li>sobriété : ne consommer que ce qu'on a besoin</li>
+<li>efficacité : stratégies d'urbanisme et d'aménagement</li>
+<li>renouvelable </li>
+</ul>
+<p><strong>Un TEPOS est un territoire qui satisfait à l'ensemble de ses besoins en énergies en s'appuyant sur ses seules ressources renouvelable. L'échelle du territoire est essentiel.</strong></p>
+<p>L'idée du TEPOS est de passer d'un monde en 100% énergie renouvelable.</p>
+<h2 id="elements-de-contexte">Elements de contexte<a class="headerlink" href="#elements-de-contexte" title="Permanent link">&para;</a></h2>
+<p>Beaucoup d'enjeux au niveau économique, de l'emploi et des finances. Si on transforme les bâtiments efficaces et sobres. On peut créer 1.7 millions d'emplois et leur donner un emploi durant 30 ans. Rénovez tous les logements, les commerces, les bureaux, il y a un outils extraordinaire pour relancer l'économie.</p>
+<p>Jusqu'en 2004, le France exporte plus qu'elle n'en importe. L'élément qui est intéressant hors énergie, elle a été positive jusqu'en 2010. L'énergie est le poste le plus important dans notre déficit. Cela donne une idée du poids de notre facture énergétique. On importe 50 milliards par an d'énergie fossile en France.  </p>
+<h2 id="i-un-constat-inquietant">I) Un constat inquiétant<a class="headerlink" href="#i-un-constat-inquietant" title="Permanent link">&para;</a></h2>
+<ul>
+<li>crise</li>
+<li>pénurie ponctuels</li>
+<li>pollutions</li>
+<li>inégalités</li>
+<li>tensions politiques</li>
+<li>idée de fin du monde</li>
+</ul>
+<h3 id="a-toujours-plus">A) Toujours plus<a class="headerlink" href="#a-toujours-plus" title="Permanent link">&para;</a></h3>
+<p>Nous sommes de plus nombreux, on veut tous être plus gourmand. Cette organisation à l'échelle planétaire donne de plus en plus d'injustice.</p>
+<p>Nous avons plus de nourriture que nécessaire mais elle n'est pas partagée équitablement. &#8531; de notre production fini à la poubelle. On aurait de quoi nourriture 11 milliards d'habitants. Le progrès technique a permis la croissance démographique. La ressource en eau va être une problématique très forte. On risque de se retrouver avec des territoires très inégalitaires. (fonte des glaces très rapides, augmentation de cyclones, de tempêtes). </p>
+<p>La vallée du Rhône permet d'alimenter l'agriculture, hors celle ci provient, la font des glaces tous les ans ainsi que de la pluie. Ce qui pose un gros problème. Ainsi que pour l'échange des commerces, le refroidissement des centrales nucléaires ainsi que pour l'eau potable. On risque d'avoir des problèmes dès les années 30.</p>
+<p>La première cause de la baisse de mortalité en Europe est l'amélioration de la ration alimentaire : révolution agricole. Ensuite, grâce à la révolution sanitaire. Le taux de natalité met du temps à baisser lié aux cultures, tradition, mentalité. Le pays qui a fait sa transition le plus tôt et le plus l'lentement est la France. Celui qui a été le plus rapide c'est le Japon, il l'a effectué en 25 ans. Tous les pays ne sont pas engagé de la même façon dans la transition. La phase 1 (baisse de mortalité) concerne les pays qui n'ont pas encore atteint leur maximum de croissance. En Europe ont est en phase 2, les pays ont une démographique qui augmente mais on déjà atteint le pic de croissance. </p>
+<p><img alt="Les phases de la transition démographique" src="../Images/demographie.PNG" /></p>
+<p>Le maximum du taux de croissance qu'one st connu est dans les années soixante. Le moment où on a atteint le rythme de croissance mondial le plus élevé. <strong>La population cessera de croître lorsque tous ses habitants auront atteint un stade de développement économique suffisant.</strong></p>
+<p>Si on veut généraliser le modèle actuel que les américains utilisent, il nous faudrait 3 planètes. Les facteurs sont :</p>
+<ul>
+<li>niveau de carbonation </li>
+<li>niveau de vie</li>
+<li>croissance de la population</li>
+</ul>
+<p>conséquence de la décentralisation lié à la mondialisation : population diminue. 2 000 milliardaires en 2019 dû la concentration financière des industries. On a une hausse du niveau de vie mais les inégalités sont plus grandes.</p>
+<p>Nous avons une désertification rurale et un étalement urbain.</p>
+<h2 id="b-tous-drogues">B) Tous drogués<a class="headerlink" href="#b-tous-drogues" title="Permanent link">&para;</a></h2>
+<p>On utilisent de l'énergie fossile tous les jours. Sans énergie et sans argent, on ne fait rien.</p>
+<p>La richesse est l'énergie. La richesse d'un territoire est l'ensemble des biens et services disponibles pour la satisfaction des besoins de la population de ce territoire.</p>
+<p>Qui génère la richesse :</p>
+<ul>
+<li>la planète</li>
+<li>l'homme</li>
+</ul>
+<p>Comment accroître la quantité de richesse globale disponible ?</p>
+<p>En allant voir ailleurs :</p>
+<ol>
+<li>conquête de nouveaux territoires</li>
+<li>découvertes de nouvelles ressources </li>
+<li>créations de nouveaux biens et services </li>
+</ol>
+<p>En modifiant nos façons de faire :</p>
+<ol>
+<li>augmentation de la capacité de travail de l'Homme</li>
+<li>augmentation de la productivité humaine</li>
+</ol>
+<p>Tous cela grâce : </p>
+<ul>
+<li>nouvelles techniques d'assolement</li>
+<li>par la sélection</li>
+<li>par l'emploi de pesticides et insecticides</li>
+<li>maîtrise de l'eau</li>
+<li>l'emploi d'engrais naturels ou chimiques</li>
+</ul>
+<h3 id="200-esclaves-chacun">200 esclaves chacun<a class="headerlink" href="#200-esclaves-chacun" title="Permanent link">&para;</a></h3>
+<p>Si on passe notre vie à pédaler, on ne peut pas alimenter le frigo. Aujourd'hui dans le monde chaque individu consomme 200 esclaves énergétiques. On consomme une énergie de plus en plus et elle est de plus en plus concentrée. La puissance est en kW, la production est en W/h. Dans un litre d'essence, on a 23 tonnes de biomasse pour avoir au final 9KW. On consomme de plus e plus, les pays occidentaux on atteint un palier, voir commence à décliner. La Chine augmenta la capacité. On a actuellement décentralisé et délocaliser donc on ne peut pas dire qu'on est passé à la transition énergétique. 1Kg de tomates sous serre chauffée correspond à 1 litre de pétrole pour l'alimenter en engrais et chauffer la serre. Le coût d'un baril de pétrole est fonction de la zone où ce dernier à été exploité.</p>
+<h3 id="les-signaux-passent-au-rouge">Les signaux passent au rouge<a class="headerlink" href="#les-signaux-passent-au-rouge" title="Permanent link">&para;</a></h3>
+<p>Le rayonnement solaire passe à travers l'atmosphère claire. Une partie du rayonnement solaire est réfléchie par l'atmosphère et la surface de la Terre. L'énergie solaire est absorbée par la surface de la Terre et la réchauffe. Elle est ensuite convertie en chaleur renvoyant l'émission d'un rayonnent IR vers l'atmosphère. Une partie du rayonnement infrarouge est absorbée et ré émise par les molécules de gaz à effet de serre. a conséquence directe est la réchauffement de la surface de la Terre et de la troposphère. Une partie du rayonnement solaire passe à travers l'atmosphère et se perd dans l'espace.</p>
+<h2 id="ii-comment-faire-un-tepos">II) Comment faire un TEPOS<a class="headerlink" href="#ii-comment-faire-un-tepos" title="Permanent link">&para;</a></h2>
+<h3 id="8000-fois-nos-besoins">8000 fois nos besoins<a class="headerlink" href="#8000-fois-nos-besoins" title="Permanent link">&para;</a></h3>
+<p>Un territoire a énergie positive, le Soleil nous offre 8000 fois ce que l'on consomme sur Terre. Il permet de se rendre compte de la quantité d'énergie renouvelable. L'important, c'est la capter, la stocket et d'éviter de la gaspiller (NégaWatt). Grosse contrainte :  intermittente, variable dans le temps d'une saison à l'autre et elle est dispersée.</p>
+<p>Depuis la logique du renouvelable on a différents types :</p>
+<ul>
+<li>éoliennes offshores : espace naturel, loin de la berge et le vent est plus fréquent </li>
+<li>hydrolienne marine, utilise la houle : on peut l'installer sur tous les littoraux et l'énergie et toujours présente</li>
+<li>géothermie profonde : utilise une ressource naturelle en profondeur</li>
+<li>central photovoltaïque</li>
+<li>biomasse : culture d'algue</li>
+</ul>
+<p>On capte au maximum l'énergie que la nature nous fournit. Dans l'habitat, il faut un bioclimatique pour avoir le soleil passif. Il va se chauffer lui même. La casquette est calculé en fonction de l'altitude et de la saison. Comme ça pas de surchauffe en été. Lorsque l'on fait une opération d'un bâtiment, on pense à l'orientation.</p>
+<h3 id="le-photovoltaique">Le photovoltaïque<a class="headerlink" href="#le-photovoltaique" title="Permanent link">&para;</a></h3>
+<ul>
+<li>0,5MW/ha (au sol)</li>
+<li>0,1kWc/m²</li>
+</ul>
+<p>Le recyclage n'est pas encore généralisé. Il y a su silicium, phosphore, bore, arsenic, antimoine. La pente en Lorraine doit être de 30° pour l'optimum. C'est rentable sur le long terme.</p>
+<p>Agromine : Chercher des gisements à faible concentration. On a des pistes de recherches Econick.</p>
+<h3 id="eolien">Éolien<a class="headerlink" href="#eolien" title="Permanent link">&para;</a></h3>
+<p>Hydrolienne : pas en pointe en France mais potentiel intéressant (2 GW en France). On résonne mixte renouvelable : complémentarité</p>
+<h3 id="fracturation-du-sous-sol">Fracturation du sous-sol<a class="headerlink" href="#fracturation-du-sous-sol" title="Permanent link">&para;</a></h3>
+<p>La température à 5 000 m de profondeur est constante à 250°C, y envoyer l'eau et la repomper. La dilatation se fait sur plusieurs kilomètres, donc il faut trouver un bon alliage. On peut les récupérer dans des sous-sols sédimentaires. Aujourd'hui l'installation permet d'avoir une suffisance pour une ville de 20 000 habitants en Alsace.</p>
+<h3 id="biocarburants">Biocarburants<a class="headerlink" href="#biocarburants" title="Permanent link">&para;</a></h3>
+<p>Cultivé du colza pour le transformer en bioéthanol. On a un pourcentage 10% de bioéthanol dans notre essence pour voiture. Ce bioéthanol va consommer de la terre agricole et avec des engrais chimique, bilan carbone plutôt négatif.</p>
+<h3 id="petrole-via-les-algues">Pétrole via les algues<a class="headerlink" href="#petrole-via-les-algues" title="Permanent link">&para;</a></h3>
+<p>Pour nourrir les algues, l'entreprise récupérer le CO2 d'une cimenterie et nourrissait les algues avec l'intégralité. Le rendement est 100 fois supérieur à celui du colza par unité de surface. Les algues ne sont pas en compétition avec notre nourriture. </p>
+<h3 id="pile-a-combustible">Pile à combustible<a class="headerlink" href="#pile-a-combustible" title="Permanent link">&para;</a></h3>
+<p>L'idée est de stocker des bonbonnes d'hydrogènes. L'hydrogène est explosif. Le risque 0 n'est pas encore atteint. Comment on fait pour alimenter els bonbonnes en hydrogène. Une fois que l'on a consommé de l'hydrogène, on rejette de l'eau. La pollution peut être en amont. Si on utilise de l'hydrogène avec du méthane, il ya un risque où on émettra du CO2. Cela n'a de sens que si on utilise un outils propre pour transformer du gaz ou de l'eau en hydrogène.</p>
+<h3 id="biomasse">Biomasse<a class="headerlink" href="#biomasse" title="Permanent link">&para;</a></h3>
+<p>En Autriche, une ville développe une usine qui récupère les résidus de bois pour les br^ler et produire du gaz, de la chaleur et de l'électricité. Elle a rendement efficace car toute l'énergie émise sera récupérer soit sous trois formes qui vont permettre d'alimenter les bâtiments ou les véhicules qui peuvent fonctionner au gaz.</p>
+<h3 id="toilettes-seches">Toilèttes seches<a class="headerlink" href="#toilettes-seches" title="Permanent link">&para;</a></h3>
+<p>composte, engrais avec les urines. Économiser une dépense énergétique.</p>
+<h3 id="metanisation">Métanisation<a class="headerlink" href="#metanisation" title="Permanent link">&para;</a></h3>
+<p>fermentation qui va créer du gaz et va donner du méthane.</p>
+<h3 id="troisieme-revolution-industrielle">Troisième révolution industrielle<a class="headerlink" href="#troisieme-revolution-industrielle" title="Permanent link">&para;</a></h3>
+<p>Nous nous dirigeons vers un 3e age. Celui de l'information partagée d'une révolution scientifique et technique et d'une énergie décentralisée
+Fin durable du plein emploi middle class fragilisé, nouveau contrat social, la nécessaire empathie. Un revenu minimum garanti pour tous.
+La troisième révolution industrielle Jeremy Rifkin</p>
+<h3 id="de-lage-du-carbone-a-lage-du-solaire">De l'âge du carbone à l'âge du solaire<a class="headerlink" href="#de-lage-du-carbone-a-lage-du-solaire" title="Permanent link">&para;</a></h3>
+<p>Le 100% renouvelable est inévitable. Quand est ce qu'on décide d'y aller. Le but de demain ça d'avoir le mix 100% renouvelable. </p>
+<h3 id="la-ferme-du-bec-hellouin">La ferme du bec Hellouin<a class="headerlink" href="#la-ferme-du-bec-hellouin" title="Permanent link">&para;</a></h3>
+<p>1000 arbres avec 500 variété=té, 8 personnes à temps plein sur 20 ha?
+Pas de pétrole, pas d'engrais chimique, pas de pesticide</p>
+<p>Agriculture conventionnelle : 1 calorie alimentaire produite pour 10 calories fossiles consommées. Un écosystème optimisé, compris, réfléchi. Un laboratoire suivi par l'INRA.</p>
+<h3 id="ville-en-transition">Ville en transition<a class="headerlink" href="#ville-en-transition" title="Permanent link">&para;</a></h3>
+<p>Avec la fin du pétrole, la théorie de la rente de Ricardo irait au rebu. Devient ITD intégration territoire développement.</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="../Paysage/" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Précédent
+              </span>
+              Du paysage au système géographique
+            </div>
+          </div>
+        </a>
+      
+      
+        <a href="../mobilite%20de%20demain/" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Suivant
+              </span>
+              Mobilité de demain
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copier dans le presse-papier", "clipboard.copied": "Copi\u00e9 dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d892486b.min.js"></script>
+      
+    
+  </body>
+</html>
